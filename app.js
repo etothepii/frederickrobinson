@@ -1,25 +1,42 @@
 var http = require('http')
-var url = require('url');
-var items = [];
+var parse = require('url').parse;
+var join = require('path').join;
+var fs = require('fs');
+var root = 'data/'
 
 var server = http.createServer(function(req, res) {
+  var url = parse(req.url);
+  var path = join(root, url.pathname + ".json");
   switch (req.method) {
     case 'POST':
-      var item = '';
+      var content = '';
       req.setEncoding('utf8');
       req.on('data', function(chunk) {
-        item += chunk;
+        content += chunk;
       });
       req.on('end', function() {
-        items.push(item);
-	res.end('OK\n');
+        fs.writeFile(path,content,function(err) {
+	  if (err) {
+	    res.end(err + "\n");
+	  }
+	  else {
+	    res.end("OK\n");
+	  }
+	});
       });
       break;
     case 'GET':
-      items.forEach(function(item, i) {
-        res.write(i + ') ' + item + '\n');
+      var stream = fs.createReadStream(path);
+      stream.on('error', function(err) {
+        console.error(err);
+        res.end(JSON.stringify(err) + "\n");
       });
-      res.end();
+      stream.on('data', function(chunk) {
+        res.write(chunk);
+      });
+      stream.on('end', function() {
+        res.end();
+      });
       break;
   }
 });
