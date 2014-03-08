@@ -2,39 +2,11 @@ var http = require('http')
 var parse = require('url').parse;
 var join = require('path').join;
 var fs = require('fs');
-var orm = require("orm");
+var frdb = require('./frederickRobinsonDB');
 var root = 'data/'
 
-var password;
-fs.readFile('./resources/password', 'utf8', function read(err, data) {
-  
-  if (err) {
-    throw err;
-  }
-  password = data;
-  connectToDatabase(password, orm);
-});
-
-function connectToDatabase(password, orm) {
-  orm.connect("mysql://fredrobinson:" + password + "@localhost/frederickRobinson", function (err, db) {
-    if (err) throw err;
-    buildORM(db);
-  });
-}
-
-var politicalParty;
-
-function buildORM(db) {
-  politicalParty = db.define("PoliticalParty", {
-    ID: Number,
-    NAME: String,
-    COLOUR: String,
-    LOGO_REF: String
-  });
-}
-
 function get(url, writer) {
-  politicalParty.find({ID:1}, function (err, politicalParties) {
+  frdb.PoliticalParty.find({ID:1}, function (err, politicalParties) {
     if (err) {
       throw err;
     }
@@ -80,4 +52,6 @@ var server = http.createServer(function(req, res) {
   }
 });
 
-server.listen(3000);
+frdb.connect(fs,function() {
+  server.listen(3000);
+});
