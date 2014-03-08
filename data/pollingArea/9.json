@@ -1,0 +1,17 @@
+{ 
+  "id": 9,
+  "name": "Tower Hamlets (Mayoralty)",
+  "type": "LOCAL_AUTHORITY",
+  "candidates":[1,2,3,4,5],
+  "children": [
+    {
+      "id": 19,
+      "displayName: "Poplar"
+    },
+    {
+      "id": 20,
+      "displayName: "Lansbury"
+    }
+  ]
+}
+

@@ -1,0 +1,17 @@
+{ 
+  "id": 19,
+  "name": "Poplar",
+  "type": "LOCAL_AUTHORITY_WARD",
+  "candidates":[],
+  "children": [
+    {
+      "id": 26,
+      "displayName: "PO1"
+    },
+    {
+      "id": 27,
+      "displayName: "PO2"
+    }
+  ]
+}
+

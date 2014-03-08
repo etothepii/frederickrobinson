@@ -1,7 +1,0 @@
-{
-  "id": "1",
-  "name": "Tower Hamlets",
-  "type": "Local Authority",
-  "isElectionArea": "false",
-  "children": {"islandgardens", "blackwallandcubitttown", "canarywharf", "poplar" }
-}
