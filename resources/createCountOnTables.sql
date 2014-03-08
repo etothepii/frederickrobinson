@@ -32,6 +32,7 @@ DROP TABLE IF EXISTS PoliticalParty	;
 CREATE TABLE PoliticalParty (
     ID INT (8) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     NAME VARCHAR (255) NOT NULL,
+    MAJOR BOOL NOT NULL,
     COLOUR CHAR(7) NOT NULL,
     LOGO_REF VARCHAR (255) NULL);
 DROP TABLE IF EXISTS Tally;
@@ -59,3 +60,4 @@ CREATE TABLE Candidate (
     `ORDER` INT (8) NOT NULL,
     INDEX `PARTY` (`PARTY`),
     INDEX `ELECTION_AREA` (`ELECTION_AREA`));
+LOAD DATA INFILE '/Users/jrrpl/git/conservatives/frederickrobinson/resources/PoliticalParty.csv' INTO TABLE PoliticalParty COLUMNS TERMINATED BY ',' ENCLOSED BY '"';
