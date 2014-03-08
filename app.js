@@ -46,6 +46,7 @@ var server = http.createServer(function(req, res) {
       break;
     case 'GET':
       get(url, function(content) {
+        res.setHeader('Content-Type', 'application/json; charset="utf-8"');
         res.end(JSON.stringify(content));
       });
       break;
