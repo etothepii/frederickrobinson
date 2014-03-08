@@ -3,6 +3,7 @@
   "name": "Tower Hamlets (Mayoralty)",
   "type": "LOCAL_AUTHORITY",
   "candidates":[1,2,3,4,5],
+  "childTypeDisplayName":"Ward",
   "children": [
     {
       "id": 19,

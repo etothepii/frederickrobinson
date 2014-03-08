@@ -1,8 +1,6 @@
 { 
   "id": 26,
   "name": "PO1",
-  "type": "LOCAL_AUTHORITY_POLLING_DISTRICT",
-  "candidates":[],
-  "children": []
+  "type": "LOCAL_AUTHORITY_POLLING_DISTRICT"
 }
 

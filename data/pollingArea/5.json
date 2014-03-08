@@ -2,7 +2,7 @@
   "id": 5,
   "name": "Westminster Parliamentary",
   "type": "ELECTION_TYPE",
-  "candidates":[],
+  "childTypeDisplayName":"Constituency",
   "children": [
     {
       "id": 6,

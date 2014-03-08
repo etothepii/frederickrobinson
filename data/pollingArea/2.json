@@ -2,7 +2,7 @@
   "id": 2,
   "name": "Engalnd",
   "type": "COUNTRY",
-  "candidates":[],
+  "childTypeDisplayName":"Election",
   "children": [
     {
       "id": 4,

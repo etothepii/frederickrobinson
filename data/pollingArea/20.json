@@ -2,7 +2,7 @@
   "id": 20,
   "name": "Lansbury",
   "type": "LOCAL_AUTHORITY_WARD",
-  "candidates":[],
+  "childTypeDisplayName":"Polling District",
   "children": [
     {
       "id": 21,

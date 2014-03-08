@@ -2,7 +2,7 @@
   "id": 8,
   "name": "Tower Hamlets",
   "type": "LOCAL_AUTHORITY",
-  "candidates":[],
+  "childTypeDisplayName":"Ward",
   "children": [
     {
       "id": 10,

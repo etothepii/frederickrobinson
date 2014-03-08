@@ -2,7 +2,7 @@
   "id": 1,
   "name": "ROOT",
   "type": "ROOT_NODE",
-  "candidates":[],
+  "childTypeDisplayName":"Country",
   "children": [
     {
       "id": 2,
