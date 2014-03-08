@@ -27,6 +27,7 @@ var server = http.createServer(function(req, res) {
       break;
     case 'GET':
       var stream = fs.createReadStream(path);
+      res.setHeader('Content-Type', 'application/json; charset="utf-8"');
       stream.on('error', function(err) {
         console.error(err);
         res.end(JSON.stringify(err) + "\n");
