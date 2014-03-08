@@ -2,7 +2,7 @@
   "id": 4,
   "name": "Local Authority",
   "type": "ELECTION_TYPE",
-  "candidates":[],
+  "childTypeDisplayName":"Local Authority",
   "children": [
     {
       "id": 8,

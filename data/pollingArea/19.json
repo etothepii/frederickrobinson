@@ -2,7 +2,7 @@
   "id": 19,
   "name": "Poplar",
   "type": "LOCAL_AUTHORITY_WARD",
-  "candidates":[],
+  "childTypeDisplayName":"Polling District",
   "children": [
     {
       "id": 26,
