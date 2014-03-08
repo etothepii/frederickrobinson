@@ -6,12 +6,29 @@ var frdb = require('./frederickRobinsonDB');
 var root = 'data/'
 
 function get(url, writer) {
+  var pathParts = url.pathname.slice(1).split("/");
+  if (pathParts.length == 2) {
+    getFromId(pathParts[0], parseInt(pathparts[1]), writer);
+  }
+
   frdb.PoliticalParty.find({ID:1}, function (err, politicalParties) {
     if (err) {
       throw err;
     }
     writeSingleOrArray(writer, politicalParties);
   });
+}
+
+function getFromId(table, id, writer) {
+  switch (table) {
+    case 'pollingArea':
+      frdb.PollingArea.find({ID:id}, function (err, pollingAreas) {
+        if (err) {
+	  throw err;
+	}
+	writeSingleOrArray(writer, pollingAreas);
+      });
+  }
 }
 
 function writeSingleOrArray(writer, array) {
