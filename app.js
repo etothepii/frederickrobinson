@@ -2,7 +2,54 @@ var http = require('http')
 var parse = require('url').parse;
 var join = require('path').join;
 var fs = require('fs');
+var orm = require("orm");
 var root = 'data/'
+
+var password;
+fs.readFile('./resources/password', 'utf8', function read(err, data) {
+  
+  if (err) {
+    throw err;
+  }
+  password = data;
+  connectToDatabase(password, orm);
+});
+
+function connectToDatabase(password, orm) {
+  orm.connect("mysql://fredrobinson:" + password + "@localhost/frederickRobinson", function (err, db) {
+    if (err) throw err;
+    buildORM(db);
+  });
+}
+
+var politicalParty;
+
+function buildORM(db) {
+  politicalParty = db.define("PoliticalParty", {
+    ID: Number,
+    NAME: String,
+    COLOUR: String,
+    LOGO_REF: String
+  });
+}
+
+function get(url, writer) {
+  politicalParty.find({ID:1}, function (err, politicalParties) {
+    if (err) {
+      throw err;
+    }
+    writeSingleOrArray(writer, politicalParties);
+  });
+}
+
+function writeSingleOrArray(writer, array) {
+  if (array.length == 1) {
+    writer(array[0]);
+  }
+  else {
+    writer(array);
+  }
+}
 
 var server = http.createServer(function(req, res) {
   var url = parse(req.url);
@@ -26,16 +73,8 @@ var server = http.createServer(function(req, res) {
       });
       break;
     case 'GET':
-      var stream = fs.createReadStream(path);
-      stream.on('error', function(err) {
-        console.error(err);
-        res.end(JSON.stringify(err) + "\n");
-      });
-      stream.on('data', function(chunk) {
-        res.write(chunk);
-      });
-      stream.on('end', function() {
-        res.end();
+      get(url, function(content) {
+        res.end(JSON.stringify(content));
       });
       break;
   }
