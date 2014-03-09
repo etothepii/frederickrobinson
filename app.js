@@ -2,6 +2,7 @@ var http = require('http')
 var parse = require('url').parse;
 var join = require('path').join;
 var fs = require('fs');
+var querystring = require('querystring');
 var frdb = require('./frederickRobinsonDB');
 var root = 'data/'
 
@@ -12,6 +13,8 @@ function get(url, process) {
     process("Unknown Table: " + pathParts[0]);
   }
   else if (pathParts.length == 1) {
+    var search = querystring.parse(url.query);
+    table.find(search, process);
   }
   else if (pathParts.length == 2) {
     var id = parseInt(pathParts[1]);

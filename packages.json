@@ -6,6 +6,7 @@
   "dependencies": {
     "mysql": "*",
     "node-mysql": "*",
-    "orm": "*"
+    "orm": "*",
+    "querystring": "*"
   }
 }
