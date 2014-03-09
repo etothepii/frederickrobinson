@@ -47,6 +47,7 @@ function buildORM(db) {
   exports.PoliticalParty = db.define("PoliticalParty", {
     ID: Number,
     NAME: String,
+    MAJOR: Boolean,
     COLOUR: String,
     LOGO_REF: String
   });
