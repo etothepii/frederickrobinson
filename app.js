@@ -8,15 +8,8 @@ var root = 'data/'
 function get(url, writer) {
   var pathParts = url.pathname.slice(1).split("/");
   if (pathParts.length == 2) {
-    getFromId(pathParts[0], parseInt(pathparts[1]), writer);
+    getFromId(pathParts[0], parseInt(pathParts[1]), writer);
   }
-
-  frdb.PoliticalParty.find({ID:1}, function (err, politicalParties) {
-    if (err) {
-      throw err;
-    }
-    writeSingleOrArray(writer, politicalParties);
-  });
 }
 
 function getFromId(table, id, writer) {
@@ -28,6 +21,20 @@ function getFromId(table, id, writer) {
 	}
 	writeSingleOrArray(writer, pollingAreas);
       });
+    case 'politicalParty':
+      var search;
+      if (id == 0) {
+        search = {};
+      }
+      else {
+        search = {ID: id};
+      }
+      frdb.PoliticalParty.find(search, function (err, parties) {
+        if (err) {
+          throw err;
+        }   
+        writeSingleOrArray(writer, parties);
+      }); 
   }
 }
 
@@ -43,6 +50,7 @@ function writeSingleOrArray(writer, array) {
 var server = http.createServer(function(req, res) {
   var url = parse(req.url);
   var path = join(root, url.pathname + ".json");
+  res.setHeader('Content-Type', 'application/json; charset="utf-8"');
   switch (req.method) {
     case 'POST':
       var content = '';
@@ -63,7 +71,6 @@ var server = http.createServer(function(req, res) {
       break;
     case 'GET':
       get(url, function(content) {
-        res.setHeader('Content-Type', 'application/json; charset="utf-8"');
         res.end(JSON.stringify(content));
       });
       break;
