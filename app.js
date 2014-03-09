@@ -7,37 +7,38 @@ var root = 'data/'
 
 function get(url, process) {
   var pathParts = url.pathname.slice(1).split("/");
-  if (pathParts.length == 2) {
+  var table = getTable(pathParts[0]);
+  if (table == null) {
+    process("Unknown Table: " + pathParts[0]);
+  }
+  else if (pathParts.length == 1) {
+  }
+  else if (pathParts.length == 2) {
     var id = parseInt(pathParts[1]);
-    switch (pathParts[0]) {
-      case 'agent':
-        getFromId(frdb.Agent, id, process);
-	break;
-      case 'candidate':
-        getFromId(frdb.Candidate, id, process);
-	break;
-      case 'count':
-        getFromId(frdb.Count, id, process);
-	break;
-      case 'overseeing':
-        getFromId(frdb.Overseeing, id, process);
-	break;
-      case 'politicalParty':
-        getFromId(frdb.PoliticalParty, id, process);
-	break;
-      case 'pollingArea':
-        getFromId(frdb.PollingArea, id, process);
-	break;
-      case 'tally':
-        getFromId(frdb.Tally, id, process);
-	break;
-      case 'user':
-        getFromId(frdb.User, id, process);
-	break;
-      default:
-        process("Unknown table: " + pathParts[0]);
-	break;
-    }
+    getFromId(table, id, process);
+  }
+}
+
+function getTable(tableName) {
+  switch (tableName) {
+    case 'agent':
+      return frdb.Agent;
+    case 'candidate':
+      return frdb.Candidate;
+    case 'count':
+      return frdb.Count;
+    case 'overseeing':
+      return frdb.Overseeing;
+    case 'politicalParty':
+      return frdb.PoliticalParty;
+    case 'pollingArea':
+      return frdb.PollingArea;
+    case 'tally':
+      return frdb.Tally;
+    case 'user':
+      return frdb.User;
+    default:
+      return null;
   }
 }
 
