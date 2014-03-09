@@ -3,13 +3,13 @@ DROP TABLE IF EXISTS Agent;
 CREATE TABLE Agent (
     ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     EMAIL VARCHAR(255) NOT NULL,
-    PASSWORD VARCHAR(255) NOT NULL,
+    PASSWORD VARCHAR(255) NULL,
     INDEX `EMAIL` (`EMAIL`));
 DROP TABLE IF EXISTS User;
 CREATE TABLE User (
     ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     EMAIL VARCHAR(255) NOT NULL,
-    PHONE_IDENTIFIER VARCHAR(255) NOT NULL,
+    PHONE_IDENTIFIER VARCHAR(255) NULL,
     INDEX `EMAIL` (`EMAIL`));
 DROP TABLE IF EXISTS Overseeing;
 CREATE TABLE Overseeing (
@@ -46,7 +46,7 @@ DROP TABLE IF EXISTS PollingArea;
 CREATE TABLE PollingArea (
     ID INT (8) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     NAME VARCHAR(64) NULL,
-    TYPE VARCHAR(64) NULL,
+    CHILD_TYPE VARCHAR(64) NULL,
     PARENT INT (8) NOT NULL,
     INDEX `PARENT` (`PARENT`));
 DROP TABLE IF EXISTS Candidate;
@@ -61,3 +61,7 @@ CREATE TABLE Candidate (
     INDEX `PARTY` (`PARTY`),
     INDEX `ELECTION_AREA` (`ELECTION_AREA`));
 LOAD DATA INFILE '/Users/jrrpl/git/conservatives/frederickrobinson/resources/PoliticalParty.csv' INTO TABLE PoliticalParty COLUMNS TERMINATED BY ',' ENCLOSED BY '"';
+LOAD DATA INFILE '/Users/jrrpl/git/conservatives/frederickrobinson/resources/Agent.csv' INTO TABLE Agent COLUMNS TERMINATED BY ',' ENCLOSED BY '"';
+LOAD DATA INFILE '/Users/jrrpl/git/conservatives/frederickrobinson/resources/User.csv' INTO TABLE User COLUMNS TERMINATED BY ',' ENCLOSED BY '"';
+LOAD DATA INFILE '/Users/jrrpl/git/conservatives/frederickrobinson/resources/Candidate.csv' INTO TABLE Candidate COLUMNS TERMINATED BY ',' ENCLOSED BY '"';
+LOAD DATA INFILE '/Users/jrrpl/git/conservatives/frederickrobinson/resources/PollingArea.csv' INTO TABLE PollingArea COLUMNS TERMINATED BY ',' ENCLOSED BY '"';
