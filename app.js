@@ -18,7 +18,31 @@ function get(url, process) {
   }
   else if (pathParts.length == 2) {
     var id = parseInt(pathParts[1]);
-    getFromId(table, id, process);
+    if (pathParts[0] == 'pollingArea') {
+      getFromId(table, id, function(err, pollingArea) {
+        table.find({PARENT: id}, function(err2, children) {
+	  var formattedCorrectly = buildReturnablePollingArea(pollingArea, children);
+          process(0, formattedCorrectly);
+        });
+      });
+    }
+    else {
+      getFromId(table, id, process);
+    }
+  }
+}
+
+function buildReturnablePollingArea(pollingArea, children) {
+  var displayChildren = [];
+  for (var i = 0; i < children.length; i++) {
+    displayChildren.push({"id": children[i].ID, "displayName": children[i].NAME});
+  }
+  console.log(JSON.stringify(displayChildren));
+  return {
+    "id": pollingArea[0].ID,
+    "name": pollingArea[0].NAME,
+    "childTypeDisplayName": pollingArea[0].CHILD_TYPE,
+    "children": displayChildren
   }
 }
 
