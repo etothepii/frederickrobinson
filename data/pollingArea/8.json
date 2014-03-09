@@ -1,0 +1,17 @@
+{ 
+  "id": 8,
+  "name": "Tower Hamlets",
+  "type": "LOCAL_AUTHORITY",
+  "childTypeDisplayName":"Ward",
+  "children": [
+    {
+      "id": 10,
+      "displayName": "Poplar"
+    },
+    {
+      "id": 11,
+      "displayName": "Lansbury"
+    }
+  ]
+}
+

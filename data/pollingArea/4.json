@@ -1,0 +1,17 @@
+{ 
+  "id": 4,
+  "name": "Local Authority",
+  "type": "ELECTION_TYPE",
+  "childTypeDisplayName":"Local Authority",
+  "children": [
+    {
+      "id": 8,
+      "displayName": "Tower Hamlets"
+    },
+    {
+      "id": 9,
+      "displayName": "Tower Hamlets (Mayoralty)"
+    }
+  ]
+}
+

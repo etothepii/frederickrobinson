@@ -1,0 +1,17 @@
+{ 
+  "id": 1,
+  "name": "ROOT",
+  "type": "ROOT_NODE",
+  "childTypeDisplayName":"Country",
+  "children": [
+    {
+      "id": 2,
+      "displayName": "England"
+    },
+    {
+      "id": 3,
+      "displayName": "Scotland"
+    }
+  ]
+}
+

@@ -1,0 +1,17 @@
+{ 
+  "id": 2,
+  "name": "Engalnd",
+  "type": "COUNTRY",
+  "childTypeDisplayName":"Election",
+  "children": [
+    {
+      "id": 4,
+      "displayName": "Local Authority"
+    },
+    {
+      "id": 5,
+      "displayName": "Westminster Parliamentary"
+    }
+  ]
+}
+

@@ -1,0 +1,29 @@
+{ 
+  "id": 11,
+  "name": "Lansbury",
+  "type": "LOCAL_AUTHORITY_WARD",
+  "childTypeDisplayName":"Polling District",
+  "children": [
+    {
+      "id": 14,
+      "displayName": "LA1"
+    },
+    {
+      "id": 15,
+      "displayName": "LA2"
+    },
+    {
+      "id": 16,
+      "displayName": "LA3"
+    },
+    {
+      "id": 17,
+      "displayName": "LA4"
+    },
+    {
+      "id": 18,
+      "displayName": "LA5"
+    }
+  ]
+}
+

@@ -1,0 +1,17 @@
+{ 
+  "id": 5,
+  "name": "Westminster Parliamentary",
+  "type": "ELECTION_TYPE",
+  "childTypeDisplayName":"Constituency",
+  "children": [
+    {
+      "id": 6,
+      "displayName": "Poplar & Limehouse"
+    },
+    {
+      "id": 7,
+      "displayName": "Bethnal Green & Bow"
+    }
+  ]
+}
+
