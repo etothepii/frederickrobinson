@@ -37,7 +37,6 @@ function buildReturnablePollingArea(pollingArea, children) {
   for (var i = 0; i < children.length; i++) {
     displayChildren.push({"id": children[i].ID, "displayName": children[i].NAME});
   }
-  console.log(JSON.stringify(displayChildren));
   return {
     "id": pollingArea[0].ID,
     "name": pollingArea[0].NAME,
