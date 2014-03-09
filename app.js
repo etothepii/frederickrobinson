@@ -94,23 +94,6 @@ var server = http.createServer(function(req, res) {
   var path = join(root, url.pathname + ".json");
   res.setHeader('Content-Type', 'application/json; charset="utf-8"');
   switch (req.method) {
-    case 'POST':
-      var content = '';
-      req.setEncoding('utf8');
-      req.on('data', function(chunk) {
-        content += chunk;
-      });
-      req.on('end', function() {
-        fs.writeFile(path,content,function(err) {
-	  if (err) {
-	    res.end(err + "\n");
-	  }
-	  else {
-	    res.end("OK\n");
-	  }
-	});
-      });
-      break;
     case 'GET':
       get(url, function(err, array) {
         if (err) {
@@ -123,6 +106,9 @@ var server = http.createServer(function(req, res) {
           });
 	}
       });
+      break;
+    default:
+      res.end("Unsupported Operation");
       break;
   }
 });
