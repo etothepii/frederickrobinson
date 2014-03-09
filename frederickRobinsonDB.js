@@ -58,7 +58,7 @@ function buildORM(db) {
   exports.PollingArea = db.define("PollingArea", {
     ID: Number,
     NAME: String,
-    TYPE: String,
+    CHILD_TYPE: String,
     PARENT: Number
   });
   exports.Candidate = db.define("Candidate", {
