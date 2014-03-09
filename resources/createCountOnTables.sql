@@ -60,8 +60,8 @@ CREATE TABLE Candidate (
     `ORDER` INT (8) NOT NULL,
     INDEX `PARTY` (`PARTY`),
     INDEX `ELECTION_AREA` (`ELECTION_AREA`));
-LOAD DATA INFILE '/Users/jrrpl/git/conservatives/frederickrobinson/resources/PoliticalParty.csv' INTO TABLE PoliticalParty COLUMNS TERMINATED BY ',' ENCLOSED BY '"';
-LOAD DATA INFILE '/Users/jrrpl/git/conservatives/frederickrobinson/resources/Agent.csv' INTO TABLE Agent COLUMNS TERMINATED BY ',' ENCLOSED BY '"';
-LOAD DATA INFILE '/Users/jrrpl/git/conservatives/frederickrobinson/resources/User.csv' INTO TABLE User COLUMNS TERMINATED BY ',' ENCLOSED BY '"';
-LOAD DATA INFILE '/Users/jrrpl/git/conservatives/frederickrobinson/resources/Candidate.csv' INTO TABLE Candidate COLUMNS TERMINATED BY ',' ENCLOSED BY '"';
-LOAD DATA INFILE '/Users/jrrpl/git/conservatives/frederickrobinson/resources/PollingArea.csv' INTO TABLE PollingArea COLUMNS TERMINATED BY ',' ENCLOSED BY '"';
+LOAD DATA INFILE '/Users/jrrpl/git/conservatives/frederickrobinson/resources/PoliticalParty.csv' INTO TABLE PoliticalParty COLUMNS TERMINATED BY ',' ENCLOSED BY '"' ESCAPED BY '\\';
+LOAD DATA INFILE '/Users/jrrpl/git/conservatives/frederickrobinson/resources/Agent.csv' INTO TABLE Agent COLUMNS TERMINATED BY ',' ENCLOSED BY '"' ESCAPED BY '\\';
+LOAD DATA INFILE '/Users/jrrpl/git/conservatives/frederickrobinson/resources/User.csv' INTO TABLE User COLUMNS TERMINATED BY ',' ENCLOSED BY '"' ESCAPED BY '\\';
+LOAD DATA INFILE '/Users/jrrpl/git/conservatives/frederickrobinson/resources/Candidate.csv' INTO TABLE Candidate COLUMNS TERMINATED BY ',' ENCLOSED BY '"' ESCAPED BY '\\';
+LOAD DATA INFILE '/Users/jrrpl/git/conservatives/frederickrobinson/resources/PollingArea.csv' INTO TABLE PollingArea COLUMNS TERMINATED BY ',' ENCLOSED BY '"'  ESCAPED BY '\\';
