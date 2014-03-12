@@ -1,0 +1,35 @@
+{
+  "GUID": "01234-5678-90AB-CDEF",
+  "provider": "gajusz@gmail.com",
+  "pollingArea": 21,
+  "password": "banana",
+  "votesCast": 2314,
+  "ballotBox": "Box 112",
+  "tallies": [
+    {
+      "party": 148,
+      "candidate": 1,
+      "count": 372
+    },
+    {
+      "party": 103,
+      "candidate": 2,
+      "count": 59
+    },
+    {
+      "party": 153,
+      "candidate": 3,
+      "count": 38
+    },
+    {
+      "party": 65,
+      "candidate": 4,
+      "count": 116
+    },
+    {
+      "party": null,
+      "candidate": 5,
+      "count":613
+    }
+  ]
+}
