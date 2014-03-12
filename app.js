@@ -4,6 +4,7 @@ var join = require('path').join;
 var fs = require('fs');
 var querystring = require('querystring');
 var frdb = require('./frederickRobinsonDB');
+var counter = require('./counter');
 var root = 'data/'
 
 function get(url, process) {
@@ -75,7 +76,6 @@ function getFromId(table, id, process) {
   table.find(search, process);
 }
 
-
 function writeSingleOrArray(array, writer) {
   if (array.length == 1) {
     writer(array[0]);
@@ -87,8 +87,18 @@ function writeSingleOrArray(array, writer) {
 
 function put(url, body, postProcessing) {
   var pathParts = url.pathname.slice(1).split("/");
-  var action = getTable(pathParts[0]);
-  postProcessing("Not implemented");
+  switch (pathParts[0]) {
+    case "count":
+      counter.process(body, postProcessing);
+      break;
+    default:
+      postProcessing("Not implemented");
+  }
+}
+
+function error(res, err) {
+  res.statusCode = 400;
+  res.end(err+"\n");
 }
 
 var server = http.createServer(function(req, res) {
@@ -110,14 +120,26 @@ var server = http.createServer(function(req, res) {
       });
       break;
     case 'POST':
-      put(url, req.body, function(err,msg) {
-        if (err) {
-	  res.statusCode = 400;
-	  res.end(err + "\n");
+    var fullBody = '';
+      req.on('data', function(chunk) {
+        fullBody += chunk.toString();
+      });
+      req.on('end', function() {
+        var decodedBody;
+        try {
+          decodedBody = JSON.parse(fullBody);
 	}
-	else {
-	  res.end(msg + "\n");
+	catch (err) {
+	  error(res, err);
+	  return;
 	}
+        put(url, decodedBody, function(err,msg) {
+          if (err) {
+	    error(res, err)
+	    return;
+          }
+          res.end(msg + "\n");
+        });
       });
       break;
     default:
