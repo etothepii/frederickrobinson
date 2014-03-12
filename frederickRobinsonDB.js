@@ -38,7 +38,7 @@ function buildORM(db) {
     MAGIC_WORD: String
   });
   exports.Count = db.define("Count", {
-    ID: Number,
+    ID: String,
     PROVIDER: Number,
     POLLING_AREA: Number,
     VOTES_CAST: Number,
@@ -54,7 +54,8 @@ function buildORM(db) {
   exports.Tally = db.define("Tally", {
     ID: Number,
     CANDIDATE: Number,
-    COUNT: Number
+    PARTY: Number,
+    COUNT: String
   });
   exports.PollingArea = db.define("PollingArea", {
     ID: Number,
