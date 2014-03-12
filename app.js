@@ -10,7 +10,7 @@ function get(url, process) {
   var pathParts = url.pathname.slice(1).split("/");
   var table = getTable(pathParts[0]);
   if (table == null) {
-    process("Unknown Table: " + pathParts[0]);
+    process("Unknown / Unsupported Table: " + pathParts[0]);
   }
   else if (pathParts.length == 1) {
     var search = querystring.parse(url.query);
@@ -51,16 +51,12 @@ function getTable(tableName) {
       return frdb.Agent;
     case 'candidate':
       return frdb.Candidate;
-    case 'count':
-      return frdb.Count;
     case 'overseeing':
       return frdb.Overseeing;
     case 'politicalParty':
       return frdb.PoliticalParty;
     case 'pollingArea':
       return frdb.PollingArea;
-    case 'tally':
-      return frdb.Tally;
     case 'user':
       return frdb.User;
     default:
