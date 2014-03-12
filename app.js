@@ -85,6 +85,12 @@ function writeSingleOrArray(array, writer) {
   }
 }
 
+function put(url, body, postProcessing) {
+  var pathParts = url.pathname.slice(1).split("/");
+  var action = getTable(pathParts[0]);
+  postProcessing("Not implemented");
+}
+
 var server = http.createServer(function(req, res) {
   var url = parse(req.url);
   var path = join(root, url.pathname + ".json");
@@ -100,6 +106,17 @@ var server = http.createServer(function(req, res) {
           writeSingleOrArray(array, function (content) {
             res.end(JSON.stringify(content));
           });
+	}
+      });
+      break;
+    case 'POST':
+      put(url, req.body, function(err,msg) {
+        if (err) {
+	  res.statusCode = 400;
+	  res.end(err + "\n");
+	}
+	else {
+	  res.end(msg + "\n");
 	}
       });
       break;
