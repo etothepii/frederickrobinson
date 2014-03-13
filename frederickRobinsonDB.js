@@ -39,7 +39,7 @@ function buildORM(db) {
   });
   exports.Count = db.define("Count", {
     ID: String,
-    AGENT: Number,
+    OVERSEEING: Number,
     PROVIDER: Number,
     POLLING_AREA: Number,
     VOTES_CAST: Number,
