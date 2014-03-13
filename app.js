@@ -7,6 +7,8 @@ var frdb = require('./frederickRobinsonDB');
 var counter = require('./counter');
 var root = 'data/'
 
+counter.setDB(frdb);
+
 function get(url, process) {
   var pathParts = url.pathname.slice(1).split("/");
   var table = getTable(pathParts[0]);
