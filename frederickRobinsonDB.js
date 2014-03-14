@@ -72,7 +72,7 @@ function buildORM(db) {
   overseeing.hasOne("agent", agent, {field:"AGENT", reverse:"watching"});
   count = db.define("Count", {
     ID: String,
-    OVERSEEING: Number,
+    AGENT: Number,
     PROVIDER: Number,
     POLLING_AREA: Number,
     VOTES_CAST: Number,
@@ -82,7 +82,7 @@ function buildORM(db) {
     id: "ID"
   });
   exports.Count = count;
-  count.hasOne("overseeing", overseeing, {field:"OVERSEEING", reverse:"counts"});
+  count.hasOne("agent", agent, {field:"AGENT"});
   count.hasOne("provider", user, {field:"PROVIDER", reverse:"counts"});
   count.hasOne("pollingArea", pollingArea, {field:"POLLING_AREA", reverse:"counts"});
   politicalParty = db.define("PoliticalParty", {
