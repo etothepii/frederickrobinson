@@ -46,7 +46,7 @@ function buildORM(db) {
     id: "ID"
   });
   exports.Count = db.define("Count", {
-    GUID: String,
+    ID: String,
     OVERSEEING: Number,
     PROVIDER: Number,
     POLLING_AREA: Number,
@@ -54,7 +54,7 @@ function buildORM(db) {
     BALLOT_BOX: String
   },
   {
-    id: "GUID"
+    id: "ID"
   });
   exports.PoliticalParty = db.define("PoliticalParty", {
     ID: Number,
