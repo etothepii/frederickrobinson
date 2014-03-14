@@ -46,23 +46,58 @@ function addNew(count, agentId, postProcessing) {
     VOTES_CAST: count.votesCast,
     BALLOT_BOX: count.ballotBox,
     AGENT: agentId
-  }
+  };
   frdb.Count.create(newCount, function (err,inserted) {
-    for (var i = 0; i < count.tallies.length; i++) {
-      var tally = count.tallies[i]
-      frdb.Tally.create({
-        CANDIDATE: tally.candidate,
-	PARTY: tally.party,
-	COUNT: count.GUID,
-	VOTES: tally.votes
-      }, function (err, items) {});
+    if (err) {
+      postProcessing(err);
+      return;
     }
-    postProcessing(false, "Inserted new row: " + JSON.stringify(inserted));
+    saveTally(count, 0, postProcessing);
+  });
+}
+
+function saveTally(count, i, postProcessing) {
+  if (i == count.tallies.length) {
+    postProcessing(false, "Successfully Created / Updated Count");
+    return;
+  }
+  var tally = count.tallies[i];
+  frdb.Tally.create({
+    CANDIDATE: tally.candidate,
+    PARTY: tally.party,
+    COUNT: count.GUID,
+    VOTES: tally.votes
+  }, function (err, items) {
+    if (err) {
+      postProcessing(err);
+    }
+    else {
+      saveTally(count, i + 1, postProcessing);
+    }  
   });
 }
 
 function update(old, count, agentId, postProcessing) {
-  postProcessing(false, "Updating Count: " + count.GUID);
+  old.PROVIDER =  count.provider;
+  old.POLLING_AREA = count.pollingArea;
+  old.VOTES_CAST = count.votesCast;
+  old.BALLOT_BOX = count.ballotBox;
+  old.AGENT = count.agentId;
+  old.save(function (err) {
+    if (err) {
+      postProcessing(err);
+      return;
+    }
+    frdb.Tally.find({Count: count.GUID}).remove(function(err) {
+      if (err) {
+        postProcessing(err);
+	  return;
+      }
+      else {
+        saveTally(count, 0, postProcessing);
+      }
+    });
+  });
 }
 
 exports.process = function(count, postProcessing) {
