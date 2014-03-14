@@ -12,16 +12,11 @@ function processCount(err, array, count, postProcessing) {
   frdb.Overseeing.find({MAGIC_WORD: count.password, POLLING_AREA: count.pollingArea}, function(err, overseeing) {
     switch (overseeing.length) {
       case 0:
-        frdb.Overseeing.create({POLLING_AREA: count.pollingArea, MAGIC_WORD: count.password}, function (err, inserted) {
-	  console.log("Inserted Rows: " + inserted.length);
-	  console.log("Inserted: " + JSON.stringify(inserted[0]));
-	  console.log("Created new overseeing: " + inserted[0].ID);
-	  processCountWithOverseeing(count, array, inserted[0].ID, postProcessing);
-	});
+        postProcessing("No agent overseeing this count found with password provided");
 	return;
       case 1:
 	console.log("Overseeing: " + overseeing[0].ID);
-        processCountWithOverseeing(count, array, overseeing[0].ID, postProcessing);
+        processCountWithOverseeing(count, array, overseeing[0].AGENT, postProcessing);
 	return;
       default: 
         postProcessing("Found multiple overseeing this area with this password failing");
@@ -30,13 +25,13 @@ function processCount(err, array, count, postProcessing) {
   });
 }
 
-function processCountWithOverseeing(count, array, overseeingId, postProcessing) {
+function processCountWithOverseeing(count, array, agentId, postProcessing) {
   switch (array.length) {
     case 0:
-      addNew(count, overseeingId, postProcessing);
+      addNew(count, agentId, postProcessing);
       return;
     case 1:  
-      update(array[0], count, overseeingId, postProcessing);
+      update(array[0], count, agentId, postProcessing);
       return;
     default: 
       postProcessing("Multiple Counts with the same primary key have been identified");
@@ -44,21 +39,29 @@ function processCountWithOverseeing(count, array, overseeingId, postProcessing) 
   }
 }
 
-function addNew(count, overseeingId, postProcessing) {
+function addNew(count, agentId, postProcessing) {
   var newCount = {
     ID: count.GUID,
     PROVIDER: count.provider,
     POLLING_AREA: count.pollingArea,
     VOTES_CAST: count.votesCast,
     BALLOT_BOX: count.ballotBox,
-    OVERSEEING: overseeingId
+    AGENT: agentId
   }
   frdb.Count.create(newCount, function (err,inserted) {
+    count.tallies.map(function (tally) {
+      frdb.Tally.create({
+        CANDIDATE: tally.candidate,
+	PARTY: tally.party,
+	COUNT: count.GUID,
+	VOTES: tally.votes
+      })
+    });
     postProcessing(false, "Inserted new row: " + JSON.stringify(inserted));
   });
 }
 
-function update(count, postProcessing) {
+function update(old, count, agentId, postProcessing) {
   postProcessing(false, "Updating Count: " + count.GUID);
 }
 
