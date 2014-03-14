@@ -122,7 +122,7 @@ function buildORM(db) {
     id: "ID"
   });
   exports.Tally = tally;
-  tally.hasOne("candidate", candidate, {field:"POLLING_AREA", reverse:"tallies"});
+  tally.hasOne("candidate", candidate, {field:"CANDIDATE", reverse:"tallies"});
   tally.hasOne("party", politicalParty, {field:"PARTY"});
   tally.hasOne("count", count, {field:"COUNT", reverse:"tallies"});
 }

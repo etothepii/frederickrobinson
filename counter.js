@@ -15,7 +15,6 @@ function processCount(err, array, count, postProcessing) {
         postProcessing("No agent overseeing this count found with password provided");
 	return;
       case 1:
-	console.log("Overseeing: " + overseeing[0].ID);
         processCountWithOverseeing(count, array, overseeing[0].AGENT, postProcessing);
 	return;
       default: 
@@ -49,14 +48,15 @@ function addNew(count, agentId, postProcessing) {
     AGENT: agentId
   }
   frdb.Count.create(newCount, function (err,inserted) {
-    count.tallies.map(function (tally) {
+    for (var i = 0; i < count.tallies.length; i++) {
+      var tally = count.tallies[i]
       frdb.Tally.create({
         CANDIDATE: tally.candidate,
 	PARTY: tally.party,
 	COUNT: count.GUID,
 	VOTES: tally.votes
-      })
-    });
+      }, function (err, items) {});
+    }
     postProcessing(false, "Inserted new row: " + JSON.stringify(inserted));
   });
 }
@@ -66,7 +66,6 @@ function update(old, count, agentId, postProcessing) {
 }
 
 exports.process = function(count, postProcessing) {
-  console.log(JSON.stringify(count));
   frdb.Count.find({ID: count.GUID}, function(err, array) {
     processCount(err, array, count, postProcessing);
   });
