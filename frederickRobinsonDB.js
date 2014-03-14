@@ -20,15 +20,25 @@ function connectToDatabase(password, orm) {
   });
 }
 
+var agent;
+var user;
+var pollingArea;
+var overseeing;
+var candidate;
+var tally;
+var count;
+var politicalParty;
+
 function buildORM(db) {
-  exports.Agent = db.define("Agent", {
+  agent = db.define("Agent", {
     ID: Number,
     EMAIL: String,
     PASSWORD: String
   },{
     id: "ID"
   });
-  exports.User = db.define("User", {
+  exports.Agent = agent;
+  user = db.define("User", {
     ID: Number,
     EMAIL: String,
     PHONE_IDENTIFIER: String
@@ -36,7 +46,19 @@ function buildORM(db) {
   {
     id: "ID"
   });
-  exports.Overseeing = db.define("Overseeing", {
+  exports.User = user;
+  pollingArea = db.define("PollingArea", {
+    ID: Number,
+    NAME: String,
+    CHILD_TYPE: String,
+    PARENT: Number
+  },
+  {
+    id: "ID"
+  });
+  exports.PollingArea = pollingArea;
+  pollingArea.hasOne("parent", pollingArea, {field:"PARENT", reverse:"children"});
+  overseeing = db.define("Overseeing", {
     ID: Number,
     AGENT: Number,
     POLLING_AREA: Number,
@@ -45,7 +67,10 @@ function buildORM(db) {
   {
     id: "ID"
   });
-  exports.Count = db.define("Count", {
+  exports.Overseeing = overseeing;
+  overseeing.hasOne("pollingArea", pollingArea, {field:"POLLING_AREA"});
+  overseeing.hasOne("agent", agent, {field:"AGENT", reverse:"watching"});
+  count = db.define("Count", {
     ID: String,
     OVERSEEING: Number,
     PROVIDER: Number,
@@ -56,7 +81,11 @@ function buildORM(db) {
   {
     id: "ID"
   });
-  exports.PoliticalParty = db.define("PoliticalParty", {
+  exports.Count = count;
+  count.hasOne("overseeing", overseeing, {field:"OVERSEEING", reverse:"counts"});
+  count.hasOne("provider", user, {field:"PROVIDER", reverse:"counts"});
+  count.hasOne("pollingArea", pollingArea, {field:"POLLING_AREA", reverse:"counts"});
+  politicalParty = db.define("PoliticalParty", {
     ID: Number,
     NAME: String,
     MAJOR: Boolean,
@@ -66,25 +95,8 @@ function buildORM(db) {
   {
     id: "ID"
   });
-  exports.Tally = db.define("Tally", {
-    ID: Number,
-    CANDIDATE: Number,
-    PARTY: Number,
-    COUNT: String
-  },
-  {
-    id: "ID"
-  });
-  exports.PollingArea = db.define("PollingArea", {
-    ID: Number,
-    NAME: String,
-    CHILD_TYPE: String,
-    PARENT: Number
-  },
-  {
-    id: "ID"
-  });
-  exports.Candidate = db.define("Candidate", {
+  exports.PoliticalParty = politicalParty;
+  candidate = db.define("Candidate", {
     ID: Number,
     SURNAME: String,
     OTHER_NAMES: String,
@@ -96,4 +108,21 @@ function buildORM(db) {
   {
     id: "ID"
   });
+  candidate.hasOne("party", politicalParty, {field:"PARTY", reverse:"candidates"});
+  candidate.hasOne("electionArea", pollingArea, {field:"ELECTION_AREA", reverse:"candidates"});
+  exports.Candidate = candidate;
+  tally = db.define("Tally", {
+    ID: Number,
+    CANDIDATE: Number,
+    PARTY: Number,
+    COUNT: String,
+    VOTES: Number
+  },
+  {
+    id: "ID"
+  });
+  exports.Tally = tally;
+  tally.hasOne("candidate", candidate, {field:"POLLING_AREA", reverse:"tallies"});
+  tally.hasOne("party", politicalParty, {field:"PARTY"});
+  tally.hasOne("count", count, {field:"COUNT", reverse:"tallies"});
 }
