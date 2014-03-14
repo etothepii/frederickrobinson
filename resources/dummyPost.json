@@ -9,27 +9,27 @@
     {
       "party": 148,
       "candidate": 1,
-      "count": 372
+      "votes": 372
     },
     {
       "party": 103,
       "candidate": 2,
-      "count": 59
+      "votes": 59
     },
     {
       "party": 153,
       "candidate": 3,
-      "count": 38
+      "votes": 38
     },
     {
       "party": 65,
       "candidate": 4,
-      "count": 116
+      "votes": 116
     },
     {
       "party": null,
       "candidate": 5,
-      "count":613
+      "votes":613
     }
   ]
 }
