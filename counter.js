@@ -4,18 +4,22 @@ exports.setDB = function(db) {
   frdb = db;
 }
 
-function processCount(err, array, count, postProcessing) {
-  if (err) {
-    postProcessing(err);
-    return;
-  }
+function processCount(old, count, postProcessing) {
+  processCountWithPollingArea(old, count, count.pollingArea, postProcessing);
+}
+
+function processCountWithPollingArea(old, count, pollingArea, postProcessing) {
   frdb.Overseeing.find({MAGIC_WORD: count.password, POLLING_AREA: count.pollingArea}, function(err, overseeing) {
     switch (overseeing.length) {
       case 0:
+        if (pollingArea.hasOwner()) {
+	  processCountWithPollingArea(old, count, pollingArea.getParent(), postProcessing);
+	  return;
+	}
         postProcessing("No agent overseeing this count found with password provided");
 	return;
       case 1:
-        processCountWithOverseeing(count, array, overseeing[0].AGENT, postProcessing);
+        processCountWithOverseeing(count, old, overseeing[0].AGENT, postProcessing);
 	return;
       default: 
         postProcessing("Found multiple overseeing this area with this password failing");
@@ -24,18 +28,12 @@ function processCount(err, array, count, postProcessing) {
   });
 }
 
-function processCountWithOverseeing(count, array, agentId, postProcessing) {
-  switch (array.length) {
-    case 0:
-      addNew(count, agentId, postProcessing);
-      return;
-    case 1:  
-      update(array[0], count, agentId, postProcessing);
-      return;
-    default: 
-      postProcessing("Multiple Counts with the same primary key have been identified");
-      return;
+function processCountWithOverseeing(count, old, agentId, postProcessing) {
+  if (old == null) {
+    addNew(count, agentId, postProcessing);
+    return;
   }
+  update(old, count, agentId, postProcessing);
 }
 
 function addNew(count, agentId, postProcessing) {
@@ -101,7 +99,7 @@ function update(old, count, agentId, postProcessing) {
 }
 
 exports.process = function(count, postProcessing) {
-  frdb.Count.find({ID: count.GUID}, function(err, array) {
-    processCount(err, array, count, postProcessing);
+  frdb.Count.get(count.GUID, function(err, old) {
+    processCount((err) ? null : old, count, postProcessing);
   });
 }
