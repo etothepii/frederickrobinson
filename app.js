@@ -4,13 +4,16 @@ var join = require('path').join;
 var fs = require('fs');
 var querystring = require('querystring');
 var frdb = require('./frederickRobinsonDB');
+var counter = require('./counter');
 var root = 'data/'
+
+counter.setDB(frdb);
 
 function get(url, process) {
   var pathParts = url.pathname.slice(1).split("/");
   var table = getTable(pathParts[0]);
   if (table == null) {
-    process("Unknown Table: " + pathParts[0]);
+    process("Unknown / Unsupported Table: " + pathParts[0]);
   }
   else if (pathParts.length == 1) {
     var search = querystring.parse(url.query);
@@ -51,16 +54,12 @@ function getTable(tableName) {
       return frdb.Agent;
     case 'candidate':
       return frdb.Candidate;
-    case 'count':
-      return frdb.Count;
     case 'overseeing':
       return frdb.Overseeing;
     case 'politicalParty':
       return frdb.PoliticalParty;
     case 'pollingArea':
       return frdb.PollingArea;
-    case 'tally':
-      return frdb.Tally;
     case 'user':
       return frdb.User;
     default:
@@ -79,7 +78,6 @@ function getFromId(table, id, process) {
   table.find(search, process);
 }
 
-
 function writeSingleOrArray(array, writer) {
   if (array.length == 1) {
     writer(array[0]);
@@ -87,6 +85,22 @@ function writeSingleOrArray(array, writer) {
   else {
     writer(array);
   }
+}
+
+function put(url, body, postProcessing) {
+  var pathParts = url.pathname.slice(1).split("/");
+  switch (pathParts[0]) {
+    case "count":
+      counter.process(body, postProcessing);
+      break;
+    default:
+      postProcessing("Not implemented");
+  }
+}
+
+function error(res, err) {
+  res.statusCode = 400;
+  res.end(err+"\n");
 }
 
 var server = http.createServer(function(req, res) {
@@ -105,6 +119,29 @@ var server = http.createServer(function(req, res) {
             res.end(JSON.stringify(content));
           });
 	}
+      });
+      break;
+    case 'POST':
+    var fullBody = '';
+      req.on('data', function(chunk) {
+        fullBody += chunk.toString();
+      });
+      req.on('end', function() {
+        var decodedBody;
+        try {
+          decodedBody = JSON.parse(fullBody);
+	}
+	catch (err) {
+	  error(res, err);
+	  return;
+	}
+        put(url, decodedBody, function(err,msg) {
+          if (err) {
+	    error(res, err)
+	    return;
+          }
+          res.end(msg + "\n");
+        });
       });
       break;
     default:
