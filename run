@@ -1,0 +1,5 @@
+#!/bin/bash
+cd resources
+mysql -u jrrpl -p < createCountOnTables.sql
+cd ..
+node app.js
