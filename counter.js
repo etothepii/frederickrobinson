@@ -8,15 +8,17 @@ function processCount(old, count, postProcessing) {
   processCountWithPollingArea(old, count, count.pollingArea, postProcessing);
 }
 
-function processCountWithPollingArea(old, count, pollingArea, postProcessing) {
-  frdb.Overseeing.find({MAGIC_WORD: count.password, POLLING_AREA: count.pollingArea}, function(err, overseeing) {
+function processCountWithPollingArea(old, count, pollingAreaId, postProcessing) {
+  frdb.Overseeing.find({MAGIC_WORD: count.password, POLLING_AREA: pollingAreaId}, function(err, overseeing) {
     switch (overseeing.length) {
       case 0:
-        if (pollingArea.hasOwner()) {
-	  processCountWithPollingArea(old, count, pollingArea.getParent(), postProcessing);
-	  return;
-	}
-        postProcessing("No agent overseeing this count found with password provided");
+        frdb.PollingArea.get(pollingAreaId, function (err, pollingArea) {
+	  if (err) {
+            postProcessing("No agent overseeing this count found with password provided");
+	    return;
+	  }
+	  processCountWithPollingArea(old, count, pollingArea.PARENT, postProcessing);
+	});
 	return;
       case 1:
         processCountWithOverseeing(count, old, overseeing[0].AGENT, postProcessing);
