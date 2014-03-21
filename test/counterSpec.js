@@ -53,6 +53,15 @@ var mockCounts = [
     "votesCast": 2314,
     "ballotBox": "Box 112",
     "tallies": []
+  },
+  {
+    "GUID": 3,
+    "provider": "gajusz@gmail.com",
+    "pollingArea": 4,
+    "password": "banana",
+    "votesCast": 2314,
+    "ballotBox": "Box 112",
+    "tallies": []
   }
 ];
 var mockOverseeings = [
@@ -64,6 +73,10 @@ var mockOverseeings = [
   },
   {
     "POLLING_AREA": 1
+  }],
+  [],
+  [{
+    "POLLING_AREA": 3
   }],
   []
 ];
@@ -79,6 +92,14 @@ var mockPollingAreas = [
   {
     "ID": 2,
     "PARENT": null
+  },
+  {
+    "ID": 3,
+    "PARENT": null
+  },
+  {
+    "ID": 4,
+    "PARENT": 3
   }
 ];
 
@@ -101,6 +122,11 @@ describe("Counter", function() {
     it("Should not process Count with no one overseeing", function() {
       counter.process(mockCounts[2], function(err, old) {
         expect(err).to.equal('No agent overseeing this count found with password provided');
+      });
+    });
+    it("Should be able to process where only parent is overseen", function() {
+      counter.process(mockCounts[3], function(err, old) {
+        expect(err).to.equal(false);
       });
     });
   });
