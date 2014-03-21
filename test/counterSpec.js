@@ -4,9 +4,8 @@ var counter = require("../lib/counter.js");
 function mockTable(array,table) {
   this.get = get;
   function get(id, postProcessing) {
-    if (id < array.length) {
-      array[id].save = function(error) {
-      }
+    if (id < array.length && array[id] != null) {
+      array[id].save = function(error) { }
       postProcessing(false, array[id]);
     }
     else {
@@ -45,6 +44,15 @@ var mockCounts = [
     "votesCast": 2314,
     "ballotBox": "Box 112",
     "tallies": []
+  },
+  {
+    "GUID": 2,
+    "provider": "gajusz@gmail.com",
+    "pollingArea": 2,
+    "password": "banana",
+    "votesCast": 2314,
+    "ballotBox": "Box 112",
+    "tallies": []
   }
 ];
 var mockOverseeings = [
@@ -57,9 +65,7 @@ var mockOverseeings = [
   {
     "POLLING_AREA": 1
   }],
-  [{
-    "POLLING_AREA": 2
-  }]
+  []
 ];
 var mockPollingAreas = [
   {
@@ -69,6 +75,10 @@ var mockPollingAreas = [
   {
     "ID": 1,
     "PARENT": 0
+  },
+  {
+    "ID": 2,
+    "PARENT": null
   }
 ];
 
@@ -86,6 +96,11 @@ describe("Counter", function() {
     it("Should not process Count with two overseeing", function() {
       counter.process(mockCounts[1], function(err, old) {
         expect(err).to.equal('Found multiple overseeing this area with this password failing');
+      });
+    });
+    it("Should not process Count with no one overseeing", function() {
+      counter.process(mockCounts[2], function(err, old) {
+        expect(err).to.equal('No agent overseeing this count found with password provided');
       });
     });
   });
