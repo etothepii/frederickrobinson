@@ -1,0 +1,20 @@
+#!/bin/bash
+function getEnding() {
+  if [ "$2" == "ALPHA" ]; then 
+    value=$((64+$1))
+    perl -e "printf \"%c\n\", $value;"
+  else 
+    echo $1
+  fi
+}
+function outputAlphaDistricts() {
+  for (( c=1; c<=$3; c++ ))
+  do
+    ending=`getEnding $c $4`
+    echo ",\"$2$ending\",NULL,$1"
+  done
+}
+while read line
+do
+  outputAlphaDistricts $line
+done
