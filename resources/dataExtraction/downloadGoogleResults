@@ -4,5 +4,7 @@ type=$2
 year=$3
 cat electionAreas.csv | grep ",$parent$" | awk -F, '{print $2}' | while read line
 do
-  echo "election $year $type $line"
+  echo $line
+  search=`echo "http://www.google.co.uk/search?q=election $year $type $line" | sed "s/ /+/g"`
+  lynx -dump -listonly $search | grep "\.gov" | grep "url\?" | grep "&sa" | sed "s/.*url...\(.*\)&sa.*/\1/"
 done
