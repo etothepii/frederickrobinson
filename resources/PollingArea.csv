@@ -1,27 +1,476 @@
 1,"ROOT","Country",0,
 2,"England","Election",1,
-3,"Scotland","Election",1,
-4,"Local Authority","Local Authority",2,
-5,"Westminster Parliamentary","Constituency",2,
-6,"Poplar & Limehouse","Polling District",5,
-7,"Bethnal Green & Bow","Polling District",5,
-8,"Tower Hamlets","Council Ward",4,
-9,"Tower Hamlets (Mayoralty)","Council Ward",4,
-10,"Poplar","Polling District",8,
-11,"Lansbury","Polling District",8,
-12,"PO1",NULL,10,
-13,"PO2",NULL,10,
-14,"LA1",NULL,11,
-15,"LA2",NULL,11,
-16,"LA3",NULL,11,
-17,"LA4",NULL,11,
-18,"LA5",NULL,11,
-19,"Poplar","Polling District",9,
-20,"Lansbury","Polling District",9,
-21,"PO1",NULL,19,
-22,"PO2",NULL,19,
-23,"LA1",NULL,20,
-24,"LA2",NULL,20,
-25,"LA3",NULL,20,
-26,"LA4",NULL,20,
-27,"LA5",NULL,20,
+3,"London Borough","Council",2,
+4,"Metropolitan Borough","Council",2,
+5,"Unitary Authority","Council",2,
+6,"Non-Metropolitan District","Council",2,
+7,"Mayoral Election","Council",2,
+8,"Barking and Dagenham","Ward",3,
+9,"Barnet","Ward",3,
+10,"Bexley","Ward",3,
+11,"Brent","Ward",3,
+12,"Bromley","Ward",3,
+13,"Camden","Ward",3,
+14,"Croydon","Ward",3,
+15,"Ealing","Ward",3,
+16,"Enfield","Ward",3,
+17,"Greenwich","Ward",3,
+18,"Hackney","Ward",3,
+19,"Hammersmith and Fulham","Ward",3,
+20,"Haringey","Ward",3,
+21,"Harrow","Ward",3,
+22,"Havering","Ward",3,
+23,"Hillingdon","Ward",3,
+24,"Hounslow","Ward",3,
+25,"Islington","Ward",3,
+26,"Kensington and Chelsea","Ward",3,
+27,"Kingston upon Thames","Ward",3,
+28,"Lambeth","Ward",3,
+29,"Lewisham","Ward",3,
+30,"Merton","Ward",3,
+31,"Newham","Ward",3,
+32,"Redbridge","Ward",3,
+33,"Richmond upon Thames","Ward",3,
+34,"Southwark","Ward",3,
+35,"Sutton","Ward",3,
+36,"Tower Hamlets","Ward",3,
+37,"Waltham Forest","Ward",3,
+38,"Wandsworth","Ward",3,
+39,"Westminster","Ward",3,
+40,"Barnsley","Ward",4,
+41,"Birmingham","Ward",4,
+42,"Bolton","Ward",4,
+43,"Bradford","Ward",4,
+44,"Bury","Ward",4,
+45,"Calderdale","Ward",4,
+46,"Coventry","Ward",4,
+47,"Doncaster","Ward",4,
+48,"Dudley","Ward",4,
+49,"Gateshead","Ward",4,
+50,"Kirklees","Ward",4,
+51,"Knowsley","Ward",4,
+52,"Leeds","Ward",4,
+53,"Liverpool","Ward",4,
+54,"Manchester","Ward",4,
+55,"Newcastle upon Tyne","Ward",4,
+56,"North Tyneside","Ward",4,
+57,"Oldham","Ward",4,
+58,"Rochdale","Ward",4,
+59,"Rotherham","Ward",4,
+60,"St. Helens","Ward",4,
+61,"Salford","Ward",4,
+62,"Sandwell","Ward",4,
+63,"Sefton","Ward",4,
+64,"Sheffield","Ward",4,
+65,"Solihull","Ward",4,
+66,"South Tyneside","Ward",4,
+67,"Stockport","Ward",4,
+68,"Sunderland","Ward",4,
+69,"Tameside","Ward",4,
+70,"Trafford","Ward",4,
+71,"Wakefield","Ward",4,
+72,"Walsall","Ward",4,
+73,"Wigan","Ward",4,
+74,"Wirral","Ward",4,
+75,"Wolverhampton","Ward",4,
+76,"Milton Keynes","Ward",5,
+77,"Slough","Ward",5,
+78,"Blackburn with Darwen","Ward",5,
+79,"Bristol","Ward",5,
+80,"Derby","Ward",5,
+81,"Halton","Ward",5,
+82,"Hartlepool","Ward",5,
+83,"Kingston upon Hull","Ward",5,
+84,"North East Lincolnshire","Ward",5,
+85,"Peterborough","Ward",5,
+86,"Plymouth","Ward",5,
+87,"Portsmouth","Ward",5,
+88,"Reading","Ward",5,
+89,"Southampton","Ward",5,
+90,"Southend-on-Sea","Ward",5,
+91,"Swindon","Ward",5,
+92,"Thurrock","Ward",5,
+93,"Warrington","Ward",5,
+94,"Wokingham","Ward",5,
+95,"Hart","Ward",6,
+96,"Three Rivers","Ward",6,
+97,"Adur","Ward",6,
+98,"Cheltenham","Ward",6,
+99,"Fareham","Ward",6,
+100,"Gosport","Ward",6,
+101,"Hastings","Ward",6,
+102,"Nuneaton and Bedworth","Ward",6,
+103,"Oxford","Ward",6,
+104,"Amber Valley","Ward",6,
+105,"Basildon","Ward",6,
+106,"Basingstoke and Deane","Ward",6,
+107,"Bassetlaw","Ward",6,
+108,"Brentwood","Ward",6,
+109,"Broxbourne","Ward",6,
+110,"Burnley","Ward",6,
+111,"Cambridge","Ward",6,
+112,"Cannock Chase","Ward",6,
+113,"City of Carlisle","Ward",6,
+114,"Castle Point","Ward",6,
+115,"Cherwell","Ward",6,
+116,"Chorley","Ward",6,
+117,"Colchester","Ward",6,
+118,"Craven","Ward",6,
+119,"Crawley","Ward",6,
+120,"Daventry","Ward",6,
+121,"Eastleigh","Ward",6,
+122,"Elmbridge","Ward",6,
+123,"Epping Forest","Ward",6,
+124,"Exeter","Ward",6,
+125,"Gloucester","Ward",6,
+126,"Great Yarmouth","Ward",6,
+127,"Harlow","Ward",6,
+128,"Harrogate","Ward",6,
+129,"Havant","Ward",6,
+130,"Hertsmere","Ward",6,
+131,"Huntingdonshire","Ward",6,
+132,"Hyndburn","Ward",6,
+133,"Ipswich","Ward",6,
+134,"Lincoln","Ward",6,
+135,"Maidstone","Ward",6,
+136,"Mole Valley","Ward",6,
+137,"Newcastle-under-Lyme","Ward",6,
+138,"North Hertfordshire","Ward",6,
+139,"Norwich","Ward",6,
+140,"Pendle","Ward",6,
+141,"Preston","Ward",6,
+142,"Purbeck","Ward",6,
+143,"Redditch","Ward",6,
+144,"Reigate and Banstead","Ward",6,
+145,"Rochford","Ward",6,
+146,"Rossendale","Ward",6,
+147,"Rugby","Ward",6,
+148,"Runnymede","Ward",6,
+149,"Rushmoor","Ward",6,
+150,"St Albans","Ward",6,
+151,"South Cambridgeshire","Ward",6,
+152,"South Lakeland","Ward",6,
+153,"Stevenage","Ward",6,
+154,"Stratford-on-Avon","Ward",6,
+155,"Stroud","Ward",6,
+156,"Tamworth","Ward",6,
+157,"Tandridge","Ward",6,
+158,"Tunbridge Wells","Ward",6,
+159,"Watford","Ward",6,
+160,"Welwyn Hatfield","Ward",6,
+161,"West Lancashire","Ward",6,
+162,"West Oxfordshire","Ward",6,
+163,"Weymouth and Portland","Ward",6,
+164,"Winchester","Ward",6,
+165,"Woking","Ward",6,
+166,"Worcester","Ward",6,
+167,"Worthing","Ward",6,
+168,"Wyre Forest","Ward",6,
+169,"Hackney","Ward",7,
+170,"Lewisham","Ward",7,
+171,"Newham","Ward",7,
+172,"Tower Hamlets","Ward",7,
+173,"Watford","Ward",7,
+174,"Scotland","Election",1,
+175,"Wales","Election",1,
+176,"European","Region",2,
+177,"European","Division",174,
+178,"European","Division",175,
+179,"East Midlands","Division",176,
+180,"East of England","Division",176,
+181,"London","Division",176,
+182,"North East England","Division",176,
+183,"North West England","Division",176,
+184,"South East England","Division",176,
+185,"South West England","Division",176,
+186,"West Midlands","Division",176,
+187,"Yorkshire and the Humber","Division",176,
+188,"Abbey ward",Polling District,8,
+189,"Alibon ward",Polling District,8,
+190,"Becontree ward",Polling District,8,
+191,"Chadwell Heath ward",Polling District,8,
+192,"Eastbrook ward",Polling District,8,
+193,"Eastbury ward",Polling District,8,
+194,"Gascoigne ward",Polling District,8,
+195,"Goresbrook ward",Polling District,8,
+196,"Heath ward",Polling District,8,
+197,"Longbridge ward",Polling District,8,
+198,"Mayesbrook ward",Polling District,8,
+199,"Parsloes ward",Polling District,8,
+200,"River ward",Polling District,8,
+201,"Thames ward",Polling District,8,
+202,"Valence ward",Polling District,8,
+203,"Village ward",Polling District,8,
+204,"Whalebone ward",Polling District,8,
+205,"Brunswick Park",Polling District,9,
+206,"Childs Hill",Polling District,9,
+207,"Coppetts",Polling District,9,
+208,"East Finchley",Polling District,9,
+209,"Finchley Church End",Polling District,9,
+210,"Golders Green",Polling District,9,
+211,"Hendon",Polling District,9,
+212,"Mill Hill",Polling District,9,
+213,"Totteridge",Polling District,9,
+214,"West Finchley",Polling District,9,
+215,"Woodhouse",Polling District,9,
+216,"Burnt Oak",Polling District,9,
+217,"Colindale",Polling District,9,
+218,"East Barnet",Polling District,9,
+219,"Edgware",Polling District,9,
+220,"Garden Suburb",Polling District,9,
+221,"Hale",Polling District,9,
+222,"High Barnet",Polling District,9,
+223,"Oakleigh",Polling District,9,
+224,"Underhill",Polling District,9,
+225,"West Hendon",Polling District,9,
+226,"FJF","NULL",206,
+227,"Bethnal Green",Polling District,36,
+228,"Blackwall and Cubitt Town",Polling District,36,
+229,"Bow East",Polling District,36,
+230,"Bow West",Polling District,36,
+231,"Bromley North",Polling District,36,
+232,"Bromley South",Polling District,36,
+233,"Canary Wharf",Polling District,36,
+234,"Island Gardens",Polling District,36,
+235,"Lansbury",Polling District,36,
+236,"Limehouse ",Polling District,36,
+237,"Mile End",Polling District,36,
+238,"Poplar",Polling District,36,
+239,"Shadwell",Polling District,36,
+240,"Spitalfields and Banglatown   ",Polling District,36,
+241,"St Dunstan’s",Polling District,36,
+242,"St Katharine’s and Wapping",Polling District,36,
+243,"St Peter’s",Polling District,36,
+244,"Stepney Green",Polling District,36,
+245,"Weavers",Polling District,36,
+246,"Whitechapel",Polling District,36,
+,"AA",NULL,188
+,"AB",NULL,188
+,"AC",NULL,188
+,"AD",NULL,188
+,"KA",NULL,189
+,"KB",NULL,189
+,"KC",NULL,189
+,"KD",NULL,189
+,"VA",NULL,190
+,"VB",NULL,190
+,"VC",NULL,190
+,"VD",NULL,190
+,"QA",NULL,191
+,"QB",NULL,191
+,"QC",NULL,191
+,"QD",NULL,191
+,"MA",NULL,192
+,"MB",NULL,192
+,"MC",NULL,192
+,"CA",NULL,193
+,"CB",NULL,193
+,"CC",NULL,193
+,"CD",NULL,193
+,"DA",NULL,194
+,"DB",NULL,194
+,"DC",NULL,194
+,"DD",NULL,194
+,"EA",NULL,195
+,"EB",NULL,195
+,"EC",NULL,195
+,"ED",NULL,195
+,"PA",NULL,196
+,"PB",NULL,196
+,"PC",NULL,196
+,"PD",NULL,196
+,"FA",NULL,197
+,"FB",NULL,197
+,"FC",NULL,197
+,"FD",NULL,197
+,"HA",NULL,198
+,"HB",NULL,198
+,"HC",NULL,198
+,"HD",NULL,198
+,"NA",NULL,199
+,"NB",NULL,199
+,"NC",NULL,199
+,"ND",NULL,199
+,"RA",NULL,200
+,"RB",NULL,200
+,"RC",NULL,200
+,"RD",NULL,200
+,"JA",NULL,201
+,"JB",NULL,201
+,"JC",NULL,201
+,"JD",NULL,201
+,"TA",NULL,202
+,"TB",NULL,202
+,"TC",NULL,202
+,"TD",NULL,202
+,"UA",NULL,203
+,"UB",NULL,203
+,"UC",NULL,203
+,"UD",NULL,203
+,"LA",NULL,204
+,"LB",NULL,204
+,"LC",NULL,204
+,"LD",NULL,204
+,"CCA",NULL,205
+,"CCB",NULL,205
+,"CCC",NULL,205
+,"CCD",NULL,205
+,"FKA",NULL,206
+,"FKB",NULL,206
+,"FKC",NULL,206
+,"FKD",NULL,206
+,"CDA",NULL,207
+,"CDB",NULL,207
+,"CDC",NULL,207
+,"CDD",NULL,207
+,"FIA",NULL,208
+,"FIB",NULL,208
+,"FIC",NULL,208
+,"FID",NULL,208
+,"FMA",NULL,209
+,"FMB",NULL,209
+,"FMC",NULL,209
+,"FMD",NULL,209
+,"FME",NULL,209
+,"FLA",NULL,210
+,"FLB",NULL,210
+,"FLC",NULL,210
+,"HQA",NULL,211
+,"HQB",NULL,211
+,"HQC",NULL,211
+,"HQD",NULL,211
+,"HPA",NULL,212
+,"HPB",NULL,212
+,"HPC",NULL,212
+,"HPD",NULL,212
+,"HPE",NULL,212
+,"CFA",NULL,213
+,"CFB",NULL,213
+,"CFC",NULL,213
+,"CFD",NULL,213
+,"CFE",NULL,213
+,"FNA",NULL,214
+,"FNB",NULL,214
+,"FNC",NULL,214
+,"FHA",NULL,215
+,"FHB",NULL,215
+,"FHC",NULL,215
+,"FHD",NULL,215
+,"HTA",NULL,216
+,"HTB",NULL,216
+,"HTC",NULL,216
+,"HTD",NULL,216
+,"HSA",NULL,217
+,"HSB",NULL,217
+,"HSC",NULL,217
+,"CBA",NULL,218
+,"CBB",NULL,218
+,"CBC",NULL,218
+,"CBD",NULL,218
+,"CBE",NULL,218
+,"HUA",NULL,219
+,"HUB",NULL,219
+,"HUC",NULL,219
+,"FJA",NULL,220
+,"FJB",NULL,220
+,"FJC",NULL,220
+,"FJD",NULL,220
+,"FJE",NULL,220
+,"HOA",NULL,221
+,"HOB",NULL,221
+,"HOC",NULL,221
+,"HOD",NULL,221
+,"HOE",NULL,221
+,"CAA",NULL,222
+,"CAB",NULL,222
+,"CAC",NULL,222
+,"CAD",NULL,222
+,"CAE",NULL,222
+,"CEA",NULL,223
+,"CEB",NULL,223
+,"CEC",NULL,223
+,"CED",NULL,223
+,"CGA",NULL,224
+,"CGB",NULL,224
+,"CGC",NULL,224
+,"CGD",NULL,224
+,"CGE",NULL,224
+,"HRA",NULL,225
+,"HRB",NULL,225
+,"HRC",NULL,225
+,"HRD",NULL,225
+,"HRE",NULL,225
+,"BG1",NULL,227
+,"BG2",NULL,227
+,"BG3",NULL,227
+,"BG4",NULL,227
+,"BG5",NULL,227
+,"BC1",NULL,228
+,"BC2",NULL,228
+,"BC3",NULL,228
+,"BC4",NULL,228
+,"BE1",NULL,229
+,"BE2",NULL,229
+,"BE3",NULL,229
+,"BE4",NULL,229
+,"BE5",NULL,229
+,"BW1",NULL,230
+,"BW2",NULL,230
+,"BW3",NULL,230
+,"BW4",NULL,230
+,"BN1",NULL,231
+,"BN2",NULL,231
+,"BN3",NULL,231
+,"BS1",NULL,232
+,"BS2",NULL,232
+,"BS3",NULL,232
+,"CW1",NULL,233
+,"CW2",NULL,233
+,"CW3",NULL,233
+,"IG1",NULL,234
+,"IG2",NULL,234
+,"IG3",NULL,234
+,"LA1",NULL,235
+,"LA2",NULL,235
+,"LA3",NULL,235
+,"LA4",NULL,235
+,"LA5",NULL,235
+,"LI1",NULL,236
+,"LI2",NULL,236
+,"ME1",NULL,237
+,"ME2",NULL,237
+,"ME3",NULL,237
+,"ME4",NULL,237
+,"ME5",NULL,237
+,"PO1",NULL,238
+,"PO2",NULL,238
+,"SH1",NULL,239
+,"SH2",NULL,239
+,"SH3",NULL,239
+,"SB1",NULL,240
+,"SB2",NULL,240
+,"SB3",NULL,240
+,"SB4",NULL,240
+,"SD1",NULL,241
+,"SD2",NULL,241
+,"SD3",NULL,241
+,"SD4",NULL,241
+,"SK1",NULL,242
+,"SK2",NULL,242
+,"SK3",NULL,242
+,"SK4",NULL,242
+,"SP1",NULL,243
+,"SP2",NULL,243
+,"SP3",NULL,243
+,"SP4",NULL,243
+,"SP5",NULL,243
+,"SG1",NULL,244
+,"SG2",NULL,244
+,"SG3",NULL,244
+,"WE1",NULL,245
+,"WE2",NULL,245
+,"WE3",NULL,245
+,"WH1",NULL,246
+,"WH2",NULL,246
+,"WH3",NULL,246
+,"WH4",NULL,246
