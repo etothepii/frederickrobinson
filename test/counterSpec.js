@@ -69,6 +69,24 @@ var mockCounts = [
     "votesCast": 2314,
     "ballotBox": "Box 112",
     "tallies": []
+  },
+  {
+    "GUID": 6,
+    "provider": "gajusz@gmail.com",
+    "pollingArea": 4,
+    "password": "banana",
+    "votesCast": 2314,
+    "ballotBox": "Box 112",
+    "tallies": []
+  },
+  {
+    "GUID": 6,
+    "provider": "gajusz@gmail.com",
+    "pollingArea": 0,
+    "password": "banana",
+    "votesCast": 2314,
+    "ballotBox": "Box 112",
+    "tallies": []
   }
 ];
 var mockOverseeings = [
@@ -116,7 +134,7 @@ counter.setDB(mockDb);
 
 describe("Counter", function() {
   describe("#Process()", function() {
-    it("Should process Count with single overseeing", function() {
+    it("Should update Count with single overseeing", function() {
       mockCounts[0].saved = 0;
       mockDb.Count.created = 0;
       counter.process(mockCounts[0], function(err, old) {
@@ -150,6 +168,24 @@ describe("Counter", function() {
         expect(err).to.equal(false);
         expect(mockCounts[3].saved).to.equal(1);
         expect(mockDb.Counter.created).to.equal(0);
+      });
+    });
+    it("Should be able to create where only parent is overseen", function() {
+      mockCounts[4].saved = 0;
+      mockDb.Count.created = 0;
+      counter.process(mockCounts[3], function(err, old) {
+        expect(err).to.equal(false);
+        expect(mockCounts[4].saved).to.equal(0);
+        expect(mockDb.Counter.created).to.equal(1);
+      });
+    });
+    it("Should create Count with single overseeing", function() {
+      mockCounts[5].saved = 0;
+      mockDb.Count.created = 0;
+      counter.process(mockCounts[0], function(err, old) {
+        expect(err).to.equal(false);
+        expect(mockCounts[5].saved).to.equal(0);
+        expect(mockDb.Count.created).to.equal(1);
       });
     });
   });
