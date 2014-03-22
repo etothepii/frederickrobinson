@@ -1,0 +1,187 @@
+1,ROOT,Country,0
+2,England,Election,1
+3,London Borough,Council,2
+4,Metropolitan Borough,Council,2
+5,Unitary Authority,Council,2
+6,Non-Metropolitan District,Council,2
+7,Mayoral Election,Council,2
+8,Barking and Dagenham,Ward,3
+9,Barnet,Ward,3
+10,Bexley,Ward,3
+11,Brent,Ward,3
+12,Bromley,Ward,3
+13,Camden,Ward,3
+14,Croydon,Ward,3
+15,Ealing,Ward,3
+16,Enfield,Ward,3
+17,Greenwich,Ward,3
+18,Hackney,Ward,3
+19,Hammersmith and Fulham,Ward,3
+20,Haringey,Ward,3
+21,Harrow,Ward,3
+22,Havering,Ward,3
+23,Hillingdon,Ward,3
+24,Hounslow,Ward,3
+25,Islington,Ward,3
+26,Kensington and Chelsea,Ward,3
+27,Kingston upon Thames,Ward,3
+28,Lambeth,Ward,3
+29,Lewisham,Ward,3
+30,Merton,Ward,3
+31,Newham,Ward,3
+32,Redbridge,Ward,3
+33,Richmond upon Thames,Ward,3
+34,Southwark,Ward,3
+35,Sutton,Ward,3
+36,Tower Hamlets,Ward,3
+37,Waltham Forest,Ward,3
+38,Wandsworth,Ward,3
+39,Westminster,Ward,3
+40,Barnsley,Ward,4
+41,Birmingham,Ward,4
+42,Bolton,Ward,4
+43,Bradford,Ward,4
+44,Bury,Ward,4
+45,Calderdale,Ward,4
+46,Coventry,Ward,4
+47,Doncaster,Ward,4
+48,Dudley,Ward,4
+49,Gateshead,Ward,4
+50,Kirklees,Ward,4
+51,Knowsley,Ward,4
+52,Leeds,Ward,4
+53,Liverpool,Ward,4
+54,Manchester,Ward,4
+55,Newcastle upon Tyne,Ward,4
+56,North Tyneside,Ward,4
+57,Oldham,Ward,4
+58,Rochdale,Ward,4
+59,Rotherham,Ward,4
+60,St. Helens,Ward,4
+61,Salford,Ward,4
+62,Sandwell,Ward,4
+63,Sefton,Ward,4
+64,Sheffield,Ward,4
+65,Solihull,Ward,4
+66,South Tyneside,Ward,4
+67,Stockport,Ward,4
+68,Sunderland,Ward,4
+69,Tameside,Ward,4
+70,Trafford,Ward,4
+71,Wakefield,Ward,4
+72,Walsall,Ward,4
+73,Wigan,Ward,4
+74,Wirral,Ward,4
+75,Wolverhampton,Ward,4
+76,Milton Keynes,Ward,5
+77,Slough,Ward,5
+78,Blackburn with Darwen,Ward,5
+79,Bristol,Ward,5
+80,Derby,Ward,5
+81,Halton,Ward,5
+82,Hartlepool,Ward,5
+83,Kingston upon Hull,Ward,5
+84,North East Lincolnshire,Ward,5
+85,Peterborough,Ward,5
+86,Plymouth,Ward,5
+87,Portsmouth,Ward,5
+88,Reading,Ward,5
+89,Southampton,Ward,5
+90,Southend-on-Sea,Ward,5
+91,Swindon,Ward,5
+92,Thurrock,Ward,5
+93,Warrington,Ward,5
+94,Wokingham,Ward,5
+95,Hart,Ward,6
+96,Three Rivers,Ward,6
+97,Adur,Ward,6
+98,Cheltenham,Ward,6
+99,Fareham,Ward,6
+100,Gosport,Ward,6
+101,Hastings,Ward,6
+102,Nuneaton and Bedworth,Ward,6
+103,Oxford,Ward,6
+104,Amber Valley,Ward,6
+105,Basildon,Ward,6
+106,Basingstoke and Deane,Ward,6
+107,Bassetlaw,Ward,6
+108,Brentwood,Ward,6
+109,Broxbourne,Ward,6
+110,Burnley,Ward,6
+111,Cambridge,Ward,6
+112,Cannock Chase,Ward,6
+113,City of Carlisle,Ward,6
+114,Castle Point,Ward,6
+115,Cherwell,Ward,6
+116,Chorley,Ward,6
+117,Colchester,Ward,6
+118,Craven,Ward,6
+119,Crawley,Ward,6
+120,Daventry,Ward,6
+121,Eastleigh,Ward,6
+122,Elmbridge,Ward,6
+123,Epping Forest,Ward,6
+124,Exeter,Ward,6
+125,Gloucester,Ward,6
+126,Great Yarmouth,Ward,6
+127,Harlow,Ward,6
+128,Harrogate,Ward,6
+129,Havant,Ward,6
+130,Hertsmere,Ward,6
+131,Huntingdonshire,Ward,6
+132,Hyndburn,Ward,6
+133,Ipswich,Ward,6
+134,Lincoln,Ward,6
+135,Maidstone,Ward,6
+136,Mole Valley,Ward,6
+137,Newcastle-under-Lyme,Ward,6
+138,North Hertfordshire,Ward,6
+139,Norwich,Ward,6
+140,Pendle,Ward,6
+141,Preston,Ward,6
+142,Purbeck,Ward,6
+143,Redditch,Ward,6
+144,Reigate and Banstead,Ward,6
+145,Rochford,Ward,6
+146,Rossendale,Ward,6
+147,Rugby,Ward,6
+148,Runnymede,Ward,6
+149,Rushmoor,Ward,6
+150,St Albans,Ward,6
+151,South Cambridgeshire,Ward,6
+152,South Lakeland,Ward,6
+153,Stevenage,Ward,6
+154,Stratford-on-Avon,Ward,6
+155,Stroud,Ward,6
+156,Tamworth,Ward,6
+157,Tandridge,Ward,6
+158,Tunbridge Wells,Ward,6
+159,Watford,Ward,6
+160,Welwyn Hatfield,Ward,6
+161,West Lancashire,Ward,6
+162,West Oxfordshire,Ward,6
+163,Weymouth and Portland,Ward,6
+164,Winchester,Ward,6
+165,Woking,Ward,6
+166,Worcester,Ward,6
+167,Worthing,Ward,6
+168,Wyre Forest,Ward,6
+169,Hackney,Ward,7
+170,Lewisham,Ward,7
+171,Newham,Ward,7
+172,Tower Hamlets,Ward,7
+173,Watford,Ward,7
+174,Scotland,Election,1
+175,Wales,Election,1
+176,European,Region,2
+177,European,Division,174
+178,European,Division,175
+179,East Midlands,Division,176
+180,East of England,Division,176
+181,London,Division,176
+182,North East England,Division,176
+183,North West England,Division,176
+184,South East England,Division,176
+185,South West England1,Division,176
+186,West Midlands,Division,176
+187,Yorkshire and the Humber,Division,176

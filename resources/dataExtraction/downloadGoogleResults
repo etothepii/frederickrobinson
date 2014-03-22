@@ -1,0 +1,8 @@
+#!/bin/bash
+parent=$1
+type=$2
+year=$3
+cat electionAreas.csv | grep ",$parent$" | awk -F, '{print $2}' | while read line
+do
+  echo "election $year $type $line"
+done
