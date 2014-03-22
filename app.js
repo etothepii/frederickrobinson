@@ -3,8 +3,8 @@ var parse = require('url').parse;
 var join = require('path').join;
 var fs = require('fs');
 var querystring = require('querystring');
-var frdb = require('./frederickRobinsonDB');
-var counter = require('./counter');
+var frdb = require('./lib/frederickRobinsonDB');
+var counter = require('./lib/counter');
 var root = 'data/'
 
 counter.setDB(frdb);
