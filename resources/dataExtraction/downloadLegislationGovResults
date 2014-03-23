@@ -5,7 +5,7 @@ download() {
   name=`echo $1 | sed "s/.*uksi.\([0-9]*\)\/\([0-9]*\)\/.*/\1-\2/"`
   echo "Downloading $1 to $name.$2"
   if [[ $2 == "txt" ]]; then
-    curl $1 2>/dev/null | html2text > ~/countUp/data/$name.$2
+    curl $1 2>/dev/null | html2text -nobs > ~/countUp/data/$name.$2
   else
     curl $1 2>/dev/null > ~/countUp/data/$name.$2
   fi
