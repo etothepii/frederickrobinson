@@ -4,7 +4,11 @@ echo "Failed to find either schedule or PDF" > ~/countUp/data/investigate.fail
 download() {
   name=`echo $1 | sed "s/.*uksi.\([0-9]*\)\/\([0-9]*\)\/.*/\1-\2/"`
   echo $name.$2
-  curl $1 2>/dev/null | html2text > ~/countUp/data/$name.$2
+  if [[ $2 == "txt" ]]; then
+    curl $1 2>/dev/null | html2text > ~/countUp/data/$name.$2
+  else
+    curl $1 2>/dev/null > ~/countUp/data/$name.$2
+  fi
 }
 findPDF() {
   PDFS=(`lynx -dump -listonly $1 | sed "s/.*\(http.*\)/\1/" | grep -i  | sort -u`)
