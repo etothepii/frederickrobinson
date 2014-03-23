@@ -30,3 +30,4 @@ for i in 1 2 3 4; do
     fi
   done
 done
+sed -i '' "s/[^\b]\b//g" ~/countUp/data/*.txt
