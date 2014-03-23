@@ -11,12 +11,13 @@ download() {
   fi
 }
 findPDF() {
-  PDFS=(`lynx -dump -listonly $1 | sed "s/.*\(http.*\)/\1/" | grep -i  | sort -u`)
+  PDFS=(`lynx -dump -listonly $1 | sed "s/.*\(http.*\)/\1/" | grep -i "\.pdf$"  | sort -u`)
   length=${#SCHEDULES[@]}
   if [[ $length -eq 1 ]]; then
     download ${SCHEDULES[0]} pdf
-  elif
+  else 
     echo $1 >> ~/countUp/data/investigate.fail
+      echo "Found $length PDFs"
   fi
 }
 for i in 1 2 3 4; do
@@ -30,7 +31,7 @@ for i in 1 2 3 4; do
       download ${SCHEDULES[0]} txt
     else
       echo $line >> ~/countUp/data/investigate.fail
-      echo "FAILED"
+      echo "Found $length sets of schedules"
     fi
   done
 done
