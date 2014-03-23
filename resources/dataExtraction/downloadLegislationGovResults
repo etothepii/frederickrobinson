@@ -1,11 +1,32 @@
 #!/bin/bash
 # http://www.legislation.gov.uk/uksi/2011/4/schedules/made
+echo "Failed to find either schedule or PDF" > ~/countUp/data/investigate.fail
 download() {
-  echo $1 
-  curl $1 2>/dev/null | html2text > ~/countUp/data/$2.txt
+  name=`echo $1 | sed "s/.*uksi.\([0-9]*\)\/\([0-9]*\)\/.*/\1-\2/"`
+  echo $name.$2
+  curl $1 2>/dev/null | html2text > ~/countUp/data/$name.$2
+}
+findPDF() {
+  PDFS=(`lynx -dump -listonly $1 | sed "s/.*\(http.*\)/\1/" | grep -i  | sort -u`)
+  length=${#SCHEDULES[@]}
+  if [[ $length -eq 1 ]]; then
+    download ${SCHEDULES[0]} pdf
+  elif
+    echo $1 >> ~/countUp/data/investigate.fail
+  fi
 }
 for i in 1 2 3 4; do
-  lynx -dump -listonly "http://www.legislation.gov.uk/uksi?title=%28Electoral%20Changes%29%20Order&page=$i" | grep "contents\/made" | sed "s/.*\(http.*\)/\1/" | sed "s/contents/schedules/" | sort -u | sed "s/\(.*uksi.\([0-9]*\)\/\([0-9]*\)\/.*\)/\1 \2-\3/" | while read line; do
-    eval download $line
+  lynx -dump -listonly "http://www.legislation.gov.uk/uksi?title=%28Electoral%20Changes%29%20Order&page=$i" | grep "contents\/made" | sed "s/.*\(http.*\)/\1/" | sort -u | while read line; do
+    echo $line
+    SCHEDULES=(`lynx -dump -listonly $line | sed "s/.*\(http.*\)/\1/" | grep -i schedules | sort -u`)
+    length=${#SCHEDULES[@]}
+    if [[ $length -eq 0 ]]; then
+      findPDF $line
+    elif [[ $length -eq 1 ]]; then
+      download ${SCHEDULES[0]} txt
+    else
+      echo $line >> ~/countUp/data/investigate.fail
+      echo "FAILED"
+    fi
   done
 done
