@@ -1,0 +1,11 @@
+#!/bin/bash
+# http://www.legislation.gov.uk/uksi/2011/4/schedules/made
+download() {
+  echo $1 
+  curl $1 2>/dev/null | html2text > ~/countUp/data/$2.txt
+}
+for i in 1 2 3 4; do
+  lynx -dump -listonly "http://www.legislation.gov.uk/uksi?title=%28Electoral%20Changes%29%20Order&page=$i" | grep "contents\/made" | sed "s/.*\(http.*\)/\1/" | sed "s/contents/schedules/" | sort -u | sed "s/\(.*uksi.\([0-9]*\)\/\([0-9]*\)\/.*\)/\1 \2-\3/" | while read line; do
+    eval download $line
+  done
+done
