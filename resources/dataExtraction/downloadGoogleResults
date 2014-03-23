@@ -1,10 +1,38 @@
 #!/bin/bash
+processCouncil() {
+  echo $2
+  search=`echo "http://www.google.co.uk/search?q=$type $2 council and democracy wards" | sed "s/ /+/g"`
+  ARRAY=(`lynx -dump -listonly $search | grep "\.gov" | grep "url\?" | grep "&sa" | sed "s/.*url...\(.*\)&sa.*/\1/"`)
+  for i in "${!ARRAY[@]}"; do 
+    num=$(($i+1));
+    printf "%s\t%s\n" "$num" "${ARRAY[$i]}"
+  done
+  selected=-1
+  url=""
+  while [ 0 ]; do
+    read -p "Make a selection: " select
+    if [[ "$select" == "X" ]]; then 
+      break;
+    elif [[ $select == http* ]]; then
+      url=$select
+      break
+    fi  
+    selected=$(($select-1))
+    open ${ARRAY[$selected]}
+  done
+  if [ -n "$url" ]; then
+   curl $url 2> /dev/null | html2text > ~/countUp/data/$1
+  elif [[ selected -lt 0 ]]; then
+    echo "No Valid value selected"
+  else
+    curl ${ARRAY[$selected]} 2> /dev/null | html2text > ~/countUp/data/$1
+  fi
+}
 parent=$1
 type=$2
-year=$3
-cat electionAreas.csv | grep ",$parent$" | awk -F, '{print $2}' | while read line
-do
-  echo $line
-  search=`echo "http://www.google.co.uk/search?q=election $year $type $line" | sed "s/ /+/g"`
-  lynx -dump -listonly $search | grep "\.gov" | grep "url\?" | grep "&sa" | sed "s/.*url...\(.*\)&sa.*/\1/"
+mkdir ~/countUp/data 2>/dev/null
+cat ~/countUp/electionAreas.csv | grep ",$parent,,,$" | awk -F, '{printf "%d \"%s\"\n",$1,$2}' | sed "s/\"/'/g"> /tmp/a
+exec 3</tmp/a
+while read -u 3 line; do
+  eval processCouncil $line
 done
