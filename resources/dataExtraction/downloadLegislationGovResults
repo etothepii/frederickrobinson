@@ -1,13 +1,13 @@
 #!/bin/bash
-# http://www.legislation.gov.uk/uksi/2011/4/schedules/made
+rm ~/countUp/data/*
 echo "Failed to find either schedule or PDF" > ~/countUp/data/investigate.fail
 download() {
   name=`echo $1 | sed "s/.*uksi.\([0-9]*\)\/\([0-9]*\)\/.*/\1-\2/"`
-  echo "Downloading $1 to $name.$2"
+  echo "Downloading $1 to $name$3.$2"
   if [[ $2 == "txt" ]]; then
-    curl $1 2>/dev/null | html2text -nobs > ~/countUp/data/$name.$2
+    curl $1 2>/dev/null | html2text -nobs > ~/countUp/data/$name$3.$2
   else
-    curl $1 2>/dev/null > ~/countUp/data/$name.$2
+    curl $1 2>/dev/null > ~/countUp/data/$name$3.$2
   fi
 }
 findPDF() {
@@ -23,15 +23,15 @@ findPDF() {
 for i in 1 2 3 4; do
   lynx -dump -listonly "http://www.legislation.gov.uk/uksi?title=%28Electoral%20Changes%29%20Order&page=$i" | grep "contents\/made" | sed "s/.*\(http.*\)/\1/" | sort -u | while read line; do
     echo $line
-    SCHEDULES=(`lynx -dump -listonly $line | sed "s/.*\(http.*\)/\1/" | grep -i schedules | sort -u`)
+    SCHEDULES=(`lynx -dump -listonly $line | sed "s/.*\(http.*\)/\1/" | grep -i schedule[^s] | sort -u`)
     length=${#SCHEDULES[@]}
     if [[ $length -eq 0 ]]; then
       findPDF $line
-    elif [[ $length -eq 1 ]]; then
-      download ${SCHEDULES[0]} txt
     else
-      echo $line >> ~/countUp/data/investigate.fail
-      echo "Found $length sets of schedules"
-    fi
+      for i in "${!SCHEDULES[@]}"; do
+        num=$(($i+1))
+        download ${SCHEDULES[$i]} txt -$num
+      done
+    fi  
   done
 done
