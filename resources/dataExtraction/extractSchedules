@@ -1,0 +1,12 @@
+#!/bin/bash
+output=1
+pattern="^\*\{6\} The.*Electoral Changes. Order"
+cat $1 | while read line; do
+  echo "$line"
+  if [[ $line =~ "$pattern" ]]; then
+    output=0
+    if [[ $output ]]; then
+      echo "$line"
+    fi
+  fi
+done
