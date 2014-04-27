@@ -8,1491 +8,1575 @@
 8,"Tower Hamlets","Ward",4
 9,"Watford","Ward",4
 10,"Council","Borough",3
-11,"./barkingAndDagenham",NULL,10
-12,"Barnet","Council Ward",11
-13,"Brunswick Park Ward","Polling District",12
-14,"Burnt Oak Ward","Polling District",12
-15,"Childs Hill Ward","Polling District",12
-16,"Colindale Ward","Polling District",12
-17,"Coppetts Ward","Polling District",12
-18,"East Barnet Ward","Polling District",12
-19,"East Finchley Ward","Polling District",12
-20,"Edgware Ward","Polling District",12
-21,"Finchley-Church End Ward","Polling District",12
-22,"Garden Suburb Ward","Polling District",12
-23,"Golders Green Ward","Polling District",12
-24,"Hale Ward","Polling District",12
-25,"Hendon Ward","Polling District",12
-26,"High Barnet Ward","Polling District",12
-27,"Mill Hill Ward","Polling District",12
-28,"Oakleigh Ward","Polling District",12
-29,"Totteridge Ward","Polling District",12
-30,"Underhill Ward","Polling District",12
-31,"West Finchley Ward","Polling District",12
-32,"West Hendon Ward","Polling District",12
-33,"Woodhouse Ward","Polling District",12
-34,"Bexley","Council Ward",11
-35,"Barnehurst Ward","Polling District",34
-36,"BH1B",NULL,35
-37,"BH2B",NULL,35
-38,"BH3B",NULL,35
-39,"BH4B",NULL,35
-40,"BH5B",NULL,35
-41,"BH6B",NULL,35
-42,"Belvedere Ward","Polling District",34
-43,"BV1E",NULL,42
-44,"BV2E",NULL,42
-45,"BV3E",NULL,42
-46,"BV4E",NULL,42
-47,"BV5E",NULL,42
-48,"Blackfen and Lamorbey Ward","Polling District",34
-49,"BL1S",NULL,48
-50,"BL2S",NULL,48
-51,"BL3S",NULL,48
-52,"BL4S",NULL,48
-53,"Blendon and Penhill Ward","Polling District",34
-54,"BP1S",NULL,53
-55,"BP2S",NULL,53
-56,"BP3S",NULL,53
-57,"BP4S",NULL,53
-58,"Brampton Ward","Polling District",34
-59,"BR1B",NULL,58
-60,"BR2B",NULL,58
-61,"BR3B",NULL,58
-62,"BR4B",NULL,58
-63,"Christchurch Ward","Polling District",34
-64,"CC1B",NULL,63
-65,"CC2B",NULL,63
-66,"CC3B",NULL,63
-67,"CC4B",NULL,63
-68,"CC5B",NULL,63
-69,"CC6B",NULL,63
-70,"Colyers Ward","Polling District",34
-71,"CL1B",NULL,70
-72,"CL2B",NULL,70
-73,"CL3B",NULL,70
-74,"CL4B",NULL,70
-75,"Cray Meadows Ward","Polling District",34
-76,"CM1S",NULL,75
-77,"CM2S",NULL,75
-78,"CM3S",NULL,75
-79,"CM4S",NULL,75
-80,"CM5S",NULL,75
-81,"CM6S",NULL,75
-82,"Crayford Ward","Polling District",34
-83,"CY1B",NULL,82
-84,"CY2B",NULL,82
-85,"CY3B",NULL,82
-86,"CY4B",NULL,82
-87,"CY5B",NULL,82
-88,"Danson Park Ward","Polling District",34
-89,"DP1B",NULL,88
-90,"DP2B",NULL,88
-91,"DP3B",NULL,88
-92,"DP4B",NULL,88
-93,"DP5B",NULL,88
-94,"East Wickham Ward","Polling District",34
-95,"EW1S",NULL,94
-96,"EW2S",NULL,94
-97,"EW3S",NULL,94
-98,"EW4S",NULL,94
-99,"Erith Ward","Polling District",34
-100,"ER1E",NULL,99
-101,"ER2E",NULL,99
-102,"ER3E",NULL,99
-103,"ER4E",NULL,99
-104,"ER5E",NULL,99
-105,"Falconwood and Welling Ward","Polling District",34
-106,"FW1S",NULL,105
-107,"FW2S",NULL,105
-108,"FW3S",NULL,105
-109,"FW4S",NULL,105
-110,"FW5S",NULL,105
-111,"Lesnes Abbey Ward","Polling District",34
-112,"LA1E",NULL,111
-113,"LA2E",NULL,111
-114,"LA3E",NULL,111
-115,"LA4E",NULL,111
-116,"LA5E",NULL,111
-117,"Longlands Ward","Polling District",34
-118,"LL1S",NULL,117
-119,"LL2S",NULL,117
-120,"LL3S",NULL,117
-121,"LL4S",NULL,117
-122,"LL5S",NULL,117
-123,"North End Ward","Polling District",34
-124,"NE1B",NULL,123
-125,"NE2B",NULL,123
-126,"NE3B",NULL,123
-127,"NE4B",NULL,123
-128,"NE5B",NULL,123
-129,"Northumberland Heath Ward","Polling District",34
-130,"NH1E",NULL,129
-131,"NH2E",NULL,129
-132,"NH3E",NULL,129
-133,"NH4E",NULL,129
-134,"NH5E",NULL,129
-135,"Sidcup Ward","Polling District",34
-136,"SP1S",NULL,135
-137,"SP2S",NULL,135
-138,"SP3S",NULL,135
-139,"SP4S",NULL,135
-140,"SP5S",NULL,135
-141,"SP6S",NULL,135
-142,"St Mary's Ward","Polling District",34
-143,"ST1S",NULL,142
-144,"ST2S",NULL,142
-145,"ST3S",NULL,142
-146,"ST4S",NULL,142
-147,"ST5S",NULL,142
-148,"St Michael's Ward","Polling District",34
-149,"SM1B",NULL,148
-150,"SM2B",NULL,148
-151,"SM3B",NULL,148
-152,"Thamesmead East Ward","Polling District",34
-153,"TE1E",NULL,152
-154,"TE2E",NULL,152
-155,"TE3E",NULL,152
-156,"TE4E",NULL,152
-157,"TE5E",NULL,152
-158,"Brent","Council Ward",11
-159,"Alperton Ward","Polling District",158
-160,"NAL1",NULL,159
-161,"NAL2",NULL,159
-162,"NAL3",NULL,159
-163,"NAL4",NULL,159
-164,"Barnhill Ward","Polling District",158
-165,"NBA1",NULL,164
-166,"NBA2",NULL,164
-167,"NBA3",NULL,164
-168,"NBA4",NULL,164
-169,"NBA5",NULL,164
-170,"NBA6",NULL,164
-171,"Brondesbury Park Ward","Polling District",158
-172,"HBP1",NULL,171
-173,"HBP2",NULL,171
-174,"HBP3",NULL,171
-175,"HBP4",NULL,171
-176,"HBP5",NULL,171
-177,"Dollis Hill Ward","Polling District",158
-178,"CDO1",NULL,177
-179,"CDO2",NULL,177
-180,"CDO3",NULL,177
-181,"CDO4",NULL,177
-182,"Dudden Hill Ward","Polling District",158
-183,"CDU1",NULL,182
-184,"CDU2",NULL,182
-185,"CDU3",NULL,182
-186,"CDU4",NULL,182
-187,"CDU5",NULL,182
-188,"CDU6",NULL,182
-189,"Fryent Ward","Polling District",158
-190,"NFR1",NULL,189
-191,"NFR2",NULL,189
-192,"NFR3",NULL,189
-193,"NFR4",NULL,189
-194,"NFR5",NULL,189
-195,"NFR6",NULL,189
-196,"NFR7",NULL,189
-197,"Harlesden Ward","Polling District",158
-198,"CHA1",NULL,197
-199,"CHA2",NULL,197
-200,"CHA3",NULL,197
-201,"CHA4",NULL,197
-202,"CHA5",NULL,197
-203,"Kensal Green Ward","Polling District",158
-204,"CKG1",NULL,203
-205,"CKG2",NULL,203
-206,"CKG3",NULL,203
-207,"CKG4",NULL,203
-208,"CKG5",NULL,203
-209,"CKG6",NULL,203
-210,"Kenton Ward","Polling District",158
-211,"NKE1",NULL,210
-212,"NKE2",NULL,210
-213,"NKE3",NULL,210
-214,"NKE4",NULL,210
-215,"NKE5",NULL,210
-216,"Kilburn Ward","Polling District",158
-217,"HKI1",NULL,216
-218,"HKI2",NULL,216
-219,"HKI3",NULL,216
-220,"HKI4",NULL,216
-221,"HKI5",NULL,216
-222,"Mapesbury Ward","Polling District",158
-223,"CMA1",NULL,222
-224,"CMA2",NULL,222
-225,"CMA3",NULL,222
-226,"CMA4",NULL,222
-227,"CMA5",NULL,222
-228,"Northwick Park Ward","Polling District",158
-229,"NNP1",NULL,228
-230,"NNP2",NULL,228
-231,"NNP3",NULL,228
-232,"NNP4",NULL,228
-233,"NNP5",NULL,228
-234,"Preston Ward","Polling District",158
-235,"NPR1",NULL,234
-236,"NPR2",NULL,234
-237,"NPR3",NULL,234
-238,"NPR4",NULL,234
-239,"Queen’s Park Ward","Polling District",158
-240,"HQP1",NULL,239
-241,"HQP2",NULL,239
-242,"HQP3",NULL,239
-243,"HQP4",NULL,239
-244,"HQP5",NULL,239
-245,"Queensbury Ward","Polling District",158
-246,"NQY1",NULL,245
-247,"NQY2",NULL,245
-248,"NQY3",NULL,245
-249,"NQY4",NULL,245
-250,"NQY5",NULL,245
-251,"NQY6",NULL,245
-252,"Stonebridge Ward","Polling District",158
-253,"CST1",NULL,252
-254,"CST2",NULL,252
-255,"CST3",NULL,252
-256,"CST4",NULL,252
-257,"CST5",NULL,252
-258,"CST6",NULL,252
-259,"Sudbury Ward","Polling District",158
-260,"NSU1",NULL,259
-261,"NSU2",NULL,259
-262,"NSU3",NULL,259
-263,"NSU4",NULL,259
-264,"NSU5",NULL,259
-265,"Tokyngton Ward","Polling District",158
-266,"CTO1",NULL,265
-267,"CTO2",NULL,265
-268,"CTO3",NULL,265
-269,"CTO4",NULL,265
-270,"CTO5",NULL,265
-271,"Welsh Harp Ward","Polling District",158
-272,"CWH1",NULL,271
-273,"CWH2",NULL,271
-274,"CWH3",NULL,271
-275,"CWH4",NULL,271
-276,"CWH5",NULL,271
-277,"CWH6",NULL,271
-278,"CWH7",NULL,271
-279,"Wembley Central Ward","Polling District",158
-280,"NWC1",NULL,279
-281,"NWC2",NULL,279
-282,"NWC3",NULL,279
-283,"NWC4",NULL,279
-284,"Willesden Green Ward","Polling District",158
-285,"CWG1",NULL,284
-286,"CWG2",NULL,284
-287,"CWG3",NULL,284
-288,"Bromley","Council Ward",11
-289,"Bickley Ward","Polling District",288
-290,"BK1",NULL,289
-291,"BK2",NULL,289
-292,"BK3",NULL,289
-293,"BK4",NULL,289
-294,"BK5",NULL,289
-295,"BK6",NULL,289
-296,"Biggin Hill Ward","Polling District",288
-297,"BH1",NULL,296
-298,"BH2",NULL,296
-299,"BH3",NULL,296
-300,"Bromley Common & Keston Ward","Polling District",288
-301,"BC1",NULL,300
-302,"BC2",NULL,300
-303,"BC3",NULL,300
-304,"BC4",NULL,300
-305,"BC5",NULL,300
-306,"Bromley Town Ward","Polling District",288
-307,"BT1",NULL,306
-308,"BT2",NULL,306
-309,"BT3",NULL,306
-310,"BT4",NULL,306
-311,"BT5",NULL,306
-312,"BT6",NULL,306
-313,"BT7",NULL,306
-314,"Chelsfield & Pratts Bottom Ward","Polling District",288
-315,"CB1",NULL,314
-316,"CB2",NULL,314
-317,"CB3",NULL,314
-318,"CB4",NULL,314
-319,"CB5",NULL,314
-320,"CB6",NULL,314
-321,"Chislehurst Ward","Polling District",288
-322,"CH1",NULL,321
-323,"CH2",NULL,321
-324,"CH3",NULL,321
-325,"CH4",NULL,321
-326,"CH5",NULL,321
-327,"Clock House Ward","Polling District",288
-328,"CL1",NULL,327
-329,"CL2",NULL,327
-330,"CL3",NULL,327
-331,"CL4",NULL,327
-332,"CL5",NULL,327
-333,"Copers Cope Ward","Polling District",288
-334,"CC1",NULL,333
-335,"CC2",NULL,333
-336,"CC3",NULL,333
-337,"Cray Valley East Ward","Polling District",288
-338,"CE1",NULL,337
-339,"CE2",NULL,337
-340,"CE3",NULL,337
-341,"CE4",NULL,337
-342,"CE5",NULL,337
-343,"CE6",NULL,337
-344,"Cray Valley West Ward","Polling District",288
-345,"CW1",NULL,344
-346,"CW2",NULL,344
-347,"CW3",NULL,344
-348,"CW4",NULL,344
-349,"Crystal Palace Ward","Polling District",288
-350,"CP1",NULL,349
-351,"CP2",NULL,349
-352,"CP3",NULL,349
-353,"CP4",NULL,349
-354,"Darwin Ward","Polling District",288
-355,"DA1",NULL,354
-356,"DA2",NULL,354
-357,"DA3",NULL,354
-358,"DA4",NULL,354
-359,"DA5",NULL,354
-360,"DA6",NULL,354
-361,"DA7",NULL,354
-362,"Farnborough & Crofton Ward","Polling District",288
-363,"FC1",NULL,362
-364,"FC2",NULL,362
-365,"FC3",NULL,362
-366,"FC4",NULL,362
-367,"FC5",NULL,362
-368,"FC6",NULL,362
-369,"Hayes & Coney Hall Ward","Polling District",288
-370,"HA1",NULL,369
-371,"HA2",NULL,369
-372,"HA3",NULL,369
-373,"HA4",NULL,369
-374,"HA5",NULL,369
-375,"HA6",NULL,369
-376,"Kelsey and Eden Park Ward","Polling District",288
-377,"KP1",NULL,376
-378,"KP2",NULL,376
-379,"KP3",NULL,376
-380,"KP4",NULL,376
-381,"Mottingham & Chislehurst North Ward","Polling District",288
-382,"MO1",NULL,381
-383,"MO2",NULL,381
-384,"MO3",NULL,381
-385,"MO4",NULL,381
-386,"Orpington Ward","Polling District",288
-387,"OR1",NULL,386
-388,"OR2",NULL,386
-389,"OR3",NULL,386
-390,"OR4",NULL,386
-391,"OR5",NULL,386
-392,"Penge and Cator Ward","Polling District",288
-393,"PE1",NULL,392
-394,"PE2",NULL,392
-395,"PE3",NULL,392
-396,"PE4",NULL,392
-397,"PE5",NULL,392
-398,"PE6",NULL,392
-399,"Petts Wood & Knoll Ward","Polling District",288
-400,"PW1",NULL,399
-401,"PW2",NULL,399
-402,"PW3",NULL,399
-403,"PW4",NULL,399
-404,"Plaistow & Sundridge Ward","Polling District",288
-405,"PS1",NULL,404
-406,"PS2",NULL,404
-407,"PS3",NULL,404
-408,"PS4",NULL,404
-409,"PS5",NULL,404
-410,"Shortlands Ward","Polling District",288
-411,"SH1",NULL,410
-412,"SH2",NULL,410
-413,"SH3",NULL,410
-414,"SH4",NULL,410
-415,"West Wickham Ward","Polling District",288
-416,"WW1",NULL,415
-417,"WW2",NULL,415
-418,"WW3",NULL,415
-419,"WW4",NULL,415
-420,"Camden","Council Ward",11
-421,"Belsize Ward","Polling District",420
-422,"HA",NULL,421
-423,"HB",NULL,421
-424,"HC",NULL,421
-425,"Bloomsbury Ward","Polling District",420
-426,"QA",NULL,425
-427,"QB",NULL,425
-428,"QC",NULL,425
-429,"QD",NULL,425
-430,"Camden Town with Primrose Hill Ward","Polling District",420
-431,"MA",NULL,430
-432,"MB",NULL,430
-433,"MC",NULL,430
-434,"MD",NULL,430
-435,"Cantelowes Ward","Polling District",420
-436,"KA",NULL,435
-437,"KB",NULL,435
-438,"KC",NULL,435
-439,"Fortune Green Ward","Polling District",420
-440,"DA",NULL,439
-441,"DB",NULL,439
-442,"DC",NULL,439
-443,"Frognal and Fitzjohns Ward","Polling District",420
-444,"CA",NULL,443
-445,"CB",NULL,443
-446,"CC",NULL,443
-447,"Gospel Oak Ward","Polling District",420
-448,"IA",NULL,447
-449,"IB",NULL,447
-450,"IC",NULL,447
-451,"Hampstead Town Ward","Polling District",420
-452,"AA",NULL,451
-453,"AB",NULL,451
-454,"AC",NULL,451
-455,"Haverstock Ward","Polling District",420
-456,"LA",NULL,455
-457,"LB",NULL,455
-458,"LC",NULL,455
-459,"LD",NULL,455
-460,"Highgate Ward","Polling District",420
-461,"BA",NULL,460
-462,"BB",NULL,460
-463,"BC",NULL,460
-464,"Holborn and Covent Garden Ward","Polling District",420
-465,"RA",NULL,464
-466,"RB",NULL,464
-467,"RC",NULL,464
-468,"Kentish Town Ward","Polling District",420
-469,"JA",NULL,468
-470,"JB",NULL,468
-471,"JC",NULL,468
-472,"Kilburn Ward","Polling District",420
-473,"FA",NULL,472
-474,"FB",NULL,472
-475,"FC",NULL,472
-476,"FD",NULL,472
-477,"Kings Cross Ward","Polling District",420
-478,"PA",NULL,477
-479,"PB",NULL,477
-480,"PC",NULL,477
-481,"Regents Park Ward","Polling District",420
-482,"NA",NULL,481
-483,"NB",NULL,481
-484,"NC",NULL,481
-485,"St Pancras and Somers Town Ward","Polling District",420
-486,"OA",NULL,485
-487,"OB",NULL,485
-488,"OC",NULL,485
-489,"OD",NULL,485
-490,"Swiss Cottage Ward","Polling District",420
-491,"GA",NULL,490
-492,"GB",NULL,490
-493,"GC",NULL,490
-494,"West Hampstead Ward","Polling District",420
-495,"EA",NULL,494
-496,"EB",NULL,494
-497,"EC",NULL,494
-498,"ED",NULL,494
-499,"Croydon","Council Ward",11
-500,"Addiscombe Ward","Polling District",499
-501,"AD1",NULL,500
-502,"AD2",NULL,500
-503,"AD3",NULL,500
-504,"AD4",NULL,500
-505,"AD5",NULL,500
-506,"AD6",NULL,500
-507,"Ashburton Ward","Polling District",499
-508,"AS1",NULL,507
-509,"AS2",NULL,507
-510,"AS3",NULL,507
-511,"AS4",NULL,507
-512,"AS5",NULL,507
-513,"AS6",NULL,507
-514,"Bensham Manor Ward","Polling District",499
-515,"BM1",NULL,514
-516,"BM2",NULL,514
-517,"BM3",NULL,514
-518,"BM4",NULL,514
-519,"BM5",NULL,514
-520,"BM6",NULL,514
-521,"Broad Green Ward","Polling District",499
-522,"BG1",NULL,521
-523,"BG2",NULL,521
-524,"BG3",NULL,521
-525,"BG4",NULL,521
-526,"BG5",NULL,521
-527,"BG6",NULL,521
-528,"BG7",NULL,521
-529,"Coulsdon East Ward","Polling District",499
-530,"CE1",NULL,529
-531,"CE2",NULL,529
-532,"CE3",NULL,529
-533,"CE4",NULL,529
-534,"CE5",NULL,529
-535,"CE6",NULL,529
-536,"CE7",NULL,529
-537,"Coulsdon West Ward","Polling District",499
-538,"CW1",NULL,537
-539,"CW2",NULL,537
-540,"CW3",NULL,537
-541,"CW4",NULL,537
-542,"CW5",NULL,537
-543,"CW6",NULL,537
-544,"Croham Ward","Polling District",499
-545,"CR1",NULL,544
-546,"CR2",NULL,544
-547,"CR3",NULL,544
-548,"CR4",NULL,544
-549,"CR5",NULL,544
-550,"CR6",NULL,544
-551,"Fairfield Ward","Polling District",499
-552,"FA1",NULL,551
-553,"FA2",NULL,551
-554,"FA3",NULL,551
-555,"FA4",NULL,551
-556,"FA5",NULL,551
-557,"FA6",NULL,551
-558,"FA7",NULL,551
-559,"Fieldway Ward","Polling District",499
-560,"FW1",NULL,559
-561,"FW2",NULL,559
-562,"FW3",NULL,559
-563,"FW4",NULL,559
-564,"Heathfield Ward","Polling District",499
-565,"HE1",NULL,564
-566,"HE2",NULL,564
-567,"HE3",NULL,564
-568,"HE4",NULL,564
-569,"HE5",NULL,564
-570,"HE6",NULL,564
-571,"HE7",NULL,564
-572,"Kenley Ward","Polling District",499
-573,"KE1",NULL,572
-574,"KE2",NULL,572
-575,"KE3",NULL,572
-576,"KE4",NULL,572
-577,"KE5",NULL,572
-578,"KE6",NULL,572
-579,"KE7",NULL,572
-580,"New Addington Ward","Polling District",499
-581,"NA1",NULL,580
-582,"NA2",NULL,580
-583,"NA3",NULL,580
-584,"NA4",NULL,580
-585,"Norbury Ward","Polling District",499
-586,"NY1",NULL,585
-587,"NY2",NULL,585
-588,"NY3",NULL,585
-589,"NY4",NULL,585
-590,"NY5",NULL,585
-591,"NY6",NULL,585
-592,"Purley Ward","Polling District",499
-593,"PU1",NULL,592
-594,"PU2",NULL,592
-595,"PU3",NULL,592
-596,"PU4",NULL,592
-597,"PU5",NULL,592
-598,"PU6",NULL,592
-599,"Sanderstead Ward","Polling District",499
-600,"SA1",NULL,599
-601,"SA2",NULL,599
-602,"SA3",NULL,599
-603,"SA4",NULL,599
-604,"SA5",NULL,599
-605,"Selhurst Ward","Polling District",499
-606,"SE1",NULL,605
-607,"SE2",NULL,605
-608,"SE3",NULL,605
-609,"SE4",NULL,605
-610,"SE5",NULL,605
-611,"SE6",NULL,605
-612,"SE7",NULL,605
-613,"Selsdon and Ballards Ward","Polling District",499
-614,"SB1",NULL,613
-615,"SB2",NULL,613
-616,"SB3",NULL,613
-617,"SB4",NULL,613
-618,"SB5",NULL,613
-619,"SB6",NULL,613
-620,"Shirley Ward","Polling District",499
-621,"SH1",NULL,620
-622,"SH2",NULL,620
-623,"SH3",NULL,620
-624,"SH4",NULL,620
-625,"SH5",NULL,620
-626,"SH6",NULL,620
-627,"South Norwood Ward","Polling District",499
-628,"SN1",NULL,627
-629,"SN2",NULL,627
-630,"SN3",NULL,627
-631,"SN4",NULL,627
-632,"SN5",NULL,627
-633,"SN6",NULL,627
-634,"Thornton Heath Ward","Polling District",499
-635,"TH1",NULL,634
-636,"TH2",NULL,634
-637,"TH3",NULL,634
-638,"TH4",NULL,634
-639,"TH5",NULL,634
-640,"TH6",NULL,634
-641,"Upper Norwood Ward","Polling District",499
-642,"UN1",NULL,641
-643,"UN2",NULL,641
-644,"UN3",NULL,641
-645,"UN4",NULL,641
-646,"UN5",NULL,641
-647,"UN6",NULL,641
-648,"UN7",NULL,641
-649,"Waddon Ward","Polling District",499
-650,"WA1",NULL,649
-651,"WA2",NULL,649
-652,"WA3",NULL,649
-653,"WA4",NULL,649
-654,"WA5",NULL,649
-655,"WA6",NULL,649
-656,"West Thornton Ward","Polling District",499
-657,"WT1",NULL,656
-658,"WT2",NULL,656
-659,"WT3",NULL,656
-660,"WT4",NULL,656
-661,"WT5",NULL,656
-662,"WT6",NULL,656
-663,"Woodside Ward","Polling District",499
-664,"WS1",NULL,663
-665,"WS2",NULL,663
-666,"WS3",NULL,663
-667,"WS4",NULL,663
-668,"WS5",NULL,663
-669,"WS6",NULL,663
-670,"Ealing","Council Ward",11
-671,"Acton Central Ward","Polling District",670
-672,"Cleveland Ward","Polling District",670
-673,"Dormers Wells Ward","Polling District",670
-674,"Ealing Broadway Ward","Polling District",670
-675,"Ealing Common Ward","Polling District",670
-676,"East Acton Ward","Polling District",670
-677,"Elthorne Ward","Polling District",670
-678,"Greenford Broadway Ward","Polling District",670
-679,"Greenford Green Ward","Polling District",670
-680,"Hanger Hill Ward","Polling District",670
-681,"Hobbayne Ward","Polling District",670
-682,"Lady Margaret Ward","Polling District",670
-683,"North Greenford Ward","Polling District",670
-684,"Northfield Ward","Polling District",670
-685,"Northolt Mandeville Ward","Polling District",670
-686,"Northolt West End Ward","Polling District",670
-687,"Norwood Green Ward","Polling District",670
-688,"Perivale Ward","Polling District",670
-689,"South Acton Ward","Polling District",670
-690,"Southall Broadway Ward","Polling District",670
-691,"Southall Green Ward","Polling District",670
-692,"Southfield Ward","Polling District",670
-693,"Walpole Ward","Polling District",670
-694,"Enfield","Council Ward",11
-695,"Bowes Ward","Polling District",694
-696,"YTA",NULL,695
-697,"YTB",NULL,695
-698,"YTC",NULL,695
-699,"YTD",NULL,695
-700,"Bush Hill Park Ward","Polling District",694
-701,"ZKA",NULL,700
-702,"ZKB",NULL,700
-703,"ZKC",NULL,700
-704,"ZKD",NULL,700
-705,"ZKE",NULL,700
-706,"Chase Ward","Polling District",694
-707,"XAA",NULL,706
-708,"XAB",NULL,706
-709,"XAC",NULL,706
-710,"XAD",NULL,706
-711,"XAE",NULL,706
-712,"XAF",NULL,706
-713,"Cockfosters Ward","Polling District",694
-714,"YDA",NULL,713
-715,"YDB",NULL,713
-716,"YDC",NULL,713
-717,"YDD",NULL,713
-718,"YDE",NULL,713
-719,"Edmonton Green Ward","Polling District",694
-720,"ZSA",NULL,719
-721,"ZSB",NULL,719
-722,"ZSC",NULL,719
-723,"ZSD",NULL,719
-724,"ZSE",NULL,719
-725,"ZSF",NULL,719
-726,"Enfield Highway Ward","Polling District",694
-727,"XHA",NULL,726
-728,"XHB",NULL,726
-729,"XHC",NULL,726
-730,"XHD",NULL,726
-731,"XHE",NULL,726
-732,"Enfield Lock Ward","Polling District",694
-733,"XCA",NULL,732
-734,"XCB",NULL,732
-735,"XCC",NULL,732
-736,"XCD",NULL,732
-737,"XCE",NULL,732
-738,"XCF",NULL,732
-739,"Grange Ward","Polling District",694
-740,"YJA",NULL,739
-741,"YJB",NULL,739
-742,"YJC",NULL,739
-743,"YJD",NULL,739
-744,"YJE",NULL,739
-745,"YJF",NULL,739
-746,"Haselbury Ward","Polling District",694
-747,"ZOA",NULL,746
-748,"ZOB",NULL,746
-749,"ZOC",NULL,746
-750,"ZOD",NULL,746
-751,"ZOE",NULL,746
-752,"Highlands Ward","Polling District",694
-753,"XEA",NULL,752
-754,"XEB",NULL,752
-755,"XEC",NULL,752
-756,"XED",NULL,752
-757,"XEE",NULL,752
-758,"Jubilee Ward","Polling District",694
-759,"ZMA",NULL,758
-760,"ZMB",NULL,758
-761,"ZMC",NULL,758
-762,"ZMD",NULL,758
-763,"ZME",NULL,758
-764,"ZMF",NULL,758
-765,"Lower Edmonton Ward","Polling District",694
-766,"ZPA",NULL,765
-767,"ZPB",NULL,765
-768,"ZPC",NULL,765
-769,"ZPD",NULL,765
-770,"Palmers Green Ward","Polling District",694
-771,"YRA",NULL,770
-772,"YRB",NULL,770
-773,"YRC",NULL,770
-774,"YRD",NULL,770
-775,"YRE",NULL,770
-776,"Ponders End Ward","Polling District",694
-777,"ZLA",NULL,776
-778,"ZLB",NULL,776
-779,"ZLC",NULL,776
-780,"ZLD",NULL,776
-781,"ZLE",NULL,776
-782,"Southbury Ward","Polling District",694
-783,"XGA",NULL,782
-784,"XGB",NULL,782
-785,"XGC",NULL,782
-786,"XGD",NULL,782
-787,"XGE",NULL,782
-788,"XGF",NULL,782
-789,"Southgate Ward","Polling District",694
-790,"YIA",NULL,789
-791,"YIB",NULL,789
-792,"YIC",NULL,789
-793,"YID",NULL,789
-794,"YIE",NULL,789
-795,"YIF",NULL,789
-796,"Southgate Green Ward","Polling District",694
-797,"YQA",NULL,796
-798,"YQB",NULL,796
-799,"YQC",NULL,796
-800,"YQD",NULL,796
-801,"YQE",NULL,796
-802,"Town Ward","Polling District",694
-803,"XFA",NULL,802
-804,"XFB",NULL,802
-805,"XFC",NULL,802
-806,"XFD",NULL,802
-807,"XFE",NULL,802
-808,"XFF",NULL,802
-809,"Turkey Street Ward","Polling District",694
-810,"XBA",NULL,809
-811,"XBB",NULL,809
-812,"XBC",NULL,809
-813,"XBD",NULL,809
-814,"Upper Edmonton Ward","Polling District",694
-815,"ZUA",NULL,814
-816,"ZUB",NULL,814
-817,"ZUC",NULL,814
-818,"ZUD",NULL,814
-819,"ZUE",NULL,814
-820,"ZUF",NULL,814
-821,"Winchmore Hill Ward","Polling District",694
-822,"YNA",NULL,821
-823,"YNB",NULL,821
-824,"YNC",NULL,821
-825,"YND",NULL,821
-826,"YNE",NULL,821
-827,"Greenwich","Council Ward",11
-828,"Abbey Wood Ward","Polling District",827
-829,"AW1",NULL,828
-830,"AW2",NULL,828
-831,"AW3",NULL,828
-832,"AW4",NULL,828
-833,"AW5",NULL,828
-834,"Blackheath Westcombe Ward","Polling District",827
-835,"BW1",NULL,834
-836,"BW2",NULL,834
-837,"BW3",NULL,834
-838,"BW4",NULL,834
-839,"BW5",NULL,834
-840,"BW6",NULL,834
-841,"BW7",NULL,834
-842,"BW8",NULL,834
-843,"Charlton Ward","Polling District",827
-844,"CH1",NULL,843
-845,"CH2",NULL,843
-846,"CH3",NULL,843
-847,"CH4",NULL,843
-848,"CH5",NULL,843
-849,"CH6",NULL,843
-850,"CH7",NULL,843
-851,"CH8",NULL,843
-852,"Coldharbour and New Eltham Ward","Polling District",827
-853,"CN1",NULL,852
-854,"CN2",NULL,852
-855,"CN3",NULL,852
-856,"CN4",NULL,852
-857,"CN5",NULL,852
-858,"CN6",NULL,852
-859,"CN7",NULL,852
-860,"Eltham North Ward","Polling District",827
-861,"EN1",NULL,860
-862,"EN2",NULL,860
-863,"EN3",NULL,860
-864,"EN4",NULL,860
-865,"EN5",NULL,860
-866,"EN6",NULL,860
-867,"EN7",NULL,860
-868,"EN8",NULL,860
-869,"EN9",NULL,860
-870,"Eltham South Ward","Polling District",827
-871,"ES1",NULL,870
-872,"ES2",NULL,870
-873,"ES3",NULL,870
-874,"ES4",NULL,870
-875,"ES5",NULL,870
-876,"ES6",NULL,870
-877,"Eltham West Ward","Polling District",827
-878,"EW1",NULL,877
-879,"EW2",NULL,877
-880,"EW3",NULL,877
-881,"EW4",NULL,877
-882,"EW5",NULL,877
-883,"EW6",NULL,877
-884,"EW7",NULL,877
-885,"Glyndon Ward","Polling District",827
-886,"GL1",NULL,885
-887,"GL2",NULL,885
-888,"GL3",NULL,885
-889,"GL4",NULL,885
-890,"GL5",NULL,885
-891,"GL6",NULL,885
-892,"GL7",NULL,885
-893,"Greenwich West Ward","Polling District",827
-894,"GW1",NULL,893
-895,"GW2",NULL,893
-896,"GW3",NULL,893
-897,"GW4",NULL,893
-898,"GW5",NULL,893
-899,"GW6",NULL,893
-900,"GW7",NULL,893
-901,"GW8",NULL,893
-902,"Kidbrooke with Hornfair Ward","Polling District",827
-903,"KH1",NULL,902
-904,"KH2",NULL,902
-905,"KH3",NULL,902
-906,"KH4",NULL,902
-907,"KH5",NULL,902
-908,"KH6",NULL,902
-909,"Middle Park and Sutcliffe Ward","Polling District",827
-910,"MS1",NULL,909
-911,"MS2",NULL,909
-912,"MS3",NULL,909
-913,"MS4",NULL,909
-914,"MS5",NULL,909
-915,"MS6",NULL,909
-916,"MS7",NULL,909
-917,"Peninsula Ward","Polling District",827
-918,"PA1",NULL,917
-919,"PA2",NULL,917
-920,"PA3",NULL,917
-921,"PA4",NULL,917
-922,"PA5",NULL,917
-923,"PA6",NULL,917
-924,"PA7",NULL,917
-925,"Plumstead Ward","Polling District",827
-926,"PL1",NULL,925
-927,"PL2",NULL,925
-928,"PL3",NULL,925
-929,"PL4",NULL,925
-930,"PL5",NULL,925
-931,"Shooters Hill Ward","Polling District",827
-932,"SH1",NULL,931
-933,"SH2",NULL,931
-934,"SH3",NULL,931
-935,"SH4",NULL,931
-936,"SH5",NULL,931
-937,"SH6",NULL,931
-938,"SH7",NULL,931
-939,"Thamesmead Moorings Ward","Polling District",827
-940,"TM1",NULL,939
-941,"TM2",NULL,939
-942,"TM3",NULL,939
-943,"TM4",NULL,939
-944,"TM5",NULL,939
-945,"TM6",NULL,939
-946,"TM7",NULL,939
-947,"Woolwich Common Ward","Polling District",827
-948,"WC1",NULL,947
-949,"WC2",NULL,947
-950,"WC3",NULL,947
-951,"WC4",NULL,947
-952,"WC5",NULL,947
-953,"WC6",NULL,947
-954,"Woolwich Riverside Ward","Polling District",827
-955,"WR1",NULL,954
-956,"WR2",NULL,954
-957,"WR3",NULL,954
-958,"WR4",NULL,954
-959,"WR5",NULL,954
-960,"WR6",NULL,954
-961,"WR7",NULL,954
-962,"WR8",NULL,954
-963,"WR9",NULL,954
-964,"Hackney","Council Ward",11
-965,"Brownswood Ward","Polling District",964
-966,"HNCA",NULL,965
-967,"HNCB",NULL,965
-968,"HNCC",NULL,965
-969,"Cazenove Ward","Polling District",964
-970,"HNEA",NULL,969
-971,"HNEB",NULL,969
-972,"HNEC",NULL,969
-973,"HNED",NULL,969
-974,"Clissold Ward","Polling District",964
-975,"HNFA",NULL,974
-976,"HNFB",NULL,974
-977,"HNFC",NULL,974
-978,"HNFD",NULL,974
-979,"Dalston Ward","Polling District",964
-980,"HNKA",NULL,979
-981,"HNKB",NULL,979
-982,"De Beauvoir Ward","Polling District",964
-983,"HSOA",NULL,982
-984,"HSOB",NULL,982
-985,"HSOC",NULL,982
-986,"Hackney Central Ward","Polling District",964
-987,"HSLA",NULL,986
-988,"HSLB",NULL,986
-989,"HSLC",NULL,986
-990,"HSLD",NULL,986
-991,"HSLE",NULL,986
-992,"Hackney Downs Ward","Polling District",964
-993,"HNHA",NULL,992
-994,"HNHB",NULL,992
-995,"HNHC",NULL,992
-996,"HNHD",NULL,992
-997,"Hackney Wick Ward","Polling District",964
-998,"HSRA",NULL,997
-999,"HSRB",NULL,997
-1000,"HSRC",NULL,997
-1001,"HSRD",NULL,997
-1002,"Haggerston Ward","Polling District",964
-1003,"HSQA",NULL,1002
-1004,"HSQB",NULL,1002
-1005,"HSQC",NULL,1002
-1006,"HSQD",NULL,1002
-1007,"HSQE",NULL,1002
-1008,"Homerton Ward","Polling District",964
-1009,"HSMA",NULL,1008
-1010,"HSMB",NULL,1008
-1011,"HSMC",NULL,1008
-1012,"HSMD",NULL,1008
-1013,"Hoxton East & Shoreditch Ward","Polling District",964
-1014,"HSUA",NULL,1013
-1015,"HSUB",NULL,1013
-1016,"HSUC",NULL,1013
-1017,"Hoxton West Ward","Polling District",964
-1018,"HSTA",NULL,1017
-1019,"HSTB",NULL,1017
-1020,"HSTC",NULL,1017
-1021,"King’S Park Ward","Polling District",964
-1022,"HSNA",NULL,1021
-1023,"HSNB",NULL,1021
-1024,"HSNC",NULL,1021
-1025,"HSND",NULL,1021
-1026,"Lea Bridge Ward","Polling District",964
-1027,"HNIA",NULL,1026
-1028,"HNIB",NULL,1026
-1029,"HNIC",NULL,1026
-1030,"HNID",NULL,1026
-1031,"London Fields Ward","Polling District",964
-1032,"HSPA",NULL,1031
-1033,"HSPB",NULL,1031
-1034,"HSPC",NULL,1031
-1035,"Shacklewell Ward","Polling District",964
-1036,"HNJA",NULL,1035
-1037,"HNJB",NULL,1035
-1038,"Springfield Ward","Polling District",964
-1039,"HNBA",NULL,1038
-1040,"HNBB",NULL,1038
-1041,"HNBC",NULL,1038
-1042,"HNBD",NULL,1038
-1043,"HNBE",NULL,1038
-1044,"Stamford Hill West Ward","Polling District",964
-1045,"HNDA",NULL,1044
-1046,"HNDB",NULL,1044
-1047,"HNDC",NULL,1044
-1048,"Stoke Newington Ward","Polling District",964
-1049,"HNGA",NULL,1048
-1050,"HNGB",NULL,1048
-1051,"HNGC",NULL,1048
-1052,"HNGD",NULL,1048
-1053,"HNGE",NULL,1048
-1054,"Victoria Ward","Polling District",964
-1055,"HSSA",NULL,1054
-1056,"HSSB",NULL,1054
-1057,"HSSC",NULL,1054
-1058,"HSSD",NULL,1054
-1059,"Woodberry Down Ward","Polling District",964
-1060,"HNAA",NULL,1059
-1061,"HNAB",NULL,1059
-1062,"HNAC",NULL,1059
-1063,"Hammersmith and Fulhum","Council Ward",11
-1064,"Addison Ward",NULL,1063
-1065,"ADA",NULL,1064
-1066,"ADB",NULL,1064
-1067,"ADC",NULL,1064
-1068,"ADD","Polling District",1064
-1069,"Askew Ward",NULL,1063
-1070,"ASA",NULL,1069
-1071,"ASB",NULL,1069
-1072,"ASC","Polling District",1069
-1073,"Avonmore and Brook Green Ward",NULL,1063
-1074,"ABA",NULL,1073
-1075,"ABB",NULL,1073
-1076,"ABC",NULL,1073
-1077,"ABD","Polling District",1073
-1078,"College Park and Old Oak Ward",NULL,1063
-1079,"CPA",NULL,1078
-1080,"CPB",NULL,1078
-1081,"CPC",NULL,1078
-1082,"CPD",NULL,1078
-1083,"CPE",NULL,1078
-1084,"CPF","Polling District",1078
-1085,"Fulham Broadway Ward",NULL,1063
-1086,"FBA",NULL,1085
-1087,"FBB",NULL,1085
-1088,"FBC","Polling District",1085
-1089,"Fulham Reach Ward",NULL,1063
-1090,"FRA",NULL,1089
-1091,"FRB",NULL,1089
-1092,"FRC",NULL,1089
-1093,"FRD","Polling District",1089
-1094,"Hammersmith Broadway Ward",NULL,1063
-1095,"HBA",NULL,1094
-1096,"HBB",NULL,1094
-1097,"HBC",NULL,1094
-1098,"HBD","Polling District",1094
-1099,"Munster Ward",NULL,1063
-1100,"MUA",NULL,1099
-1101,"MUB",NULL,1099
-1102,"MUC",NULL,1099
-1103,"MUD","Polling District",1099
-1104,"North End Ward",NULL,1063
-1105,"NEA",NULL,1104
-1106,"NEB",NULL,1104
-1107,"NEC","Polling District",1104
-1108,"Palace Riverside Ward",NULL,1063
-1109,"PRA",NULL,1108
-1110,"PRB",NULL,1108
-1111,"PRC","Polling District",1108
-1112,"Parsons Green and Walham Ward",NULL,1063
-1113,"PGA",NULL,1112
-1114,"PGB",NULL,1112
-1115,"PGC",NULL,1112
-1116,"PGD","Polling District",1112
-1117,"Ravenscourt Park Ward",NULL,1063
-1118,"RPA",NULL,1117
-1119,"RPB",NULL,1117
-1120,"RPC",NULL,1117
-1121,"RPD",NULL,1117
-1122,"RPE","Polling District",1117
-1123,"Sands End Ward",NULL,1063
-1124,"SEA",NULL,1123
-1125,"SEB",NULL,1123
-1126,"SEC",NULL,1123
-1127,"SED","Polling District",1123
-1128,"Shepherds Bush Green Ward",NULL,1063
-1129,"SBA",NULL,1128
-1130,"SBB",NULL,1128
-1131,"SBC",NULL,1128
-1132,"SBD","Polling District",1128
-1133,"Town Ward",NULL,1063
-1134,"TWA",NULL,1133
-1135,"TWB",NULL,1133
-1136,"TWC","Polling District",1133
-1137,"Wormholt and White City Ward",NULL,1063
-1138,"WWA",NULL,1137
-1139,"WWB",NULL,1137
-1140,"WWC","Polling District",1137
-1141,"Haringey","Council Ward",11
-1142,"Harrow","Council Ward",11
-1143,"Havering","Council Ward",11
-1144,"Hillingdon","Council Ward",11
-1145,"Hounslow","Council Ward",11
-1146,"Islington","Council Ward",11
-1147,"Kensington and Chelsea","Council Ward",11
-1148,"Kingston upon Thames","Council Ward",11
-1149,"Lambeth","Council Ward",11
-1150,"Lewisham","Council Ward",11
-1151,"Merton","Council Ward",11
-1152,"Newham","Council Ward",11
-1153,"Redbridge","Council Ward",11
-1154,"Richmond upon Thames","Council Ward",11
-1155,"Southwark","Council Ward",11
-1156,"Sutton","Council Ward",11
-1157,"Tower Hamlets","Council Ward",1156
-1158,"Bethnal Green Ward","Polling District",1157
-1159,"BG1",NULL,1158
-1160,"BG2",NULL,1158
-1161,"BG3",NULL,1158
-1162,"BG4",NULL,1158
-1163,"BG5",NULL,1158
-1164,"Blackwall and Cubitt Town Ward","Polling District",1157
-1165,"BC1",NULL,1164
-1166,"BC2",NULL,1164
-1167,"BC3",NULL,1164
-1168,"BC4",NULL,1164
-1169,"Bow East Ward","Polling District",1157
-1170,"BE1",NULL,1169
-1171,"BE2",NULL,1169
-1172,"BE3",NULL,1169
-1173,"BE4",NULL,1169
-1174,"BE5",NULL,1169
-1175,"Bow West Ward","Polling District",1157
-1176,"BW1",NULL,1175
-1177,"BW2",NULL,1175
-1178,"BW3",NULL,1175
-1179,"Bromley North Ward","Polling District",1157
-1180,"BN1",NULL,1179
-1181,"BN2",NULL,1179
-1182,"BN3",NULL,1179
-1183,"Bromley South Ward","Polling District",1157
-1184,"BS1",NULL,1183
-1185,"BS2",NULL,1183
-1186,"BS3",NULL,1183
-1187,"Canary Wharf Ward","Polling District",1157
-1188,"CW1",NULL,1187
-1189,"CW2",NULL,1187
-1190,"CW3",NULL,1187
-1191,"Island Gardens Ward","Polling District",1157
-1192,"IG1",NULL,1191
-1193,"IG2",NULL,1191
-1194,"IG3",NULL,1191
-1195,"Lansbury Ward","Polling District",1157
-1196,"LA1",NULL,1195
-1197,"LA2",NULL,1195
-1198,"LA3",NULL,1195
-1199,"LA4",NULL,1195
-1200,"LA5",NULL,1195
-1201,"Limehouse Ward","Polling District",1157
-1202,"LI1",NULL,1201
-1203,"LI2",NULL,1201
-1204,"Mile End Ward","Polling District",1157
-1205,"ME1",NULL,1204
-1206,"ME2",NULL,1204
-1207,"ME3",NULL,1204
-1208,"ME4",NULL,1204
-1209,"ME5",NULL,1204
-1210,"Poplar Ward","Polling District",1157
-1211,"PO1",NULL,1210
-1212,"PO2",NULL,1210
-1213,"Shadwell Ward","Polling District",1157
-1214,"SH1",NULL,1213
-1215,"SH2",NULL,1213
-1216,"SH3",NULL,1213
-1217,"Spitalfields and Banglatown Ward","Polling District",1157
-1218,"SB1",NULL,1217
-1219,"SB2",NULL,1217
-1220,"SB3",NULL,1217
-1221,"St. Dunstan`s Ward","Polling District",1157
-1222,"SD1",NULL,1221
-1223,"SD2",NULL,1221
-1224,"SD3",NULL,1221
-1225,"SD4",NULL,1221
-1226,"St. Katharine`s and Wapping Ward","Polling District",1157
-1227,"SK{4}",NULL,1226
-1228,"St. Peter`s Ward","Polling District",1157
-1229,"SP1",NULL,1228
-1230,"SP2",NULL,1228
-1231,"SP3",NULL,1228
-1232,"SP4",NULL,1228
-1233,"Stepney Green Ward","Polling District",1157
-1234,"SG1",NULL,1233
-1235,"SG2",NULL,1233
-1236,"SG3",NULL,1233
-1237,"Weavers Ward","Polling District",1157
-1238,"WE1",NULL,1237
-1239,"WE2",NULL,1237
-1240,"WE3",NULL,1237
-1241,"Whitechapel Ward","Polling District",1157
-1242,"WH1",NULL,1241
-1243,"WH2",NULL,1241
-1244,"WH3",NULL,1241
-1245,"WH4",NULL,1241
-1246,"WH5P",NULL,1241
-1247,"Waltham Forest","Council Ward",11
-1248,"Wandsworth","Council Ward",11
-1249,"Westminster","Council Ward",11
-1250,"Kensington and Chelsea","Council Ward",11
-1251,"Kingston upon Thames","Council Ward",11
-1252,"Lambeth","Council Ward",11
-1253,"Lewisham","Council Ward",11
-1254,"Merton","Council Ward",11
-1255,"Newham","Council Ward",11
-1256,"Redbridge","Council Ward",11
-1257,"Richmond upon Thames","Council Ward",11
-1258,"Southwark","Council Ward",11
-1259,"Sutton","Council Ward",11
-1260,"Tower Hamlets","Council Ward",11
-1261,"Bethnal Green Ward","Polling District",1260
-1262,"BG1",NULL,1261
-1263,"BG2",NULL,1261
-1264,"BG3",NULL,1261
-1265,"BG4",NULL,1261
-1266,"BG5",NULL,1261
-1267,"Blackwall and Cubitt Town Ward","Polling District",1260
-1268,"BC1",NULL,1267
-1269,"BC2",NULL,1267
-1270,"BC3",NULL,1267
-1271,"BC4",NULL,1267
-1272,"Bow East Ward","Polling District",1260
-1273,"BE1",NULL,1272
-1274,"BE2",NULL,1272
-1275,"BE3",NULL,1272
-1276,"BE4",NULL,1272
-1277,"BE5",NULL,1272
-1278,"Bow West Ward","Polling District",1260
-1279,"BW1",NULL,1278
-1280,"BW2",NULL,1278
-1281,"BW3",NULL,1278
-1282,"Bromley North Ward","Polling District",1260
-1283,"BN1",NULL,1282
-1284,"BN2",NULL,1282
-1285,"BN3",NULL,1282
-1286,"Bromley South Ward","Polling District",1260
-1287,"BS1",NULL,1286
-1288,"BS2",NULL,1286
-1289,"BS3",NULL,1286
-1290,"Canary Wharf Ward","Polling District",1260
-1291,"CW1",NULL,1290
-1292,"CW2",NULL,1290
-1293,"CW3",NULL,1290
-1294,"Island Gardens Ward","Polling District",1260
-1295,"IG1",NULL,1294
-1296,"IG2",NULL,1294
-1297,"IG3",NULL,1294
-1298,"Lansbury Ward","Polling District",1260
-1299,"LA1",NULL,1298
-1300,"LA2",NULL,1298
-1301,"LA3",NULL,1298
-1302,"LA4",NULL,1298
-1303,"LA5",NULL,1298
-1304,"Limehouse Ward","Polling District",1260
-1305,"LI1",NULL,1304
-1306,"LI2",NULL,1304
-1307,"Mile End Ward","Polling District",1260
-1308,"ME1",NULL,1307
-1309,"ME2",NULL,1307
-1310,"ME3",NULL,1307
-1311,"ME4",NULL,1307
-1312,"ME5",NULL,1307
-1313,"Poplar Ward","Polling District",1260
-1314,"PO1",NULL,1313
-1315,"PO2",NULL,1313
-1316,"Shadwell Ward","Polling District",1260
-1317,"SH1",NULL,1316
-1318,"SH2",NULL,1316
-1319,"SH3",NULL,1316
-1320,"Spitalfields and Banglatown Ward","Polling District",1260
-1321,"SB1",NULL,1320
-1322,"SB2",NULL,1320
-1323,"SB3",NULL,1320
-1324,"St. Dunstan`s Ward","Polling District",1260
-1325,"SD1",NULL,1324
-1326,"SD2",NULL,1324
-1327,"SD3",NULL,1324
-1328,"SD4",NULL,1324
-1329,"St. Katharine`s and Wapping Ward","Polling District",1260
-1330,"SK{4}",NULL,1329
-1331,"St. Peter`s Ward","Polling District",1260
-1332,"SP1",NULL,1331
-1333,"SP2",NULL,1331
-1334,"SP3",NULL,1331
-1335,"SP4",NULL,1331
-1336,"Stepney Green Ward","Polling District",1260
-1337,"SG1",NULL,1336
-1338,"SG2",NULL,1336
-1339,"SG3",NULL,1336
-1340,"Weavers Ward","Polling District",1260
-1341,"WE1",NULL,1340
-1342,"WE2",NULL,1340
-1343,"WE3",NULL,1340
-1344,"Whitechapel Ward","Polling District",1260
-1345,"WH1",NULL,1344
-1346,"WH2",NULL,1344
-1347,"WH3",NULL,1344
-1348,"WH4",NULL,1344
-1349,"WH5P",NULL,1344
-1350,"Waltham Forest","Council Ward",11
-1351,"Wandsworth","Council Ward",11
-1352,"Westminster","Council Ward",11
-1353,"Metropolitan Borough","Borough",2
-1354,"Barnsley","Ward",1353
-1355,"Birmingham","Ward",1353
-1356,"Bolton","Ward",1353
-1357,"Bradford","Ward",1353
-1358,"Bury","Ward",1353
-1359,"Calderdale","Ward",1353
-1360,"Coventry","Ward",1353
-1361,"Doncaster","Ward",1353
-1362,"Dudley","Ward",1353
-1363,"Gateshead","Ward",1353
-1364,"Kirklees","Ward",1353
-1365,"Knowsley","Ward",1353
-1366,"Leeds","Ward",1353
-1367,"Liverpool","Ward",1353
-1368,"Manchester","Ward",1353
-1369,"Newcastle upon Tyne","Ward",1353
-1370,"North Tyneside","Ward",1353
-1371,"Oldham","Ward",1353
-1372,"Rochdale","Ward",1353
-1373,"Rotherham","Ward",1353
-1374,"St. Helens","Ward",1353
-1375,"Salford","Ward",1353
-1376,"Sandwell","Ward",1353
-1377,"Sefton","Ward",1353
-1378,"Sheffield","Ward",1353
-1379,"Solihull","Ward",1353
-1380,"South Tyneside","Ward",1353
-1381,"Stockport","Ward",1353
-1382,"Sunderland","Ward",1353
-1383,"Tameside","Ward",1353
-1384,"Trafford","Ward",1353
-1385,"Wakefield","Ward",1353
-1386,"Walsall","Ward",1353
-1387,"Wigan","Ward",1353
-1388,"Wirral","Ward",1353
-1389,"Wolverhampton","Ward",1353
-1390,"Unitary Authority","Authority",2
-1391,"Milton Keynes","Ward",1390
-1392,"Slough","Ward",1390
-1393,"Blackburn with Darwen","Ward",1390
-1394,"Bristol","Ward",1390
-1395,"Derby","Ward",1390
-1396,"Halton","Ward",1390
-1397,"Hartlepool","Ward",1390
-1398,"Kingston upon Hull","Ward",1390
-1399,"North East Lincolnshire","Ward",1390
-1400,"Peterborough","Ward",1390
-1401,"Plymouth","Ward",1390
-1402,"Portsmouth","Ward",1390
-1403,"Reading","Ward",1390
-1404,"Southampton","Ward",1390
-1405,"Southend-on-Sea","Ward",1390
-1406,"Swindon","Ward",1390
-1407,"Thurrock","Ward",1390
-1408,"Warrington","Ward",1390
-1409,"Wokingham","Ward",1390
-1410,"Non-Metropolitan District","District",2
-1411,"Hart","Ward",1410
-1412,"Three Rivers","Ward",1410
-1413,"Adur","Ward",1410
-1414,"Cheltenham","Ward",1410
-1415,"Fareham","Ward",1410
-1416,"Gosport","Ward",1410
-1417,"Hastings","Ward",1410
-1418,"Nuneaton and Bedworth","Ward",1410
-1419,"Oxford","Ward",1410
-1420,"Amber Valley","Ward",1410
-1421,"Basildon","Ward",1410
-1422,"Basingstoke and Deane","Ward",1410
-1423,"Bassetlaw","Ward",1410
-1424,"Brentwood","Ward",1410
-1425,"Broxbourne","Ward",1410
-1426,"Burnley","Ward",1410
-1427,"Cambridge","Ward",1410
-1428,"Cannock Chase","Ward",1410
-1429,"City of Carlisle","Ward",1410
-1430,"Castle Point","Ward",1410
-1431,"Cherwell","Ward",1410
-1432,"Chorley","Ward",1410
-1433,"Colchester","Ward",1410
-1434,"Craven","Ward",1410
-1435,"Crawley","Ward",1410
-1436,"Daventry","Ward",1410
-1437,"Eastleigh","Ward",1410
-1438,"Elmbridge","Ward",1410
-1439,"Epping Forest","Ward",1410
-1440,"Exeter","Ward",1410
-1441,"Gloucester","Ward",1410
-1442,"Great Yarmouth","Ward",1410
-1443,"Harlow","Ward",1410
-1444,"Harrogate","Ward",1410
-1445,"Havant","Ward",1410
-1446,"Hertsmere","Ward",1410
-1447,"Huntingdonshire","Ward",1410
-1448,"Hyndburn","Ward",1410
-1449,"Ipswich","Ward",1410
-1450,"Lincoln","Ward",1410
-1451,"Maidstone","Ward",1410
-1452,"Mole Valley","Ward",1410
-1453,"Newcastle-under-Lyme","Ward",1410
-1454,"North Hertfordshire","Ward",1410
-1455,"Norwich","Ward",1410
-1456,"Pendle","Ward",1410
-1457,"Preston","Ward",1410
-1458,"Purbeck","Ward",1410
-1459,"Redditch","Ward",1410
-1460,"Reigate and Banstead","Ward",1410
-1461,"Rochford","Ward",1410
-1462,"Rossendale","Ward",1410
-1463,"Rugby","Ward",1410
-1464,"Runnymede","Ward",1410
-1465,"Rushmoor","Ward",1410
-1466,"St Albans","Ward",1410
-1467,"South Cambridgeshire","Ward",1410
-1468,"South Lakeland","Ward",1410
-1469,"Stevenage","Ward",1410
-1470,"Stratford-on-Avon","Ward",1410
-1471,"Stroud","Ward",1410
-1472,"Tamworth","Ward",1410
-1473,"Tandridge","Ward",1410
-1474,"Tunbridge Wells","Ward",1410
-1475,"Watford","Ward",1410
-1476,"Welwyn Hatfield","Ward",1410
-1477,"West Lancashire","Ward",1410
-1478,"West Oxfordshire","Ward",1410
-1479,"Weymouth and Portland","Ward",1410
-1480,"Winchester","Ward",1410
-1481,"Woking","Ward",1410
-1482,"Worcester","Ward",1410
-1483,"Worthing","Ward",1410
-1484,"Wyre Forest","Ward",1410
-1485,"European","Region",2
-1486,"East Midlands","Division",1485
-1487,"East of England","Division",1485
-1488,"London","Division",1485
-1489,"North East England","Division",1485
-1490,"North West England","Division",1485
-1491,"South East England","Division",1485
-1492,"South West England","Division",1485
-1493,"West Midlands","Division",1485
-1494,"Yorkshire and the Humber","Division",1485
-1495,"Scotland","Election",1
-1496,"European","Division",1495
-1497,"Wales","Election",1
-1498,"European","Division",1497
+11,"Barking and Dagenham","Council Ward",10
+12,"Abbey Ward","Polling District",11
+13,"AA",NULL,12
+14,"AB",NULL,12
+15,"AC",NULL,12
+16,"AD",NULL,12
+17,"Alibon Ward","Polling District",11
+18,"KA",NULL,17
+19,"KB",NULL,17
+20,"KC",NULL,17
+21,"KD",NULL,17
+22,"Becontree Ward","Polling District",11
+23,"VA",NULL,22
+24,"VB",NULL,22
+25,"VC",NULL,22
+26,"VD",NULL,22
+27,"Chadwell Heath Ward","Polling District",11
+28,"QA",NULL,27
+29,"QB",NULL,27
+30,"QC",NULL,27
+31,"QD",NULL,27
+32,"Eastbrook Ward","Polling District",11
+33,"MA",NULL,32
+34,"MB",NULL,32
+35,"MC",NULL,32
+36,"Eastbury Ward","Polling District",11
+37,"CA",NULL,36
+38,"CB",NULL,36
+39,"CC",NULL,36
+40,"CD",NULL,36
+41,"Gascoigne Ward","Polling District",11
+42,"DA",NULL,41
+43,"DB",NULL,41
+44,"DC",NULL,41
+45,"DD",NULL,41
+46,"Goresbrook Ward","Polling District",11
+47,"EA",NULL,46
+48,"EB",NULL,46
+49,"EC",NULL,46
+50,"ED",NULL,46
+51,"Heath Ward","Polling District",11
+52,"PA",NULL,51
+53,"PB",NULL,51
+54,"PC",NULL,51
+55,"PD",NULL,51
+56,"Longbridge Ward","Polling District",11
+57,"FA",NULL,56
+58,"FB",NULL,56
+59,"FC",NULL,56
+60,"FD",NULL,56
+61,"Mayesbrook Ward","Polling District",11
+62,"HA",NULL,61
+63,"HB",NULL,61
+64,"HC",NULL,61
+65,"HD",NULL,61
+66,"Parsloes Ward","Polling District",11
+67,"NA",NULL,66
+68,"NB",NULL,66
+69,"NC",NULL,66
+70,"ND",NULL,66
+71,"River Ward","Polling District",11
+72,"RA",NULL,71
+73,"RB",NULL,71
+74,"RC",NULL,71
+75,"RD",NULL,71
+76,"Thames Ward","Polling District",11
+77,"JA",NULL,76
+78,"JB",NULL,76
+79,"JC",NULL,76
+80,"JD",NULL,76
+81,"Valence Ward","Polling District",11
+82,"TA",NULL,81
+83,"TB",NULL,81
+84,"TC",NULL,81
+85,"TD",NULL,81
+86,"Village Ward","Polling District",11
+87,"UA",NULL,86
+88,"UB",NULL,86
+89,"UC",NULL,86
+90,"UD",NULL,86
+91,"Whalebone Ward","Polling District",11
+92,"LA",NULL,91
+93,"LB",NULL,91
+94,"LC",NULL,91
+95,"LD",NULL,91
+96,"Barnet","Council Ward",10
+97,"Brunswick Park Ward","Polling District",96
+98,"Burnt Oak Ward","Polling District",96
+99,"Childs Hill Ward","Polling District",96
+100,"Colindale Ward","Polling District",96
+101,"Coppetts Ward","Polling District",96
+102,"East Barnet Ward","Polling District",96
+103,"East Finchley Ward","Polling District",96
+104,"Edgware Ward","Polling District",96
+105,"Finchley-Church End Ward","Polling District",96
+106,"Garden Suburb Ward","Polling District",96
+107,"Golders Green Ward","Polling District",96
+108,"Hale Ward","Polling District",96
+109,"Hendon Ward","Polling District",96
+110,"High Barnet Ward","Polling District",96
+111,"Mill Hill Ward","Polling District",96
+112,"Oakleigh Ward","Polling District",96
+113,"Totteridge Ward","Polling District",96
+114,"Underhill Ward","Polling District",96
+115,"West Finchley Ward","Polling District",96
+116,"West Hendon Ward","Polling District",96
+117,"Woodhouse Ward","Polling District",96
+118,"Bexley","Council Ward",10
+119,"Barnehurst Ward","Polling District",118
+120,"BH1B",NULL,119
+121,"BH2B",NULL,119
+122,"BH3B",NULL,119
+123,"BH4B",NULL,119
+124,"BH5B",NULL,119
+125,"BH6B",NULL,119
+126,"Belvedere Ward","Polling District",118
+127,"BV1E",NULL,126
+128,"BV2E",NULL,126
+129,"BV3E",NULL,126
+130,"BV4E",NULL,126
+131,"BV5E",NULL,126
+132,"Blackfen and Lamorbey Ward","Polling District",118
+133,"BL1S",NULL,132
+134,"BL2S",NULL,132
+135,"BL3S",NULL,132
+136,"BL4S",NULL,132
+137,"Blendon and Penhill Ward","Polling District",118
+138,"BP1S",NULL,137
+139,"BP2S",NULL,137
+140,"BP3S",NULL,137
+141,"BP4S",NULL,137
+142,"Brampton Ward","Polling District",118
+143,"BR1B",NULL,142
+144,"BR2B",NULL,142
+145,"BR3B",NULL,142
+146,"BR4B",NULL,142
+147,"Christchurch Ward","Polling District",118
+148,"CC1B",NULL,147
+149,"CC2B",NULL,147
+150,"CC3B",NULL,147
+151,"CC4B",NULL,147
+152,"CC5B",NULL,147
+153,"CC6B",NULL,147
+154,"Colyers Ward","Polling District",118
+155,"CL1B",NULL,154
+156,"CL2B",NULL,154
+157,"CL3B",NULL,154
+158,"CL4B",NULL,154
+159,"Cray Meadows Ward","Polling District",118
+160,"CM1S",NULL,159
+161,"CM2S",NULL,159
+162,"CM3S",NULL,159
+163,"CM4S",NULL,159
+164,"CM5S",NULL,159
+165,"CM6S",NULL,159
+166,"Crayford Ward","Polling District",118
+167,"CY1B",NULL,166
+168,"CY2B",NULL,166
+169,"CY3B",NULL,166
+170,"CY4B",NULL,166
+171,"CY5B",NULL,166
+172,"Danson Park Ward","Polling District",118
+173,"DP1B",NULL,172
+174,"DP2B",NULL,172
+175,"DP3B",NULL,172
+176,"DP4B",NULL,172
+177,"DP5B",NULL,172
+178,"East Wickham Ward","Polling District",118
+179,"EW1S",NULL,178
+180,"EW2S",NULL,178
+181,"EW3S",NULL,178
+182,"EW4S",NULL,178
+183,"Erith Ward","Polling District",118
+184,"ER1E",NULL,183
+185,"ER2E",NULL,183
+186,"ER3E",NULL,183
+187,"ER4E",NULL,183
+188,"ER5E",NULL,183
+189,"Falconwood and Welling Ward","Polling District",118
+190,"FW1S",NULL,189
+191,"FW2S",NULL,189
+192,"FW3S",NULL,189
+193,"FW4S",NULL,189
+194,"FW5S",NULL,189
+195,"Lesnes Abbey Ward","Polling District",118
+196,"LA1E",NULL,195
+197,"LA2E",NULL,195
+198,"LA3E",NULL,195
+199,"LA4E",NULL,195
+200,"LA5E",NULL,195
+201,"Longlands Ward","Polling District",118
+202,"LL1S",NULL,201
+203,"LL2S",NULL,201
+204,"LL3S",NULL,201
+205,"LL4S",NULL,201
+206,"LL5S",NULL,201
+207,"North End Ward","Polling District",118
+208,"NE1B",NULL,207
+209,"NE2B",NULL,207
+210,"NE3B",NULL,207
+211,"NE4B",NULL,207
+212,"NE5B",NULL,207
+213,"Northumberland Heath Ward","Polling District",118
+214,"NH1E",NULL,213
+215,"NH2E",NULL,213
+216,"NH3E",NULL,213
+217,"NH4E",NULL,213
+218,"NH5E",NULL,213
+219,"Sidcup Ward","Polling District",118
+220,"SP1S",NULL,219
+221,"SP2S",NULL,219
+222,"SP3S",NULL,219
+223,"SP4S",NULL,219
+224,"SP5S",NULL,219
+225,"SP6S",NULL,219
+226,"St Mary's Ward","Polling District",118
+227,"ST1S",NULL,226
+228,"ST2S",NULL,226
+229,"ST3S",NULL,226
+230,"ST4S",NULL,226
+231,"ST5S",NULL,226
+232,"St Michael's Ward","Polling District",118
+233,"SM1B",NULL,232
+234,"SM2B",NULL,232
+235,"SM3B",NULL,232
+236,"Thamesmead East Ward","Polling District",118
+237,"TE1E",NULL,236
+238,"TE2E",NULL,236
+239,"TE3E",NULL,236
+240,"TE4E",NULL,236
+241,"TE5E",NULL,236
+242,"Brent","Council Ward",10
+243,"Alperton Ward","Polling District",242
+244,"NAL1",NULL,243
+245,"NAL2",NULL,243
+246,"NAL3",NULL,243
+247,"NAL4",NULL,243
+248,"Barnhill Ward","Polling District",242
+249,"NBA1",NULL,248
+250,"NBA2",NULL,248
+251,"NBA3",NULL,248
+252,"NBA4",NULL,248
+253,"NBA5",NULL,248
+254,"NBA6",NULL,248
+255,"Brondesbury Park Ward","Polling District",242
+256,"HBP1",NULL,255
+257,"HBP2",NULL,255
+258,"HBP3",NULL,255
+259,"HBP4",NULL,255
+260,"HBP5",NULL,255
+261,"Dollis Hill Ward","Polling District",242
+262,"CDO1",NULL,261
+263,"CDO2",NULL,261
+264,"CDO3",NULL,261
+265,"CDO4",NULL,261
+266,"Dudden Hill Ward","Polling District",242
+267,"CDU1",NULL,266
+268,"CDU2",NULL,266
+269,"CDU3",NULL,266
+270,"CDU4",NULL,266
+271,"CDU5",NULL,266
+272,"CDU6",NULL,266
+273,"Fryent Ward","Polling District",242
+274,"NFR1",NULL,273
+275,"NFR2",NULL,273
+276,"NFR3",NULL,273
+277,"NFR4",NULL,273
+278,"NFR5",NULL,273
+279,"NFR6",NULL,273
+280,"NFR7",NULL,273
+281,"Harlesden Ward","Polling District",242
+282,"CHA1",NULL,281
+283,"CHA2",NULL,281
+284,"CHA3",NULL,281
+285,"CHA4",NULL,281
+286,"CHA5",NULL,281
+287,"Kensal Green Ward","Polling District",242
+288,"CKG1",NULL,287
+289,"CKG2",NULL,287
+290,"CKG3",NULL,287
+291,"CKG4",NULL,287
+292,"CKG5",NULL,287
+293,"CKG6",NULL,287
+294,"Kenton Ward","Polling District",242
+295,"NKE1",NULL,294
+296,"NKE2",NULL,294
+297,"NKE3",NULL,294
+298,"NKE4",NULL,294
+299,"NKE5",NULL,294
+300,"Kilburn Ward","Polling District",242
+301,"HKI1",NULL,300
+302,"HKI2",NULL,300
+303,"HKI3",NULL,300
+304,"HKI4",NULL,300
+305,"HKI5",NULL,300
+306,"Mapesbury Ward","Polling District",242
+307,"CMA1",NULL,306
+308,"CMA2",NULL,306
+309,"CMA3",NULL,306
+310,"CMA4",NULL,306
+311,"CMA5",NULL,306
+312,"Northwick Park Ward","Polling District",242
+313,"NNP1",NULL,312
+314,"NNP2",NULL,312
+315,"NNP3",NULL,312
+316,"NNP4",NULL,312
+317,"NNP5",NULL,312
+318,"Preston Ward","Polling District",242
+319,"NPR1",NULL,318
+320,"NPR2",NULL,318
+321,"NPR3",NULL,318
+322,"NPR4",NULL,318
+323,"Queen’s Park Ward","Polling District",242
+324,"HQP1",NULL,323
+325,"HQP2",NULL,323
+326,"HQP3",NULL,323
+327,"HQP4",NULL,323
+328,"HQP5",NULL,323
+329,"Queensbury Ward","Polling District",242
+330,"NQY1",NULL,329
+331,"NQY2",NULL,329
+332,"NQY3",NULL,329
+333,"NQY4",NULL,329
+334,"NQY5",NULL,329
+335,"NQY6",NULL,329
+336,"Stonebridge Ward","Polling District",242
+337,"CST1",NULL,336
+338,"CST2",NULL,336
+339,"CST3",NULL,336
+340,"CST4",NULL,336
+341,"CST5",NULL,336
+342,"CST6",NULL,336
+343,"Sudbury Ward","Polling District",242
+344,"NSU1",NULL,343
+345,"NSU2",NULL,343
+346,"NSU3",NULL,343
+347,"NSU4",NULL,343
+348,"NSU5",NULL,343
+349,"Tokyngton Ward","Polling District",242
+350,"CTO1",NULL,349
+351,"CTO2",NULL,349
+352,"CTO3",NULL,349
+353,"CTO4",NULL,349
+354,"CTO5",NULL,349
+355,"Welsh Harp Ward","Polling District",242
+356,"CWH1",NULL,355
+357,"CWH2",NULL,355
+358,"CWH3",NULL,355
+359,"CWH4",NULL,355
+360,"CWH5",NULL,355
+361,"CWH6",NULL,355
+362,"CWH7",NULL,355
+363,"Wembley Central Ward","Polling District",242
+364,"NWC1",NULL,363
+365,"NWC2",NULL,363
+366,"NWC3",NULL,363
+367,"NWC4",NULL,363
+368,"Willesden Green Ward","Polling District",242
+369,"CWG1",NULL,368
+370,"CWG2",NULL,368
+371,"CWG3",NULL,368
+372,"Bromley","Council Ward",10
+373,"Bickley Ward","Polling District",372
+374,"BK1",NULL,373
+375,"BK2",NULL,373
+376,"BK3",NULL,373
+377,"BK4",NULL,373
+378,"BK5",NULL,373
+379,"BK6",NULL,373
+380,"Biggin Hill Ward","Polling District",372
+381,"BH1",NULL,380
+382,"BH2",NULL,380
+383,"BH3",NULL,380
+384,"Bromley Common & Keston Ward","Polling District",372
+385,"BC1",NULL,384
+386,"BC2",NULL,384
+387,"BC3",NULL,384
+388,"BC4",NULL,384
+389,"BC5",NULL,384
+390,"Bromley Town Ward","Polling District",372
+391,"BT1",NULL,390
+392,"BT2",NULL,390
+393,"BT3",NULL,390
+394,"BT4",NULL,390
+395,"BT5",NULL,390
+396,"BT6",NULL,390
+397,"BT7",NULL,390
+398,"Chelsfield & Pratts Bottom Ward","Polling District",372
+399,"CB1",NULL,398
+400,"CB2",NULL,398
+401,"CB3",NULL,398
+402,"CB4",NULL,398
+403,"CB5",NULL,398
+404,"CB6",NULL,398
+405,"Chislehurst Ward","Polling District",372
+406,"CH1",NULL,405
+407,"CH2",NULL,405
+408,"CH3",NULL,405
+409,"CH4",NULL,405
+410,"CH5",NULL,405
+411,"Clock House Ward","Polling District",372
+412,"CL1",NULL,411
+413,"CL2",NULL,411
+414,"CL3",NULL,411
+415,"CL4",NULL,411
+416,"CL5",NULL,411
+417,"Copers Cope Ward","Polling District",372
+418,"CC1",NULL,417
+419,"CC2",NULL,417
+420,"CC3",NULL,417
+421,"Cray Valley East Ward","Polling District",372
+422,"CE1",NULL,421
+423,"CE2",NULL,421
+424,"CE3",NULL,421
+425,"CE4",NULL,421
+426,"CE5",NULL,421
+427,"CE6",NULL,421
+428,"Cray Valley West Ward","Polling District",372
+429,"CW1",NULL,428
+430,"CW2",NULL,428
+431,"CW3",NULL,428
+432,"CW4",NULL,428
+433,"Crystal Palace Ward","Polling District",372
+434,"CP1",NULL,433
+435,"CP2",NULL,433
+436,"CP3",NULL,433
+437,"CP4",NULL,433
+438,"Darwin Ward","Polling District",372
+439,"DA1",NULL,438
+440,"DA2",NULL,438
+441,"DA3",NULL,438
+442,"DA4",NULL,438
+443,"DA5",NULL,438
+444,"DA6",NULL,438
+445,"DA7",NULL,438
+446,"Farnborough & Crofton Ward","Polling District",372
+447,"FC1",NULL,446
+448,"FC2",NULL,446
+449,"FC3",NULL,446
+450,"FC4",NULL,446
+451,"FC5",NULL,446
+452,"FC6",NULL,446
+453,"Hayes & Coney Hall Ward","Polling District",372
+454,"HA1",NULL,453
+455,"HA2",NULL,453
+456,"HA3",NULL,453
+457,"HA4",NULL,453
+458,"HA5",NULL,453
+459,"HA6",NULL,453
+460,"Kelsey and Eden Park Ward","Polling District",372
+461,"KP1",NULL,460
+462,"KP2",NULL,460
+463,"KP3",NULL,460
+464,"KP4",NULL,460
+465,"Mottingham & Chislehurst North Ward","Polling District",372
+466,"MO1",NULL,465
+467,"MO2",NULL,465
+468,"MO3",NULL,465
+469,"MO4",NULL,465
+470,"Orpington Ward","Polling District",372
+471,"OR1",NULL,470
+472,"OR2",NULL,470
+473,"OR3",NULL,470
+474,"OR4",NULL,470
+475,"OR5",NULL,470
+476,"Penge and Cator Ward","Polling District",372
+477,"PE1",NULL,476
+478,"PE2",NULL,476
+479,"PE3",NULL,476
+480,"PE4",NULL,476
+481,"PE5",NULL,476
+482,"PE6",NULL,476
+483,"Petts Wood & Knoll Ward","Polling District",372
+484,"PW1",NULL,483
+485,"PW2",NULL,483
+486,"PW3",NULL,483
+487,"PW4",NULL,483
+488,"Plaistow & Sundridge Ward","Polling District",372
+489,"PS1",NULL,488
+490,"PS2",NULL,488
+491,"PS3",NULL,488
+492,"PS4",NULL,488
+493,"PS5",NULL,488
+494,"Shortlands Ward","Polling District",372
+495,"SH1",NULL,494
+496,"SH2",NULL,494
+497,"SH3",NULL,494
+498,"SH4",NULL,494
+499,"West Wickham Ward","Polling District",372
+500,"WW1",NULL,499
+501,"WW2",NULL,499
+502,"WW3",NULL,499
+503,"WW4",NULL,499
+504,"Camden","Council Ward",10
+505,"Belsize Ward","Polling District",504
+506,"HA",NULL,505
+507,"HB",NULL,505
+508,"HC",NULL,505
+509,"Bloomsbury Ward","Polling District",504
+510,"QA",NULL,509
+511,"QB",NULL,509
+512,"QC",NULL,509
+513,"QD",NULL,509
+514,"Camden Town with Primrose Hill Ward","Polling District",504
+515,"MA",NULL,514
+516,"MB",NULL,514
+517,"MC",NULL,514
+518,"MD",NULL,514
+519,"Cantelowes Ward","Polling District",504
+520,"KA",NULL,519
+521,"KB",NULL,519
+522,"KC",NULL,519
+523,"Fortune Green Ward","Polling District",504
+524,"DA",NULL,523
+525,"DB",NULL,523
+526,"DC",NULL,523
+527,"Frognal and Fitzjohns Ward","Polling District",504
+528,"CA",NULL,527
+529,"CB",NULL,527
+530,"CC",NULL,527
+531,"Gospel Oak Ward","Polling District",504
+532,"IA",NULL,531
+533,"IB",NULL,531
+534,"IC",NULL,531
+535,"Hampstead Town Ward","Polling District",504
+536,"AA",NULL,535
+537,"AB",NULL,535
+538,"AC",NULL,535
+539,"Haverstock Ward","Polling District",504
+540,"LA",NULL,539
+541,"LB",NULL,539
+542,"LC",NULL,539
+543,"LD",NULL,539
+544,"Highgate Ward","Polling District",504
+545,"BA",NULL,544
+546,"BB",NULL,544
+547,"BC",NULL,544
+548,"Holborn and Covent Garden Ward","Polling District",504
+549,"RA",NULL,548
+550,"RB",NULL,548
+551,"RC",NULL,548
+552,"Kentish Town Ward","Polling District",504
+553,"JA",NULL,552
+554,"JB",NULL,552
+555,"JC",NULL,552
+556,"Kilburn Ward","Polling District",504
+557,"FA",NULL,556
+558,"FB",NULL,556
+559,"FC",NULL,556
+560,"FD",NULL,556
+561,"Kings Cross Ward","Polling District",504
+562,"PA",NULL,561
+563,"PB",NULL,561
+564,"PC",NULL,561
+565,"Regents Park Ward","Polling District",504
+566,"NA",NULL,565
+567,"NB",NULL,565
+568,"NC",NULL,565
+569,"St Pancras and Somers Town Ward","Polling District",504
+570,"OA",NULL,569
+571,"OB",NULL,569
+572,"OC",NULL,569
+573,"OD",NULL,569
+574,"Swiss Cottage Ward","Polling District",504
+575,"GA",NULL,574
+576,"GB",NULL,574
+577,"GC",NULL,574
+578,"West Hampstead Ward","Polling District",504
+579,"EA",NULL,578
+580,"EB",NULL,578
+581,"EC",NULL,578
+582,"ED",NULL,578
+583,"Croydon","Council Ward",10
+584,"Addiscombe Ward","Polling District",583
+585,"AD1",NULL,584
+586,"AD2",NULL,584
+587,"AD3",NULL,584
+588,"AD4",NULL,584
+589,"AD5",NULL,584
+590,"AD6",NULL,584
+591,"Ashburton Ward","Polling District",583
+592,"AS1",NULL,591
+593,"AS2",NULL,591
+594,"AS3",NULL,591
+595,"AS4",NULL,591
+596,"AS5",NULL,591
+597,"AS6",NULL,591
+598,"Bensham Manor Ward","Polling District",583
+599,"BM1",NULL,598
+600,"BM2",NULL,598
+601,"BM3",NULL,598
+602,"BM4",NULL,598
+603,"BM5",NULL,598
+604,"BM6",NULL,598
+605,"Broad Green Ward","Polling District",583
+606,"BG1",NULL,605
+607,"BG2",NULL,605
+608,"BG3",NULL,605
+609,"BG4",NULL,605
+610,"BG5",NULL,605
+611,"BG6",NULL,605
+612,"BG7",NULL,605
+613,"Coulsdon East Ward","Polling District",583
+614,"CE1",NULL,613
+615,"CE2",NULL,613
+616,"CE3",NULL,613
+617,"CE4",NULL,613
+618,"CE5",NULL,613
+619,"CE6",NULL,613
+620,"CE7",NULL,613
+621,"Coulsdon West Ward","Polling District",583
+622,"CW1",NULL,621
+623,"CW2",NULL,621
+624,"CW3",NULL,621
+625,"CW4",NULL,621
+626,"CW5",NULL,621
+627,"CW6",NULL,621
+628,"Croham Ward","Polling District",583
+629,"CR1",NULL,628
+630,"CR2",NULL,628
+631,"CR3",NULL,628
+632,"CR4",NULL,628
+633,"CR5",NULL,628
+634,"CR6",NULL,628
+635,"Fairfield Ward","Polling District",583
+636,"FA1",NULL,635
+637,"FA2",NULL,635
+638,"FA3",NULL,635
+639,"FA4",NULL,635
+640,"FA5",NULL,635
+641,"FA6",NULL,635
+642,"FA7",NULL,635
+643,"Fieldway Ward","Polling District",583
+644,"FW1",NULL,643
+645,"FW2",NULL,643
+646,"FW3",NULL,643
+647,"FW4",NULL,643
+648,"Heathfield Ward","Polling District",583
+649,"HE1",NULL,648
+650,"HE2",NULL,648
+651,"HE3",NULL,648
+652,"HE4",NULL,648
+653,"HE5",NULL,648
+654,"HE6",NULL,648
+655,"HE7",NULL,648
+656,"Kenley Ward","Polling District",583
+657,"KE1",NULL,656
+658,"KE2",NULL,656
+659,"KE3",NULL,656
+660,"KE4",NULL,656
+661,"KE5",NULL,656
+662,"KE6",NULL,656
+663,"KE7",NULL,656
+664,"New Addington Ward","Polling District",583
+665,"NA1",NULL,664
+666,"NA2",NULL,664
+667,"NA3",NULL,664
+668,"NA4",NULL,664
+669,"Norbury Ward","Polling District",583
+670,"NY1",NULL,669
+671,"NY2",NULL,669
+672,"NY3",NULL,669
+673,"NY4",NULL,669
+674,"NY5",NULL,669
+675,"NY6",NULL,669
+676,"Purley Ward","Polling District",583
+677,"PU1",NULL,676
+678,"PU2",NULL,676
+679,"PU3",NULL,676
+680,"PU4",NULL,676
+681,"PU5",NULL,676
+682,"PU6",NULL,676
+683,"Sanderstead Ward","Polling District",583
+684,"SA1",NULL,683
+685,"SA2",NULL,683
+686,"SA3",NULL,683
+687,"SA4",NULL,683
+688,"SA5",NULL,683
+689,"Selhurst Ward","Polling District",583
+690,"SE1",NULL,689
+691,"SE2",NULL,689
+692,"SE3",NULL,689
+693,"SE4",NULL,689
+694,"SE5",NULL,689
+695,"SE6",NULL,689
+696,"SE7",NULL,689
+697,"Selsdon and Ballards Ward","Polling District",583
+698,"SB1",NULL,697
+699,"SB2",NULL,697
+700,"SB3",NULL,697
+701,"SB4",NULL,697
+702,"SB5",NULL,697
+703,"SB6",NULL,697
+704,"Shirley Ward","Polling District",583
+705,"SH1",NULL,704
+706,"SH2",NULL,704
+707,"SH3",NULL,704
+708,"SH4",NULL,704
+709,"SH5",NULL,704
+710,"SH6",NULL,704
+711,"South Norwood Ward","Polling District",583
+712,"SN1",NULL,711
+713,"SN2",NULL,711
+714,"SN3",NULL,711
+715,"SN4",NULL,711
+716,"SN5",NULL,711
+717,"SN6",NULL,711
+718,"Thornton Heath Ward","Polling District",583
+719,"TH1",NULL,718
+720,"TH2",NULL,718
+721,"TH3",NULL,718
+722,"TH4",NULL,718
+723,"TH5",NULL,718
+724,"TH6",NULL,718
+725,"Upper Norwood Ward","Polling District",583
+726,"UN1",NULL,725
+727,"UN2",NULL,725
+728,"UN3",NULL,725
+729,"UN4",NULL,725
+730,"UN5",NULL,725
+731,"UN6",NULL,725
+732,"UN7",NULL,725
+733,"Waddon Ward","Polling District",583
+734,"WA1",NULL,733
+735,"WA2",NULL,733
+736,"WA3",NULL,733
+737,"WA4",NULL,733
+738,"WA5",NULL,733
+739,"WA6",NULL,733
+740,"West Thornton Ward","Polling District",583
+741,"WT1",NULL,740
+742,"WT2",NULL,740
+743,"WT3",NULL,740
+744,"WT4",NULL,740
+745,"WT5",NULL,740
+746,"WT6",NULL,740
+747,"Woodside Ward","Polling District",583
+748,"WS1",NULL,747
+749,"WS2",NULL,747
+750,"WS3",NULL,747
+751,"WS4",NULL,747
+752,"WS5",NULL,747
+753,"WS6",NULL,747
+754,"Ealing","Council Ward",10
+755,"Acton Central Ward","Polling District",754
+756,"Cleveland Ward","Polling District",754
+757,"Dormers Wells Ward","Polling District",754
+758,"Ealing Broadway Ward","Polling District",754
+759,"Ealing Common Ward","Polling District",754
+760,"East Acton Ward","Polling District",754
+761,"Elthorne Ward","Polling District",754
+762,"Greenford Broadway Ward","Polling District",754
+763,"Greenford Green Ward","Polling District",754
+764,"Hanger Hill Ward","Polling District",754
+765,"Hobbayne Ward","Polling District",754
+766,"Lady Margaret Ward","Polling District",754
+767,"North Greenford Ward","Polling District",754
+768,"Northfield Ward","Polling District",754
+769,"Northolt Mandeville Ward","Polling District",754
+770,"Northolt West End Ward","Polling District",754
+771,"Norwood Green Ward","Polling District",754
+772,"Perivale Ward","Polling District",754
+773,"South Acton Ward","Polling District",754
+774,"Southall Broadway Ward","Polling District",754
+775,"Southall Green Ward","Polling District",754
+776,"Southfield Ward","Polling District",754
+777,"Walpole Ward","Polling District",754
+778,"Enfield","Council Ward",10
+779,"Bowes Ward","Polling District",778
+780,"YTA",NULL,779
+781,"YTB",NULL,779
+782,"YTC",NULL,779
+783,"YTD",NULL,779
+784,"Bush Hill Park Ward","Polling District",778
+785,"ZKA",NULL,784
+786,"ZKB",NULL,784
+787,"ZKC",NULL,784
+788,"ZKD",NULL,784
+789,"ZKE",NULL,784
+790,"Chase Ward","Polling District",778
+791,"XAA",NULL,790
+792,"XAB",NULL,790
+793,"XAC",NULL,790
+794,"XAD",NULL,790
+795,"XAE",NULL,790
+796,"XAF",NULL,790
+797,"Cockfosters Ward","Polling District",778
+798,"YDA",NULL,797
+799,"YDB",NULL,797
+800,"YDC",NULL,797
+801,"YDD",NULL,797
+802,"YDE",NULL,797
+803,"Edmonton Green Ward","Polling District",778
+804,"ZSA",NULL,803
+805,"ZSB",NULL,803
+806,"ZSC",NULL,803
+807,"ZSD",NULL,803
+808,"ZSE",NULL,803
+809,"ZSF",NULL,803
+810,"Enfield Highway Ward","Polling District",778
+811,"XHA",NULL,810
+812,"XHB",NULL,810
+813,"XHC",NULL,810
+814,"XHD",NULL,810
+815,"XHE",NULL,810
+816,"Enfield Lock Ward","Polling District",778
+817,"XCA",NULL,816
+818,"XCB",NULL,816
+819,"XCC",NULL,816
+820,"XCD",NULL,816
+821,"XCE",NULL,816
+822,"XCF",NULL,816
+823,"Grange Ward","Polling District",778
+824,"YJA",NULL,823
+825,"YJB",NULL,823
+826,"YJC",NULL,823
+827,"YJD",NULL,823
+828,"YJE",NULL,823
+829,"YJF",NULL,823
+830,"Haselbury Ward","Polling District",778
+831,"ZOA",NULL,830
+832,"ZOB",NULL,830
+833,"ZOC",NULL,830
+834,"ZOD",NULL,830
+835,"ZOE",NULL,830
+836,"Highlands Ward","Polling District",778
+837,"XEA",NULL,836
+838,"XEB",NULL,836
+839,"XEC",NULL,836
+840,"XED",NULL,836
+841,"XEE",NULL,836
+842,"Jubilee Ward","Polling District",778
+843,"ZMA",NULL,842
+844,"ZMB",NULL,842
+845,"ZMC",NULL,842
+846,"ZMD",NULL,842
+847,"ZME",NULL,842
+848,"ZMF",NULL,842
+849,"Lower Edmonton Ward","Polling District",778
+850,"ZPA",NULL,849
+851,"ZPB",NULL,849
+852,"ZPC",NULL,849
+853,"ZPD",NULL,849
+854,"Palmers Green Ward","Polling District",778
+855,"YRA",NULL,854
+856,"YRB",NULL,854
+857,"YRC",NULL,854
+858,"YRD",NULL,854
+859,"YRE",NULL,854
+860,"Ponders End Ward","Polling District",778
+861,"ZLA",NULL,860
+862,"ZLB",NULL,860
+863,"ZLC",NULL,860
+864,"ZLD",NULL,860
+865,"ZLE",NULL,860
+866,"Southbury Ward","Polling District",778
+867,"XGA",NULL,866
+868,"XGB",NULL,866
+869,"XGC",NULL,866
+870,"XGD",NULL,866
+871,"XGE",NULL,866
+872,"XGF",NULL,866
+873,"Southgate Ward","Polling District",778
+874,"YIA",NULL,873
+875,"YIB",NULL,873
+876,"YIC",NULL,873
+877,"YID",NULL,873
+878,"YIE",NULL,873
+879,"YIF",NULL,873
+880,"Southgate Green Ward","Polling District",778
+881,"YQA",NULL,880
+882,"YQB",NULL,880
+883,"YQC",NULL,880
+884,"YQD",NULL,880
+885,"YQE",NULL,880
+886,"Town Ward","Polling District",778
+887,"XFA",NULL,886
+888,"XFB",NULL,886
+889,"XFC",NULL,886
+890,"XFD",NULL,886
+891,"XFE",NULL,886
+892,"XFF",NULL,886
+893,"Turkey Street Ward","Polling District",778
+894,"XBA",NULL,893
+895,"XBB",NULL,893
+896,"XBC",NULL,893
+897,"XBD",NULL,893
+898,"Upper Edmonton Ward","Polling District",778
+899,"ZUA",NULL,898
+900,"ZUB",NULL,898
+901,"ZUC",NULL,898
+902,"ZUD",NULL,898
+903,"ZUE",NULL,898
+904,"ZUF",NULL,898
+905,"Winchmore Hill Ward","Polling District",778
+906,"YNA",NULL,905
+907,"YNB",NULL,905
+908,"YNC",NULL,905
+909,"YND",NULL,905
+910,"YNE",NULL,905
+911,"Greenwich","Council Ward",10
+912,"Abbey Wood Ward","Polling District",911
+913,"AW1",NULL,912
+914,"AW2",NULL,912
+915,"AW3",NULL,912
+916,"AW4",NULL,912
+917,"AW5",NULL,912
+918,"Blackheath Westcombe Ward","Polling District",911
+919,"BW1",NULL,918
+920,"BW2",NULL,918
+921,"BW3",NULL,918
+922,"BW4",NULL,918
+923,"BW5",NULL,918
+924,"BW6",NULL,918
+925,"BW7",NULL,918
+926,"BW8",NULL,918
+927,"Charlton Ward","Polling District",911
+928,"CH1",NULL,927
+929,"CH2",NULL,927
+930,"CH3",NULL,927
+931,"CH4",NULL,927
+932,"CH5",NULL,927
+933,"CH6",NULL,927
+934,"CH7",NULL,927
+935,"CH8",NULL,927
+936,"Coldharbour and New Eltham Ward","Polling District",911
+937,"CN1",NULL,936
+938,"CN2",NULL,936
+939,"CN3",NULL,936
+940,"CN4",NULL,936
+941,"CN5",NULL,936
+942,"CN6",NULL,936
+943,"CN7",NULL,936
+944,"Eltham North Ward","Polling District",911
+945,"EN1",NULL,944
+946,"EN2",NULL,944
+947,"EN3",NULL,944
+948,"EN4",NULL,944
+949,"EN5",NULL,944
+950,"EN6",NULL,944
+951,"EN7",NULL,944
+952,"EN8",NULL,944
+953,"EN9",NULL,944
+954,"Eltham South Ward","Polling District",911
+955,"ES1",NULL,954
+956,"ES2",NULL,954
+957,"ES3",NULL,954
+958,"ES4",NULL,954
+959,"ES5",NULL,954
+960,"ES6",NULL,954
+961,"Eltham West Ward","Polling District",911
+962,"EW1",NULL,961
+963,"EW2",NULL,961
+964,"EW3",NULL,961
+965,"EW4",NULL,961
+966,"EW5",NULL,961
+967,"EW6",NULL,961
+968,"EW7",NULL,961
+969,"Glyndon Ward","Polling District",911
+970,"GL1",NULL,969
+971,"GL2",NULL,969
+972,"GL3",NULL,969
+973,"GL4",NULL,969
+974,"GL5",NULL,969
+975,"GL6",NULL,969
+976,"GL7",NULL,969
+977,"Greenwich West Ward","Polling District",911
+978,"GW1",NULL,977
+979,"GW2",NULL,977
+980,"GW3",NULL,977
+981,"GW4",NULL,977
+982,"GW5",NULL,977
+983,"GW6",NULL,977
+984,"GW7",NULL,977
+985,"GW8",NULL,977
+986,"Kidbrooke with Hornfair Ward","Polling District",911
+987,"KH1",NULL,986
+988,"KH2",NULL,986
+989,"KH3",NULL,986
+990,"KH4",NULL,986
+991,"KH5",NULL,986
+992,"KH6",NULL,986
+993,"Middle Park and Sutcliffe Ward","Polling District",911
+994,"MS1",NULL,993
+995,"MS2",NULL,993
+996,"MS3",NULL,993
+997,"MS4",NULL,993
+998,"MS5",NULL,993
+999,"MS6",NULL,993
+1000,"MS7",NULL,993
+1001,"Peninsula Ward","Polling District",911
+1002,"PA1",NULL,1001
+1003,"PA2",NULL,1001
+1004,"PA3",NULL,1001
+1005,"PA4",NULL,1001
+1006,"PA5",NULL,1001
+1007,"PA6",NULL,1001
+1008,"PA7",NULL,1001
+1009,"Plumstead Ward","Polling District",911
+1010,"PL1",NULL,1009
+1011,"PL2",NULL,1009
+1012,"PL3",NULL,1009
+1013,"PL4",NULL,1009
+1014,"PL5",NULL,1009
+1015,"Shooters Hill Ward","Polling District",911
+1016,"SH1",NULL,1015
+1017,"SH2",NULL,1015
+1018,"SH3",NULL,1015
+1019,"SH4",NULL,1015
+1020,"SH5",NULL,1015
+1021,"SH6",NULL,1015
+1022,"SH7",NULL,1015
+1023,"Thamesmead Moorings Ward","Polling District",911
+1024,"TM1",NULL,1023
+1025,"TM2",NULL,1023
+1026,"TM3",NULL,1023
+1027,"TM4",NULL,1023
+1028,"TM5",NULL,1023
+1029,"TM6",NULL,1023
+1030,"TM7",NULL,1023
+1031,"Woolwich Common Ward","Polling District",911
+1032,"WC1",NULL,1031
+1033,"WC2",NULL,1031
+1034,"WC3",NULL,1031
+1035,"WC4",NULL,1031
+1036,"WC5",NULL,1031
+1037,"WC6",NULL,1031
+1038,"Woolwich Riverside Ward","Polling District",911
+1039,"WR1",NULL,1038
+1040,"WR2",NULL,1038
+1041,"WR3",NULL,1038
+1042,"WR4",NULL,1038
+1043,"WR5",NULL,1038
+1044,"WR6",NULL,1038
+1045,"WR7",NULL,1038
+1046,"WR8",NULL,1038
+1047,"WR9",NULL,1038
+1048,"Hackney","Council Ward",10
+1049,"Brownswood Ward","Polling District",1048
+1050,"HNCA",NULL,1049
+1051,"HNCB",NULL,1049
+1052,"HNCC",NULL,1049
+1053,"Cazenove Ward","Polling District",1048
+1054,"HNEA",NULL,1053
+1055,"HNEB",NULL,1053
+1056,"HNEC",NULL,1053
+1057,"HNED",NULL,1053
+1058,"Clissold Ward","Polling District",1048
+1059,"HNFA",NULL,1058
+1060,"HNFB",NULL,1058
+1061,"HNFC",NULL,1058
+1062,"HNFD",NULL,1058
+1063,"Dalston Ward","Polling District",1048
+1064,"HNKA",NULL,1063
+1065,"HNKB",NULL,1063
+1066,"De Beauvoir Ward","Polling District",1048
+1067,"HSOA",NULL,1066
+1068,"HSOB",NULL,1066
+1069,"HSOC",NULL,1066
+1070,"Hackney Central Ward","Polling District",1048
+1071,"HSLA",NULL,1070
+1072,"HSLB",NULL,1070
+1073,"HSLC",NULL,1070
+1074,"HSLD",NULL,1070
+1075,"HSLE",NULL,1070
+1076,"Hackney Downs Ward","Polling District",1048
+1077,"HNHA",NULL,1076
+1078,"HNHB",NULL,1076
+1079,"HNHC",NULL,1076
+1080,"HNHD",NULL,1076
+1081,"Hackney Wick Ward","Polling District",1048
+1082,"HSRA",NULL,1081
+1083,"HSRB",NULL,1081
+1084,"HSRC",NULL,1081
+1085,"HSRD",NULL,1081
+1086,"Haggerston Ward","Polling District",1048
+1087,"HSQA",NULL,1086
+1088,"HSQB",NULL,1086
+1089,"HSQC",NULL,1086
+1090,"HSQD",NULL,1086
+1091,"HSQE",NULL,1086
+1092,"Homerton Ward","Polling District",1048
+1093,"HSMA",NULL,1092
+1094,"HSMB",NULL,1092
+1095,"HSMC",NULL,1092
+1096,"HSMD",NULL,1092
+1097,"Hoxton East & Shoreditch Ward","Polling District",1048
+1098,"HSUA",NULL,1097
+1099,"HSUB",NULL,1097
+1100,"HSUC",NULL,1097
+1101,"Hoxton West Ward","Polling District",1048
+1102,"HSTA",NULL,1101
+1103,"HSTB",NULL,1101
+1104,"HSTC",NULL,1101
+1105,"King’S Park Ward","Polling District",1048
+1106,"HSNA",NULL,1105
+1107,"HSNB",NULL,1105
+1108,"HSNC",NULL,1105
+1109,"HSND",NULL,1105
+1110,"Lea Bridge Ward","Polling District",1048
+1111,"HNIA",NULL,1110
+1112,"HNIB",NULL,1110
+1113,"HNIC",NULL,1110
+1114,"HNID",NULL,1110
+1115,"London Fields Ward","Polling District",1048
+1116,"HSPA",NULL,1115
+1117,"HSPB",NULL,1115
+1118,"HSPC",NULL,1115
+1119,"Shacklewell Ward","Polling District",1048
+1120,"HNJA",NULL,1119
+1121,"HNJB",NULL,1119
+1122,"Springfield Ward","Polling District",1048
+1123,"HNBA",NULL,1122
+1124,"HNBB",NULL,1122
+1125,"HNBC",NULL,1122
+1126,"HNBD",NULL,1122
+1127,"HNBE",NULL,1122
+1128,"Stamford Hill West Ward","Polling District",1048
+1129,"HNDA",NULL,1128
+1130,"HNDB",NULL,1128
+1131,"HNDC",NULL,1128
+1132,"Stoke Newington Ward","Polling District",1048
+1133,"HNGA",NULL,1132
+1134,"HNGB",NULL,1132
+1135,"HNGC",NULL,1132
+1136,"HNGD",NULL,1132
+1137,"HNGE",NULL,1132
+1138,"Victoria Ward","Polling District",1048
+1139,"HSSA",NULL,1138
+1140,"HSSB",NULL,1138
+1141,"HSSC",NULL,1138
+1142,"HSSD",NULL,1138
+1143,"Woodberry Down Ward","Polling District",1048
+1144,"HNAA",NULL,1143
+1145,"HNAB",NULL,1143
+1146,"HNAC",NULL,1143
+1147,"Hammersmith and Fulhum","Council Ward",10
+1148,"Addison Ward",NULL,1147
+1149,"ADA",NULL,1148
+1150,"ADB",NULL,1148
+1151,"ADC",NULL,1148
+1152,"ADD","Polling District",1148
+1153,"Askew Ward",NULL,1147
+1154,"ASA",NULL,1153
+1155,"ASB",NULL,1153
+1156,"ASC","Polling District",1153
+1157,"Avonmore and Brook Green Ward",NULL,1147
+1158,"ABA",NULL,1157
+1159,"ABB",NULL,1157
+1160,"ABC",NULL,1157
+1161,"ABD","Polling District",1157
+1162,"College Park and Old Oak Ward",NULL,1147
+1163,"CPA",NULL,1162
+1164,"CPB",NULL,1162
+1165,"CPC",NULL,1162
+1166,"CPD",NULL,1162
+1167,"CPE",NULL,1162
+1168,"CPF","Polling District",1162
+1169,"Fulham Broadway Ward",NULL,1147
+1170,"FBA",NULL,1169
+1171,"FBB",NULL,1169
+1172,"FBC","Polling District",1169
+1173,"Fulham Reach Ward",NULL,1147
+1174,"FRA",NULL,1173
+1175,"FRB",NULL,1173
+1176,"FRC",NULL,1173
+1177,"FRD","Polling District",1173
+1178,"Hammersmith Broadway Ward",NULL,1147
+1179,"HBA",NULL,1178
+1180,"HBB",NULL,1178
+1181,"HBC",NULL,1178
+1182,"HBD","Polling District",1178
+1183,"Munster Ward",NULL,1147
+1184,"MUA",NULL,1183
+1185,"MUB",NULL,1183
+1186,"MUC",NULL,1183
+1187,"MUD","Polling District",1183
+1188,"North End Ward",NULL,1147
+1189,"NEA",NULL,1188
+1190,"NEB",NULL,1188
+1191,"NEC","Polling District",1188
+1192,"Palace Riverside Ward",NULL,1147
+1193,"PRA",NULL,1192
+1194,"PRB",NULL,1192
+1195,"PRC","Polling District",1192
+1196,"Parsons Green and Walham Ward",NULL,1147
+1197,"PGA",NULL,1196
+1198,"PGB",NULL,1196
+1199,"PGC",NULL,1196
+1200,"PGD","Polling District",1196
+1201,"Ravenscourt Park Ward",NULL,1147
+1202,"RPA",NULL,1201
+1203,"RPB",NULL,1201
+1204,"RPC",NULL,1201
+1205,"RPD",NULL,1201
+1206,"RPE","Polling District",1201
+1207,"Sands End Ward",NULL,1147
+1208,"SEA",NULL,1207
+1209,"SEB",NULL,1207
+1210,"SEC",NULL,1207
+1211,"SED","Polling District",1207
+1212,"Shepherds Bush Green Ward",NULL,1147
+1213,"SBA",NULL,1212
+1214,"SBB",NULL,1212
+1215,"SBC",NULL,1212
+1216,"SBD","Polling District",1212
+1217,"Town Ward",NULL,1147
+1218,"TWA",NULL,1217
+1219,"TWB",NULL,1217
+1220,"TWC","Polling District",1217
+1221,"Wormholt and White City Ward",NULL,1147
+1222,"WWA",NULL,1221
+1223,"WWB",NULL,1221
+1224,"WWC","Polling District",1221
+1225,"Haringey","Council Ward",10
+1226,"Harrow","Council Ward",10
+1227,"Havering","Council Ward",10
+1228,"Hillingdon","Council Ward",10
+1229,"Hounslow","Council Ward",10
+1230,"Islington","Council Ward",10
+1231,"Kensington and Chelsea","Council Ward",10
+1232,"Kingston upon Thames","Council Ward",10
+1233,"Lambeth","Council Ward",10
+1234,"Lewisham","Council Ward",10
+1235,"Merton","Council Ward",10
+1236,"Newham","Council Ward",10
+1237,"Redbridge","Council Ward",10
+1238,"Richmond upon Thames","Council Ward",10
+1239,"Southwark","Council Ward",10
+1240,"Sutton","Council Ward",10
+1241,"Tower Hamlets","Council Ward",1240
+1242,"Bethnal Green Ward","Polling District",1241
+1243,"BG1",NULL,1242
+1244,"BG2",NULL,1242
+1245,"BG3",NULL,1242
+1246,"BG4",NULL,1242
+1247,"BG5",NULL,1242
+1248,"Blackwall and Cubitt Town Ward","Polling District",1241
+1249,"BC1",NULL,1248
+1250,"BC2",NULL,1248
+1251,"BC3",NULL,1248
+1252,"BC4",NULL,1248
+1253,"Bow East Ward","Polling District",1241
+1254,"BE1",NULL,1253
+1255,"BE2",NULL,1253
+1256,"BE3",NULL,1253
+1257,"BE4",NULL,1253
+1258,"BE5",NULL,1253
+1259,"Bow West Ward","Polling District",1241
+1260,"BW1",NULL,1259
+1261,"BW2",NULL,1259
+1262,"BW3",NULL,1259
+1263,"Bromley North Ward","Polling District",1241
+1264,"BN1",NULL,1263
+1265,"BN2",NULL,1263
+1266,"BN3",NULL,1263
+1267,"Bromley South Ward","Polling District",1241
+1268,"BS1",NULL,1267
+1269,"BS2",NULL,1267
+1270,"BS3",NULL,1267
+1271,"Canary Wharf Ward","Polling District",1241
+1272,"CW1",NULL,1271
+1273,"CW2",NULL,1271
+1274,"CW3",NULL,1271
+1275,"Island Gardens Ward","Polling District",1241
+1276,"IG1",NULL,1275
+1277,"IG2",NULL,1275
+1278,"IG3",NULL,1275
+1279,"Lansbury Ward","Polling District",1241
+1280,"LA1",NULL,1279
+1281,"LA2",NULL,1279
+1282,"LA3",NULL,1279
+1283,"LA4",NULL,1279
+1284,"LA5",NULL,1279
+1285,"Limehouse Ward","Polling District",1241
+1286,"LI1",NULL,1285
+1287,"LI2",NULL,1285
+1288,"Mile End Ward","Polling District",1241
+1289,"ME1",NULL,1288
+1290,"ME2",NULL,1288
+1291,"ME3",NULL,1288
+1292,"ME4",NULL,1288
+1293,"ME5",NULL,1288
+1294,"Poplar Ward","Polling District",1241
+1295,"PO1",NULL,1294
+1296,"PO2",NULL,1294
+1297,"Shadwell Ward","Polling District",1241
+1298,"SH1",NULL,1297
+1299,"SH2",NULL,1297
+1300,"SH3",NULL,1297
+1301,"Spitalfields and Banglatown Ward","Polling District",1241
+1302,"SB1",NULL,1301
+1303,"SB2",NULL,1301
+1304,"SB3",NULL,1301
+1305,"St. Dunstan`s Ward","Polling District",1241
+1306,"SD1",NULL,1305
+1307,"SD2",NULL,1305
+1308,"SD3",NULL,1305
+1309,"SD4",NULL,1305
+1310,"St. Katharine`s and Wapping Ward","Polling District",1241
+1311,"SK{4}",NULL,1310
+1312,"St. Peter`s Ward","Polling District",1241
+1313,"SP1",NULL,1312
+1314,"SP2",NULL,1312
+1315,"SP3",NULL,1312
+1316,"SP4",NULL,1312
+1317,"Stepney Green Ward","Polling District",1241
+1318,"SG1",NULL,1317
+1319,"SG2",NULL,1317
+1320,"SG3",NULL,1317
+1321,"Weavers Ward","Polling District",1241
+1322,"WE1",NULL,1321
+1323,"WE2",NULL,1321
+1324,"WE3",NULL,1321
+1325,"Whitechapel Ward","Polling District",1241
+1326,"WH1",NULL,1325
+1327,"WH2",NULL,1325
+1328,"WH3",NULL,1325
+1329,"WH4",NULL,1325
+1330,"WH5P",NULL,1325
+1331,"Waltham Forest","Council Ward",10
+1332,"Wandsworth","Council Ward",10
+1333,"Westminster","Council Ward",10
+1334,"Kensington and Chelsea","Council Ward",10
+1335,"Kingston upon Thames","Council Ward",10
+1336,"Lambeth","Council Ward",10
+1337,"Lewisham","Council Ward",10
+1338,"Merton","Council Ward",10
+1339,"Newham","Council Ward",10
+1340,"Redbridge","Council Ward",10
+1341,"Richmond upon Thames","Council Ward",10
+1342,"Southwark","Council Ward",10
+1343,"Sutton","Council Ward",10
+1344,"Tower Hamlets","Council Ward",10
+1345,"Bethnal Green Ward","Polling District",1344
+1346,"BG1",NULL,1345
+1347,"BG2",NULL,1345
+1348,"BG3",NULL,1345
+1349,"BG4",NULL,1345
+1350,"BG5",NULL,1345
+1351,"Blackwall and Cubitt Town Ward","Polling District",1344
+1352,"BC1",NULL,1351
+1353,"BC2",NULL,1351
+1354,"BC3",NULL,1351
+1355,"BC4",NULL,1351
+1356,"Bow East Ward","Polling District",1344
+1357,"BE1",NULL,1356
+1358,"BE2",NULL,1356
+1359,"BE3",NULL,1356
+1360,"BE4",NULL,1356
+1361,"BE5",NULL,1356
+1362,"Bow West Ward","Polling District",1344
+1363,"BW1",NULL,1362
+1364,"BW2",NULL,1362
+1365,"BW3",NULL,1362
+1366,"Bromley North Ward","Polling District",1344
+1367,"BN1",NULL,1366
+1368,"BN2",NULL,1366
+1369,"BN3",NULL,1366
+1370,"Bromley South Ward","Polling District",1344
+1371,"BS1",NULL,1370
+1372,"BS2",NULL,1370
+1373,"BS3",NULL,1370
+1374,"Canary Wharf Ward","Polling District",1344
+1375,"CW1",NULL,1374
+1376,"CW2",NULL,1374
+1377,"CW3",NULL,1374
+1378,"Island Gardens Ward","Polling District",1344
+1379,"IG1",NULL,1378
+1380,"IG2",NULL,1378
+1381,"IG3",NULL,1378
+1382,"Lansbury Ward","Polling District",1344
+1383,"LA1",NULL,1382
+1384,"LA2",NULL,1382
+1385,"LA3",NULL,1382
+1386,"LA4",NULL,1382
+1387,"LA5",NULL,1382
+1388,"Limehouse Ward","Polling District",1344
+1389,"LI1",NULL,1388
+1390,"LI2",NULL,1388
+1391,"Mile End Ward","Polling District",1344
+1392,"ME1",NULL,1391
+1393,"ME2",NULL,1391
+1394,"ME3",NULL,1391
+1395,"ME4",NULL,1391
+1396,"ME5",NULL,1391
+1397,"Poplar Ward","Polling District",1344
+1398,"PO1",NULL,1397
+1399,"PO2",NULL,1397
+1400,"Shadwell Ward","Polling District",1344
+1401,"SH1",NULL,1400
+1402,"SH2",NULL,1400
+1403,"SH3",NULL,1400
+1404,"Spitalfields and Banglatown Ward","Polling District",1344
+1405,"SB1",NULL,1404
+1406,"SB2",NULL,1404
+1407,"SB3",NULL,1404
+1408,"St. Dunstan`s Ward","Polling District",1344
+1409,"SD1",NULL,1408
+1410,"SD2",NULL,1408
+1411,"SD3",NULL,1408
+1412,"SD4",NULL,1408
+1413,"St. Katharine`s and Wapping Ward","Polling District",1344
+1414,"SK{4}",NULL,1413
+1415,"St. Peter`s Ward","Polling District",1344
+1416,"SP1",NULL,1415
+1417,"SP2",NULL,1415
+1418,"SP3",NULL,1415
+1419,"SP4",NULL,1415
+1420,"Stepney Green Ward","Polling District",1344
+1421,"SG1",NULL,1420
+1422,"SG2",NULL,1420
+1423,"SG3",NULL,1420
+1424,"Weavers Ward","Polling District",1344
+1425,"WE1",NULL,1424
+1426,"WE2",NULL,1424
+1427,"WE3",NULL,1424
+1428,"Whitechapel Ward","Polling District",1344
+1429,"WH1",NULL,1428
+1430,"WH2",NULL,1428
+1431,"WH3",NULL,1428
+1432,"WH4",NULL,1428
+1433,"WH5P",NULL,1428
+1434,"Waltham Forest","Council Ward",10
+1435,"Wandsworth","Council Ward",10
+1436,"Westminster","Council Ward",10
+1437,"Metropolitan Borough","Borough",2
+1438,"Barnsley","Ward",1437
+1439,"Birmingham","Ward",1437
+1440,"Bolton","Ward",1437
+1441,"Bradford","Ward",1437
+1442,"Bury","Ward",1437
+1443,"Calderdale","Ward",1437
+1444,"Coventry","Ward",1437
+1445,"Doncaster","Ward",1437
+1446,"Dudley","Ward",1437
+1447,"Gateshead","Ward",1437
+1448,"Kirklees","Ward",1437
+1449,"Knowsley","Ward",1437
+1450,"Leeds","Ward",1437
+1451,"Liverpool","Ward",1437
+1452,"Manchester","Ward",1437
+1453,"Newcastle upon Tyne","Ward",1437
+1454,"North Tyneside","Ward",1437
+1455,"Oldham","Ward",1437
+1456,"Rochdale","Ward",1437
+1457,"Rotherham","Ward",1437
+1458,"St. Helens","Ward",1437
+1459,"Salford","Ward",1437
+1460,"Sandwell","Ward",1437
+1461,"Sefton","Ward",1437
+1462,"Sheffield","Ward",1437
+1463,"Solihull","Ward",1437
+1464,"South Tyneside","Ward",1437
+1465,"Stockport","Ward",1437
+1466,"Sunderland","Ward",1437
+1467,"Tameside","Ward",1437
+1468,"Trafford","Ward",1437
+1469,"Wakefield","Ward",1437
+1470,"Walsall","Ward",1437
+1471,"Wigan","Ward",1437
+1472,"Wirral","Ward",1437
+1473,"Wolverhampton","Ward",1437
+1474,"Unitary Authority","Authority",2
+1475,"Milton Keynes","Ward",1474
+1476,"Slough","Ward",1474
+1477,"Blackburn with Darwen","Ward",1474
+1478,"Bristol","Ward",1474
+1479,"Derby","Ward",1474
+1480,"Halton","Ward",1474
+1481,"Hartlepool","Ward",1474
+1482,"Kingston upon Hull","Ward",1474
+1483,"North East Lincolnshire","Ward",1474
+1484,"Peterborough","Ward",1474
+1485,"Plymouth","Ward",1474
+1486,"Portsmouth","Ward",1474
+1487,"Reading","Ward",1474
+1488,"Southampton","Ward",1474
+1489,"Southend-on-Sea","Ward",1474
+1490,"Swindon","Ward",1474
+1491,"Thurrock","Ward",1474
+1492,"Warrington","Ward",1474
+1493,"Wokingham","Ward",1474
+1494,"Non-Metropolitan District","District",2
+1495,"Hart","Ward",1494
+1496,"Three Rivers","Ward",1494
+1497,"Adur","Ward",1494
+1498,"Cheltenham","Ward",1494
+1499,"Fareham","Ward",1494
+1500,"Gosport","Ward",1494
+1501,"Hastings","Ward",1494
+1502,"Nuneaton and Bedworth","Ward",1494
+1503,"Oxford","Ward",1494
+1504,"Amber Valley","Ward",1494
+1505,"Basildon","Ward",1494
+1506,"Basingstoke and Deane","Ward",1494
+1507,"Bassetlaw","Ward",1494
+1508,"Brentwood","Ward",1494
+1509,"Broxbourne","Ward",1494
+1510,"Burnley","Ward",1494
+1511,"Cambridge","Ward",1494
+1512,"Cannock Chase","Ward",1494
+1513,"City of Carlisle","Ward",1494
+1514,"Castle Point","Ward",1494
+1515,"Cherwell","Ward",1494
+1516,"Chorley","Ward",1494
+1517,"Colchester","Ward",1494
+1518,"Craven","Ward",1494
+1519,"Crawley","Ward",1494
+1520,"Daventry","Ward",1494
+1521,"Eastleigh","Ward",1494
+1522,"Elmbridge","Ward",1494
+1523,"Epping Forest","Ward",1494
+1524,"Exeter","Ward",1494
+1525,"Gloucester","Ward",1494
+1526,"Great Yarmouth","Ward",1494
+1527,"Harlow","Ward",1494
+1528,"Harrogate","Ward",1494
+1529,"Havant","Ward",1494
+1530,"Hertsmere","Ward",1494
+1531,"Huntingdonshire","Ward",1494
+1532,"Hyndburn","Ward",1494
+1533,"Ipswich","Ward",1494
+1534,"Lincoln","Ward",1494
+1535,"Maidstone","Ward",1494
+1536,"Mole Valley","Ward",1494
+1537,"Newcastle-under-Lyme","Ward",1494
+1538,"North Hertfordshire","Ward",1494
+1539,"Norwich","Ward",1494
+1540,"Pendle","Ward",1494
+1541,"Preston","Ward",1494
+1542,"Purbeck","Ward",1494
+1543,"Redditch","Ward",1494
+1544,"Reigate and Banstead","Ward",1494
+1545,"Rochford","Ward",1494
+1546,"Rossendale","Ward",1494
+1547,"Rugby","Ward",1494
+1548,"Runnymede","Ward",1494
+1549,"Rushmoor","Ward",1494
+1550,"St Albans","Ward",1494
+1551,"South Cambridgeshire","Ward",1494
+1552,"South Lakeland","Ward",1494
+1553,"Stevenage","Ward",1494
+1554,"Stratford-on-Avon","Ward",1494
+1555,"Stroud","Ward",1494
+1556,"Tamworth","Ward",1494
+1557,"Tandridge","Ward",1494
+1558,"Tunbridge Wells","Ward",1494
+1559,"Watford","Ward",1494
+1560,"Welwyn Hatfield","Ward",1494
+1561,"West Lancashire","Ward",1494
+1562,"West Oxfordshire","Ward",1494
+1563,"Weymouth and Portland","Ward",1494
+1564,"Winchester","Ward",1494
+1565,"Woking","Ward",1494
+1566,"Worcester","Ward",1494
+1567,"Worthing","Ward",1494
+1568,"Wyre Forest","Ward",1494
+1569,"European","Region",2
+1570,"East Midlands","Division",1569
+1571,"East of England","Division",1569
+1572,"London","Division",1569
+1573,"North East England","Division",1569
+1574,"North West England","Division",1569
+1575,"South East England","Division",1569
+1576,"South West England","Division",1569
+1577,"West Midlands","Division",1569
+1578,"Yorkshire and the Humber","Division",1569
+1579,"Scotland","Election",1
+1580,"European","Division",1579
+1581,"Wales","Election",1
+1582,"European","Division",1581
