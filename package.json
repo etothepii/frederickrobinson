@@ -1,7 +1,7 @@
 {
   "name": "frederickRobinson",
   "description": "Web Service for Count On Applications",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "private": true,
   "dependencies": {
     "mysql": "*",
