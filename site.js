@@ -2,7 +2,8 @@ var express = require('express')
   , passport = require('passport')
   , util = require('util')
   , GoogleStrategy = require('passport-google').Strategy
-  , path = require('path');
+  , path = require('path')
+  , socketio = require('socket.io');
 
 
 // Passport session setup.
@@ -20,6 +21,22 @@ passport.deserializeUser(function(obj, done) {
   done(null, obj);
 });
 
+exports.listen = function(server) {
+  var io = socketio.listen(server);
+  io.set('log level', 1);
+  io.sockets.on('connection', function(socket) {
+    socket.on('watching', function(agent) {
+      socket.emit('watching', watching(agent));
+    });
+  });
+}
+
+function watching(agent) {
+  return {
+    agent: agent,
+    watching: []
+  }
+}
 
 // Use the GoogleStrategy within Passport.
 // Strategies in passport require a `validate` function, which accept
