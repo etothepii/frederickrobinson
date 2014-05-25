@@ -9,6 +9,8 @@
     "orm": "*",
     "querystring": "*",
     "chai": "*",
-    "mocha": "*"
+    "mocha": "*",
+    "express": "*",
+    "jade": "*"
   }
 }
