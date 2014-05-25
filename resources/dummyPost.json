@@ -1,10 +1,9 @@
 {
   "GUID": "01234-5678-90AB-CDEF",
-  "provider": "gajusz@gmail.com",
+  "deviceIdentifier": "a5b82367b9c33a17",
   "pollingArea": 21,
-  "password": "banana",
   "votesCast": 2314,
-  "ballotBox": "Box 112",
+  "ballotBox": "TH112",
   "tallies": [
     {
       "party": 148,
