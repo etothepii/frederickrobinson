@@ -43,8 +43,8 @@ function watching(agent) {
 // credentials (in this case, an OpenID identifier and profile), and invoke a
 // callback with a user object.
 passport.use(new GoogleStrategy({
-    returnURL: 'http://localhost:3000/auth/google/return',
-    realm: 'http://localhost:3000/'
+    returnURL: 'http://localhost:3001/auth/google/return',
+    realm: 'http://localhost:3001/'
   },
   function(identifier, profile, done) {
     // asynchronous verification, for effect...
@@ -136,7 +136,7 @@ app.get('/logout', function(req, res){
   res.redirect('/');
 });
 
-app.listen(3000);
+app.listen(3001);
 
 
 // Simple route middleware to ensure user is authenticated.
