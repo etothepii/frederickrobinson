@@ -1,0 +1,25 @@
+#!/bin/bash
+source ~/.bashrc
+case $1 in
+"START")
+        export FREDROBINSON_DB_USER=$(cat resources/environment/username)
+        export FREDROBINSON_DB_PASSWORD=$(cat resources/environment/password)
+        export NODE_ENV=$(cat resources/environment/environment)
+        export DATABASE=$(cat resources/environment/database)
+        export SERVICE_PORT=$(cat resources/environment/servicePort)
+        export SITE_PORT=$(cat resources/environment/sitePort)
+        export REALM=$(cat resources/environment/realm)
+        npm install
+        forever start app.js
+        forever start site.js
+	;;
+"CLEAN")
+        cd resources
+        cat createCountOnTables.sql | sed "s/db_name/$DATABASE/" | mysql --user=$FREDROBINSON_DB_USER --password=$FREDROBINSON_DB_PASSWORD 
+        cd ..
+	;;
+"STOP")	
+        forever stop app.js
+        forever stop site.js
+	;;
+esac

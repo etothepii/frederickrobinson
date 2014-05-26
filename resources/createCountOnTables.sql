@@ -1,4 +1,4 @@
-USE frederickRobinson;
+USE db_name;
 DROP TABLE IF EXISTS Agent;
 CREATE TABLE Agent (
     ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
