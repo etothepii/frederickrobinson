@@ -15,7 +15,7 @@ case $1 in
 	;;
 "CLEAN")
         cd resources
-        cat createCountOnTables.sql | sed "s/db_name/$DATABASE/" | mysql --user=$FREDROBINSON_DB_USER --password=$FREDROBINSON_DB_PASSWORD 
+        cat createCountOnTables.sql | sed "s/db_name/$DATABASE/" | mysql --user=$FREDROBINSON_DB_USERNAME --password=$FREDROBINSON_DB_PASSWORD 
         cd ..
 	;;
 "STOP")	
