@@ -42,9 +42,10 @@ function watching(agent) {
 // Strategies in passport require a `validate` function, which accept
 // credentials (in this case, an OpenID identifier and profile), and invoke a
 // callback with a user object.
+
 passport.use(new GoogleStrategy({
-    returnURL: 'http://localhost:3001/auth/google/return',
-    realm: 'http://localhost:3001/'
+    returnURL: 'http://' + process.env.REALM + '/auth/google/return',
+    realm: 'http://' + process.env.REALM + '/'
   },
   function(identifier, profile, done) {
     // asynchronous verification, for effect...
@@ -136,7 +137,8 @@ app.get('/logout', function(req, res){
   res.redirect('/');
 });
 
-app.listen(3001);
+console.log("Launching site on port: " + process.env.SITE_PORT);
+app.listen(process.env.SITE_PORT);
 
 
 // Simple route middleware to ensure user is authenticated.
