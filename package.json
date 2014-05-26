@@ -7,7 +7,9 @@
   "dependencies": {
     "mysql": "*",
     "node-mysql": "*",
+    "socket.io": "*",
     "orm": "*",
+    "forever": "*",
     "querystring": "*",
     "chai": "*",
     "mocha": "*",
