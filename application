@@ -2,7 +2,7 @@
 source ~/.bashrc
 case $1 in
 "START")
-        export FREDROBINSON_DB_USER=$(cat resources/environment/username)
+        export FREDROBINSON_DB_USERNAME=$(cat resources/environment/username)
         export FREDROBINSON_DB_PASSWORD=$(cat resources/environment/password)
         export NODE_ENV=$(cat resources/environment/environment)
         export DATABASE=$(cat resources/environment/database)
