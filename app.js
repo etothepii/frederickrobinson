@@ -151,5 +151,5 @@ var server = http.createServer(function(req, res) {
 });
 
 frdb.connect(fs,function() {
-  server.listen(3000);
+  server.listen(process.env.SERVICE_PORT);
 });
