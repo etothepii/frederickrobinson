@@ -1,16 +1,23 @@
 {
+  "author": "Etothepii Ltd",
   "name": "frederickRobinson",
   "description": "Web Service for Count On Applications",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "private": true,
   "dependencies": {
     "mysql": "*",
     "node-mysql": "*",
+    "socket.io": "*",
     "orm": "*",
+    "forever": "*",
     "querystring": "*",
     "chai": "*",
     "mocha": "*",
-    "express": "*",
+    "ejs": ">= 0.0.0",
+    "passport": ">= 0.0.0",
+    "util": "*",
+    "passport-google": ">= 0.0.0",
+    "express": "3.4.7",
     "jade": "*"
   }
 }
