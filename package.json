@@ -2,7 +2,7 @@
   "author": "Etothepii Ltd",
   "name": "frederickRobinson",
   "description": "Web Service for Count On Applications",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "private": true,
   "dependencies": {
     "mysql": "*",
