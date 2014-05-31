@@ -7,11 +7,12 @@ export DATABASE=$(cat resources/environment/database)
 export SERVICE_PORT=$(cat resources/environment/servicePort)
 export SITE_PORT=$(cat resources/environment/sitePort)
 export REALM=$(cat resources/environment/realm)
+pwd=$(pwd)
 case $1 in
 "START")
         npm install
-        forever start app.js
-        forever start site.js
+        forever start $pwd/app.js
+        forever start $pwd/site.js
 	;;
 "SYNC")
         git fetch
@@ -28,7 +29,7 @@ case $1 in
         cd ..
 	;;
 "STOP")	
-        forever stop app.js
-        forever stop site.js
+        forever stop $pwd/app.js
+        forever stop $pwd/site.js
 	;;
 esac
