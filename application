@@ -13,6 +13,15 @@ case $1 in
         forever start app.js
         forever start site.js
 	;;
+"SYNC")
+        git fetch
+	if [ "$#" -ne 2 ]
+	then
+	  echo "Usage ./application SYNC git_branch"
+	  exit 1
+	fi
+	git checkout origin/$2
+        ;;
 "CLEAN")
         cd resources
         cat createCountOnTables.sql | sed "s/db_name/$DATABASE/" | mysql --user=$FREDROBINSON_DB_USERNAME --password=$FREDROBINSON_DB_PASSWORD 
