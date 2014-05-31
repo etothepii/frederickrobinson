@@ -21,7 +21,8 @@ case $1 in
 	  echo "Usage ./application SYNC git_branch"
 	  exit 1
 	fi
-	git checkout origin/$2
+	git checkout $2
+	git pull
         ;;
 "CLEAN")
         cd resources
