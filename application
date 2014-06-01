@@ -17,9 +17,11 @@ case $1 in
         forever start $pwd/site.js
 	;;
 "APP")
+        npm install
         node $pwd/app.js
 	;;
 "SITE")
+        npm install
         node $pwd/site.js
 	;;
 "SYNC")
