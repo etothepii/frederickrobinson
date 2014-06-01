@@ -1,7 +1,7 @@
 var express = require('express')
   , passport = require('passport')
   , util = require('util')
-  , GoogleStrategy = require('passport-google').Strategy
+  , GoogleStrategy = require('passport-google-oauth').OAuth2Strategy
   , path = require('path')
   , socketio = require('socket.io');
 
@@ -38,25 +38,14 @@ function watching(agent) {
   }
 }
 
-// Use the GoogleStrategy within Passport.
-// Strategies in passport require a `validate` function, which accept
-// credentials (in this case, an OpenID identifier and profile), and invoke a
-// callback with a user object.
-
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    returnURL: 'http://' + process.env.REALM + '/auth/google/return'
+    callbackURL: 'http://' + process.env.REALM + '/auth/google/return'
   },
-  function(identifier, profile, done) {
-    // asynchronous verification, for effect...
+  function(accessToken, refereshToken, profile, done) {
     process.nextTick(function () {
       
-      // To keep the example simple, the user's Google profile is returned to
-      // represent the logged-in user. In a typical application, you would want
-      // to associate the Google account with a user record in your database,
-      // and return that user instead.
-      profile.identifier = identifier;
       return done(null, profile);
     });
   }
@@ -74,8 +63,6 @@ app.configure(function() {
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(express.session({ secret: 'nothing to see hear' }));
-  // Initialize Passport! Also use passport.session() middleware, to support
-  // persistent login sessions (recommended).
   app.use(passport.initialize());
   app.use(passport.session());
   app.use(app.router);
@@ -117,10 +104,7 @@ app.get('/purchase', function(req, res){
 // the user to google.com. After authenticating, Google will redirect the
 // user back to this application at /auth/google/return
 app.get('/auth/google',
-  passport.authenticate('google', { failureRedirect: '/login' }),
-  function(req, res) {
-    res.redirect('/');
-  });
+  passport.authenticate('google', {scope: 'profile'}));
 
 // GET /auth/google/return
 // Use passport.authenticate() as route middleware to authenticate the
