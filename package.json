@@ -16,7 +16,7 @@
     "ejs": ">= 0.0.0",
     "passport": ">= 0.0.0",
     "util": "*",
-    "passport-google": ">= 0.0.0",
+    "passport-google-oauth": ">= 0.0.0",
     "express": "3.4.7",
     "jade": "*"
   }
