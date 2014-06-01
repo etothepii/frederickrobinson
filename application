@@ -14,6 +14,12 @@ case $1 in
         forever start $pwd/app.js
         forever start $pwd/site.js
 	;;
+"APP")
+        node $pwd/app.js
+	;;
+"SITE")
+        node $pwd/site.js
+	;;
 "SYNC")
         git fetch
 	if [ "$#" -ne 2 ]
