@@ -44,8 +44,9 @@ function watching(agent) {
 // callback with a user object.
 
 passport.use(new GoogleStrategy({
-    returnURL: 'http://' + process.env.REALM + '/auth/google/return',
-    realm: 'http://' + process.env.REALM + '/'
+    clientID: process.env.GOOGLE_CLIENT_ID,
+    clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+    returnURL: 'http://' + process.env.REALM + '/auth/google/return'
   },
   function(identifier, profile, done) {
     // asynchronous verification, for effect...
@@ -61,7 +62,7 @@ passport.use(new GoogleStrategy({
   }
 ));
 
-var app = express.createServer();
+var app = express();
 
 // configure Express
 app.configure(function() {
